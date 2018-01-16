@@ -1,0 +1,13 @@
+{
+    "title": "Emercoin Documentation",
+    "tagline": "Community Documentation for the Emercoin Project",
+    "image": "./images/EMC_Evolve_Circles.jpg",
+    "languages": { "en": "English", "ru": "Russian" },
+    "ignore": {
+        "files": ["Work_In_Progress.md",".gitignore","README.md"],
+        "folders": ["999_Not_Published"]
+    },
+    "html": {
+        "edit_on_github": "/emercoin/docs"
+    }
+}
