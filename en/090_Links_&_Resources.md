@@ -68,7 +68,7 @@ More exchanges can be found at
 -   [Cryptocointalk](https://cryptocointalk.com/topic/2144-emercoin-emc-information)
 -   [Reddit](http://www.reddit.com/r/Emercoin/)
 -   [Twitter (official)](https://twitter.com/emercoin_press)
--   [Twitter (news)](https://twitter.com/EmercoinRSS)
+-   [Twitter (news)](https://twitter.com/emercoin)
 -   [Coinpursuit](https://www.coinpursuit.com/members/emercoin.1073)
 -   [BTCSEC (Russian)](https://forum.btcsec.com/index.php?/topic/3408-emercoin/)
 -   [Facebook](https://www.facebook.com/EmercoinOfficial)
