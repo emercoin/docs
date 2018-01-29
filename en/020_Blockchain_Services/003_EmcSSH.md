@@ -59,8 +59,8 @@ Next, you need to download and install the <u>latest</u> [emcssh release](https:
 
 ```text
 $ wget https://github.com/emercoin/emcssh/archive/0.0.4.tar.gz  (change to whatever is the latest release)
-$ tar xfz emcssh-0.0.4.tar.gz
-$ cd emcssh-0.0.4
+$ tar xfz 0.0.4.tar.gz
+$ cd 0.0.4
 $ make
 $ make install
 ```
