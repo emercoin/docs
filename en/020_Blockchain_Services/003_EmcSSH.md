@@ -58,7 +58,7 @@ $ apt-get install libcurl4-openssl-dev libjansson-dev
 Next, you need to download and install the <u>latest</u> [emcssh release](https://github.com/emercoin/emcssh/releases):
 
 ```text
-$ wget https://github.com/emercoin/emcssh/archive/emcssh-0.0.4.tar.gz  (change to whatever is the latest release)
+$ wget https://github.com/emercoin/emcssh/archive/0.0.4.tar.gz  (change to whatever is the latest release)
 $ tar xfz emcssh-0.0.4.tar.gz
 $ cd emcssh-0.0.4
 $ make
