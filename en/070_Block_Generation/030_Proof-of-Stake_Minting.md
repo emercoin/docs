@@ -18,10 +18,10 @@ Proof-of-Stake guide
 --------------------
 This guide covers how to mint
 [Proof-of-Stake](http://en.wikipedia.org/wiki/Proof-of-stake) (PoS)
-blocks with an encrypted wallet on your own computer using the [Emercoin
-GUI](../General_Usage/Running_Emercoin). Note that it is also possible to mint
-PoS blocks on a headless server with the [Emercoin
-daemon](../General_Usage/Running_Emercoin) (see *walletpassphrase* command
+blocks with an encrypted wallet on your own computer using the <b>Emercoin
+GUI</b>. Note that it is also possible to mint
+PoS blocks on a headless server with the <b>Emercoin
+daemon</b> (see *walletpassphrase* command
 below).
 
 Before we begin, let's understand a few things about PoS with Emercoin:
@@ -110,7 +110,7 @@ minting PoS blocks and to support the Emercoin network.
 While coins are staking they will not be accessible to spend. If you
 need to prevent an amount of EMC from staking, simply set
 **reservebalance** in your wallet's
-[emercoin.conf](../General_Usage/Running_Emercoin) file. e.g:
+[emercoin.conf](../Running_Emercoin/emercoin.conf) file. e.g:
 
     reservebalance=1000
 
@@ -121,7 +121,7 @@ To prevent your wallet from staking at all, simply set
 
 If using the command line daemon instead of the GUI then you can unlock
 your wallet for minting using the
-[walletpassphrase](../General_Usage/Running_Emercoin) command:
+**walletpassphrase** command:
 
     walletpassphrase "passphrase" timeout [mintonly]
 
@@ -138,7 +138,7 @@ e.g. to unlock for minting for 604800 seconds (1 week):
     [UTXO](https://bitcoin.org/en/glossary/unspent-transaction-output)
     has been left unspent in your wallet for at least 30 days.
 -   Ensure you have not set **reservebalance** in your wallet's
-    [emercoin.conf](../General_Usage/Running_Emercoin) file.
+    [emercoin.conf](../Running_Emercoin/emercoin.conf) file.
 -   See
     <https://www.reddit.com/r/EmerCoin/comments/6xsmfw/pos_minting_question/>
 

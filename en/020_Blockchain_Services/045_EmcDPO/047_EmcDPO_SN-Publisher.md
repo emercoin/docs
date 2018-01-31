@@ -32,12 +32,12 @@ serial numbers.
 Preparation of the Emercoin wallet to work with SN-Publisher
 ------------------------------------------------------------
 
-1. If your [Emercoin wallet](../../Install_Software/Emercoin_Core) is currently
+1. If your [Emercoin wallet](../../Install_Software/Core_Wallets/GUI_wallet) is currently
 running, exit it via the menu (File &gt; Exit).
 
 2. Enter the wallet folder (in Windows this is: **C:\\Users\\&lt;YOUR USER
 NAME&gt;\\AppData\\Roaming\\EmerCoin**) and create a configuration file
-called **[emercoin.conf](../../General_Usage/Running_Emercoin#page_emercoin-conf)**. For convenience,
+called **[emercoin.conf](../../Running_Emercoin/emercoin.conf)**. For convenience,
 first create a text file called emercoin.txt, and then rename it after
 editing. In the file **emercoin.conf** write the following lines:
 

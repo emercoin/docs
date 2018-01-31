@@ -1,8 +1,8 @@
-<div style="overflow:hidden;"><img style="float:left;" src="EmercoinSW_Wallet.png" alt="Emercoin SW on Google Play" width="512"></div>
+# Emercoin Secure Wallet
 
-# Emercoin SW (Android, iOS, Windows, Linux, MacOS)
-Emercoin Secure Wallet is a lightweight and secure client app for mobile
-and desktop devices. Unlike the already announced Emercoin One/Basic, it
+<div style="overflow:hidden;"><img style="float:left;" src="EmercoinSW_Wallet.png" alt="Emercoin SW on Google Play" width="512"></div><br>
+
+<strong>Emercoin Secure Wallet</strong> is a lightweight and secure client app for Android, iOS, Windows, Linux and MacOS. Unlike the already announced Emercoin One/Basic, it
 stores keys locally and uses the Electrum protocol.
 
 Emercoin SW is released by Aspanta Limited.

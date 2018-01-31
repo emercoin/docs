@@ -6,9 +6,9 @@ EmcDNS is a system for decentralized domain names supporting a full range of [DN
 
 Because of Emercoin's secure and distributed blockchain the domain name records are completely decentralized and uncensorable and cannot be altered, revoked or suspended by any authority. Only a record's owner can modify or transfer it to another owner, and a record's owner is determined by whoever controls the private key to the associated payment address.
 
-Only DNS record owners can manage their records: change values, lease times, or delete them or transfer ownership to another [EMC](../../What_is_Emercoin) address. These actions can be performed using the [Emercoin NVS](../Emercoin_NVS) in the Emercoin wallet GUI, or via the **name\_new** or **name\_update** commands in the [Emercoin API](../../General_Usage/Emercoin_API).
+Only DNS record owners can manage their records: change values, lease times, or delete them or transfer ownership to another EMC address. These actions can be performed using the [Emercoin NVS](../Emercoin_NVS) in the Emercoin wallet GUI, or via the **name\_new** or **name\_update** commands in the [Emercoin API](../../Emercoin_API).
 
-DNS records can easily be retrieved from any Emercoin wallet using the [Emercoin API](../../General_Usage/Emercoin_API) using JSONRPC or the command line, or by the standard [RFC1034](https://www.ietf.org/rfc/rfc1034.txt) DNS protocol that is built in to every Emercoin wallet.
+DNS records can easily be retrieved from any Emercoin wallet using the [Emercoin API](../../Emercoin_API) using JSONRPC or the command line, or by the standard [RFC1034](https://www.ietf.org/rfc/rfc1034.txt) DNS protocol that is built in to every Emercoin wallet.
 
 Supported DNS zones
 -------------------

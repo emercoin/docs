@@ -48,7 +48,7 @@ address for the pair is created in the local wallet.
 
 You can manage NVS entries either through the Emercoin [wallet
 GUI](http://emercoin.com#download), or via the
-[emercoin-cli](../General_Usage/Running_Emercoin#emercoin-cli).
+[emercoin-cli](../Running_Emercoin/Command_Line).
 
 Service abbreviations
 --------------
@@ -140,7 +140,7 @@ Managing NVS entries with the command line
 ----------------------------------
 
 Below is the list of
-[Emercoin API](../General_Usage/Emercoin_API) commands for
+[Emercoin API](../Emercoin_API) commands for
 managing NVS entries. Parameters in square brackets [ ] are optional.
 
 	name_new <name> <value> <days> [toaddress]

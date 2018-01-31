@@ -14,9 +14,6 @@ Links to third-party websites, projects and services relating to Emercoin. Inclu
 
 -   [Sourceforge](https://sourceforge.net/projects/emercoin/files)
 -   [Emercoin GitHub](https://github.com/Emercoin)
--   [Install Instructions](./General_Usage/Running_Emercoin)
--   [Blockchain Engine emcweb
-    wallet](https://www.blockchainengine.org/deploy/) (Azure/server deployment)
 
 ### Mobile Wallets
 

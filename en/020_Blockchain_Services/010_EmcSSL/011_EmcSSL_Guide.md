@@ -5,7 +5,7 @@
 
 This article will guide you through step by step instructions for using
 [EmcSSL](EmcSSL_Introduction) to create a new certificate and use it to
-log in without a password to a website that supports it. The guide assumes you are running the [Emercoin GUI wallet](../../General_Usage/Running_Emercoin) and have some [EMC](../../Introduction/The_EMC_Currency) in your wallet balance.
+log in without a password to a website that supports it. The guide assumes you are running the <b>Emercoin GUI wallet</b> and have some [EMC](../../Introduction/The_EMC_Currency) in your wallet balance.
 
 Follow these steps:
 

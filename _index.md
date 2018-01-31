@@ -1,5 +1,8 @@
-Documentation for the [Emercoin](http://emercoin.com) project. 
 
-You can edit this page directly on the [Emercoin Documentation GitHub](https://github.com/Emercoin/docs) using [Markdown](https://guides.github.com/features/mastering-markdown/) syntax.
+<p class="lead">
+<strong>Emercoin</strong> is a blockchain platform supporting a wide range of distributed services.
+</p>
 
-Pages are generated with <http://daux.io>.
+## Emercoin Community Documentation Project
+
+is Documentation for the [Emercoin](http://emercoin.com) project. See the <a href="https://github.com/Emercoin/docs">GitHub repository</a> for more details.

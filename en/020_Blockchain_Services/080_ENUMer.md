@@ -41,7 +41,7 @@ Configuration
 -------------
 
 To activate this feature, set some config params in
-**[emercoin.conf](../General_Usage/Running_Emercoin)**:
+**[emercoin.conf](../Running_Emercoin/emercoin.conf)**:
 
 ```text
 #emcdnsallowed=.coin|.emc|.lib|.bazar           # remove Allowed TLDs without ENUM

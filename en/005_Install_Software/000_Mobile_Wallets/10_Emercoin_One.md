@@ -1,8 +1,8 @@
-<div style="overflow:hidden;"><img style="float:left;" src="Emercoin_One.png" alt="Emercoin One on the Appstore" width="512"></div>
-
 # Emercoin One for iOS
 
-Emercoin One iOS app is a full-featured Emercoin wallet for iOS devices
+<div style="overflow:hidden;"><img style="float:left;" src="Emercoin_One.png" alt="Emercoin One on the Appstore" width="512"></div><br>
+
+<strong>Emercoin One</strong> iOS app is a full-featured Emercoin wallet for iOS devices
 with exchange integration.
 
 Emercoin One is released by Aspanta Limited.

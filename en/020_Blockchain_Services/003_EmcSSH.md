@@ -6,7 +6,7 @@ EmcSSH is a system for [Public Key
 Infrastructure](https://en.wikipedia.org/wiki/Public_key_infrastructure)
 (PKI) and [Access Control
 List](https://en.wikipedia.org/wiki/Access_control_list) (ACL)
-management on the [Emercoin](../What_is_Emercoin) blockchain.
+management on the [Emercoin](../About_Emercoin) blockchain.
 
 It is possible to create a bridge between
 [OpenSSH](https://en.wikipedia.org/wiki/Openssh) and the Emercoin
@@ -22,7 +22,7 @@ SSH credentials during the authentication process.
 
 Users can manage their own login credentials (public keys) by submitting
 and modifying records in the EMC blockchain (using the standard
-[Emercoin GUI or daemon](../General_Usage/Running_Emercoin)). Similarly,
+Emercoin GUI or command-line daemon. Similarly,
 admins can manage user groups for their services that may contain
 references to other groups as well as individual users - allowing for
 the creation of recursive authentication trees.
@@ -44,43 +44,37 @@ is already running the Emercoin wallet.
 
 First upgrade the existing software:
 
-```text
-$ apt-get update
-$ apt-get dist-upgrade
-```
+    $ apt-get update
+    $ apt-get dist-upgrade
 
 Now install curl and jansson:
 
-```text
-$ apt-get install libcurl4-openssl-dev libjansson-dev
-```
+    $ apt-get install libcurl4-openssl-dev libjansson-dev
 
 Next, you need to download and install the <u>latest</u> [emcssh release](https://github.com/emercoin/emcssh/releases):
 
-```text
-$ wget https://github.com/emercoin/emcssh/archive/0.0.4.tar.gz  (change to whatever is the latest release)
-$ tar xfz 0.0.4.tar.gz
-$ cd 0.0.4
-$ make
-$ make install
-```
+    $ wget https://github.com/emercoin/emcssh/archive/0.0.4.tar.gz  (change to whatever is the latest release)
+    $ tar xfz 0.0.4.tar.gz
+    $ cd emcssh-0.0.4
+    $ make
+    $ make install
 
 ### Setting up EmcSSH
 
-Now you need to edit the config file `/usr/local/etc/emcssh_config`
+Now you need to edit the config file `/usr/local/etc/emercoin/emcssh.conf`
 and change the setting for `emcurl`. Settings need to match those in
-your [emercoin.conf](../General_Usage/Running_Emercoin)
+your **emercoin.conf** file.
 
-    $ nano /usr/local/etc/emcssh_config
+    $ nano /usr/local/etc/emercoin/emcssh.conf
 
 Change the value for `emcurl`:
 
-    emcurl http://emccoinrpc:rpcpassword@127.0.0.1:8775/
+    emcurl http://emccoinrpc:rpcpassword@127.0.0.1:6662/
 
-The values for `emccoinrpc` and `rpcpassword` should be taken from your [emercoin.conf](../General_Usage/Running_Emercoin). Other
+The values for `emccoinrpc` and `rpcpassword` should be taken from your **emercoin.conf** file. Other
 parameters can be left as is.
 
-*Important: the `emcssh_config` file should have permissions set to read
+*Important: the `emcssh.conf` file should have permissions set to read
 and write only by the root user. Do not change the permissions on this file as it
 contains the `rpcpassword`.*
 
@@ -92,7 +86,7 @@ updated. Users of other operating systems can skip the next step.
 
 For starters find out what version of OpenSSH is installed:
 
-    sshd -v
+    $ sshd -v
 
 In response, we get the following message:
 
@@ -102,19 +96,19 @@ In response, we get the following message:
 If the version is 6.2 or above, the next step can be skipped. Otherwise,
 update:
 
-    nano /etc/apt/sources.list
+    $ nano /etc/apt/sources.list
 
 Add to the end of the line and save the file:
 
-    deb http://ftp.debian.org/debian/ wheezy-backports main non-free contrib
+    $ deb http://ftp.debian.org/debian/ wheezy-backports main non-free contrib
 
 Update the system:
 
-    apt-get update
+    $ apt-get update
 
 and install sshd:
 
-    apt-get -t wheezy-backports install openssh-server
+    $ apt-get -t wheezy-backports install openssh-server
 
 The installation script asks whether to disable password authentication.
 The best response is not to be able to log in the traditional way.
@@ -122,13 +116,13 @@ The best response is not to be able to log in the traditional way.
 In addition, users of Debian will need to change the file location
 emcssh:
 
-    mv /usr/local/sbin/emcssh /usr/sbin/emcssh
+    $ mv /usr/local/sbin/emcssh /usr/sbin/emcssh
 
 ### Configure OpenSSH
 
 Now we need to edit the configuration file `sshd_config`:
 
-    nano /etc/ssh/sshd_config
+    $ nano /etc/ssh/sshd_config
 
 It is necessary to add some lines:
 
@@ -144,12 +138,15 @@ For other operating systems:
 
 Now, restart sshd with the new configuration:
 
-    kill -HUP `cat /var/run/sshd.pid`
+    $ kill -HUP `cat /var/run/sshd.pid`
 
-### Generating a key pair
+### Generate an SSH key pair
 
-Now we need to generate a key pair for a user. If the user is running
-Windows, we recommend using
+Now we need to generate a key pair for a user. In Linux, simply type the following command:
+
+    $ ssh-keygen -t rsa -b 4096 -C "@your-username"
+
+If the user is running Windows, we recommend using
 [PuTTYgen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
 Run PuTTYgen, change the number of bits to 4096 and click **Generate**.
@@ -165,7 +162,9 @@ Click **Save Private Key** and store the key on your computer. Password
 protection is not needed, therefore, you can agree to save without a
 password.
 
-Next, we need to add the public key (highlighted in the picture above)
+### Add the public key to the Emercoin NVS
+
+Next, we need to add the public key (highlighted for Windows in the picture above)
 to the [Emercoin NVS](../Blockchain_Services/Emercoin_NVS) as a **name-&gt;value**
 pair. Do this in your Emercoin wallet on your PC. In the **name** field,
 specify:
@@ -182,8 +181,8 @@ Now we need to wait for confirmation of our transaction. To save time
 while waiting for confirmation, you can now go back to your server, and
 add a new user to the file **emcssh\_keys**:
 
-    cd $HOME/.ssh/
-    nano emcssh_keys
+    $ cd $HOME/.ssh/
+    $ nano emcssh_keys
 
 In the document, simply add your user with @. In my case it is:
 
@@ -257,7 +256,7 @@ problem. And if you can't fix it, please ask for help.
 Finally, here's another useful command, which shows when visitors log
 in:
 
-    grep "Accepted publickey" /var/log/auth.log
+    $ grep "Accepted publickey" /var/log/auth.log
 
 ### Supplementary info for MacOS X users
 
@@ -299,4 +298,5 @@ More info
 
 1.  See the following article on medium: [What is EmerSSH?
     FAQ](https://medium.com/@emer.tech/what-is-emerssh-faq-d38a6a0d073c).
+
 

@@ -1,4 +1,4 @@
-# Roadmap and Achievements (work-in-progress)
+# Roadmap and Achievements
 
 Important Emercoin milestones:
 

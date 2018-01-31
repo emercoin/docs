@@ -11,6 +11,6 @@ Magnet links should use the following **name-&gt;value** format:
     "value" : "magnet:?xt=urn:btih:dff183bcac72a628fcac88ac1c85c239b806fd5e&dn=emercoin-0.3.2-linux.tar.gz"
 
 A list of all magnet links can be retrieved using the following command
-with the [Emercoin API](../General_Usage/Emercoin_API):
+with the [Emercoin API](../Emercoin_API):
 
     $ emc name_filter ^magnet:

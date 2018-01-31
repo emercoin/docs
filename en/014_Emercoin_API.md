@@ -4,8 +4,8 @@
 
 As with [Bitcoin](https://en.bitcoin.it/wiki/Running_Bitcoin), Application programming interface (API) is available via:
 
--   the "debug console" in the [Emercoin Core GUI](../Install_Software/Emercoin_Core).
--   [JSONRPC](https://en.bitcoin.it/wiki/API_reference_%28JSON-RPC%29), per settings in your [emercoin.conf](Running_Emercoin).
+-   the "debug console" in Emercoin Core GUI](../Install_Software/Emercoin_Core/GUI_wallet).
+-   [JSONRPC](https://en.bitcoin.it/wiki/API_reference_%28JSON-RPC%29), per settings in your <b>emercoin.conf</b>.
 -   Directly on the command line interface (emercoin-cli).
 
 API commands

@@ -51,12 +51,12 @@ Installation
     this running.
 
 2.  You need to [install the Emercoin wallet
-    daemon](../General_Usage/Running_Emercoin) on your web server.
+    daemon](../Install_Software/Core_Wallets/CLI_daemon) on your web server.
 
-EMCLNX uses the [emercoin API](../General_Usage/Running_Emercoin)
+EMCLNX uses the [emercoin API](../Emercoin_API)
 JSONRPC interface, so ensure you have set suitable parameters related to
 RPC access in your daemon's
-[emercoin.conf](../General_Usage/Running_Emercoin) file, namely:
+[emercoin.conf](../Running_Emercoin/emercoin.conf) file, namely:
 **rpcuser**, **rpcpassword**, **rpcport**, and **rpcallowip**.
 
 After starting the daemon, download and unzip the EMCLNX archive from
@@ -148,8 +148,8 @@ To use EMCLNX as a **Buyer**, you will need to deposit some
 these funds to pay **Hosts** for the **Visitors** who are referred to
 you.
 
-In addition, you need to use the [Emercoin
-wallet](../General_Usage/Running_Emercoin) (GUI wallet is easiest) to manage
+In addition, you need to use the Emercoin
+Core wallet (GUI wallet is easiest) to manage
 advertisement contracts and signatures. Of course, if needed, you can
 use a single wallet for all functions, but it's more practical to use
 two independent wallets - one for payment, another for contract
@@ -174,7 +174,7 @@ output for domain emercoin.com:
 
 2. Select some unique name for your contract, for example:
 **MyFirstContract**. You will need to check if this name is available by
-using the [name\_show](../General_Usage/Emercoin_API) command
+using the [name\_show](../Emercoin_API) command
 in the Emercoin wallet. You can do this in the GUI wallet's debug window
 by entering the command:
 
@@ -185,7 +185,7 @@ is OK (the name is not taken yet).
 
 3. Generate a signature for your contract using the EMC address you
 generated above, using the
-[signmessage](../General_Usage/Emercoin_API) command. e.g:
+[signmessage](../Emercoin_API) command. e.g:
 
         signmessage EdvJ7b7zPL6gj5f8VNfX6zmVcftb35sKX2 MyFirstContract
 
