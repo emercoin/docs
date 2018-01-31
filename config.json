@@ -11,7 +11,7 @@
     "live": {
         "clean_urls": true
     },
-    "themes_directory": "/var/www/themes",
+    "themes_directory": "/var/www/docs/themes",
     "html": {
         "theme": "daux-blue",
         "search": true,
