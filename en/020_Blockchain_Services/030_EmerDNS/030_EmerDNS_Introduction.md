@@ -1,8 +1,8 @@
-<div style="overflow:hidden;"><img style="float:left;" src="EmcDNS_logo.png" alt="EmcDNS logo" width="256"></div>
+<div style="overflow:hidden;"><img style="float:left;" src="EmerDNS_logo.png" alt="EmerDNS logo" width="256"></div>
 
-# EmcDNS
+# EmerDNS
 
-EmcDNS is a system for decentralized domain names supporting a full range of [DNS records](http://en.wikipedia.org/wiki/List_of_DNS_record_types). EmcDNS operates under the **"dns"** service abbreviation in the [Emercoin NVS](../Emercoin_NVS).
+EmerDNS is a system for decentralized domain names supporting a full range of [DNS records](http://en.wikipedia.org/wiki/List_of_DNS_record_types). EmerDNS operates under the **"dns"** service abbreviation in the [Emercoin NVS](../Emercoin_NVS).
 
 Because of Emercoin's secure and distributed blockchain the domain name records are completely decentralized and uncensorable and cannot be altered, revoked or suspended by any authority. Only a record's owner can modify or transfer it to another owner, and a record's owner is determined by whoever controls the private key to the associated payment address.
 
@@ -12,9 +12,9 @@ DNS records can easily be retrieved from any Emercoin wallet using the [Emercoin
 
 Supported DNS zones
 -------------------
-Technically, EmcDNS can support any [DNS-zone](https://en.wikipedia.org/wiki/DNS_zone) or [TLD](https://en.wikipedia.org/wiki/TLD). However, for seamless integration into a standard DNS tree, and to prevent collisions with existing DNS-zones, we currently recommend creating EmcDNS records only in the zones: *\*.emc*, *\*.coin*, *\*.lib*, *\*.bazar*.
+Technically, EmerDNS can support any [DNS-zone](https://en.wikipedia.org/wiki/DNS_zone) or [TLD](https://en.wikipedia.org/wiki/TLD). However, for seamless integration into a standard DNS tree, and to prevent collisions with existing DNS-zones, we currently recommend creating EmerDNS records only in the zones: *\*.emc*, *\*.coin*, *\*.lib*, *\*.bazar*.
 
-Current root zones supported by EmcDNS, and their intended purpose:
+Current root zones supported by EmerDNS, and their intended purpose:
 
 Zone     |Intended Purpose
 -------- |---------------------------------------------------------------------
@@ -23,15 +23,15 @@ Zone     |Intended Purpose
 .lib     |from the words Library and Liberty - that is, knowledge and freedom
 .bazar   |marketplace
 
-Accessing EmcDNS zones
+Accessing EmerDNS zones
 ----------------------
 
-There are several ways that EmcDNS domains can be reached:
+There are several ways that EmerDNS domains can be reached:
 
 
 ### Browser extensions
 
-Several 3rd-party browser plugins exist which allow you to easily visit EmcDNS domains:
+Several 3rd-party browser plugins exist which allow you to easily visit EmerDNS domains:
 
 -   [Peername.com browser
     extension](https://peername.com/browser-extension) (firefox,
@@ -41,23 +41,23 @@ Several 3rd-party browser plugins exist which allow you to easily visit EmcDNS d
 -   [friGate browser extension](https://fri-gate.org/) (firefox,
     chrome, opera)
 
-A more updated list of browser extensions that support EmcDNS may be found [here](../../Links_&_Resources#page_EmcDNS-Browser-Plugins).
+A more updated list of browser extensions that support EmerDNS may be found [here](../../Links_&_Resources#page_EmerDNS-Browser-Plugins).
 
 ### OpenNIC
-Emercoin maintains a peering agreement with the DNS provider [OpenNIC](http://opennicproject.org) which means domains registered with EmcDNS are accessible by default to all users of OpenNIC DNS servers. Emercoin domain zones are thus accessible by visiting [opennicproject.org](http://opennicproject.org) and following their [guide](http://wiki.opennicproject.org/GettingStarted) for setting your DNS resolver to OpenNIC servers.
+Emercoin maintains a peering agreement with the DNS provider [OpenNIC](http://opennicproject.org) which means domains registered with EmerDNS are accessible by default to all users of OpenNIC DNS servers. Emercoin domain zones are thus accessible by visiting [opennicproject.org](http://opennicproject.org) and following their [guide](http://wiki.opennicproject.org/GettingStarted) for setting your DNS resolver to OpenNIC servers.
 
 OpenNIC is a simple and convenient method to seamlessly access all websites registered in the Emercoin blockchain, as well as all other domain zones that OpenNIC supports.
 
 ### Proxy servers
 
-3rd-party proxy servers can provide access to EmcDNS zones:
+3rd-party proxy servers can provide access to EmerDNS zones:
 
 -   [OpenNIC Proxy](http://proxy.opennicproject.org)
 -   [Emerproxy.xyz](https://emerproxy.xyz)
 
-### EmcDNS gateways
+### EmerDNS gateways
 
-**Emergate.net** - The emergate.net gateway is an example of [DNS tree integration](#Integration_into_a_regular_DNS_tree) maintained by the Emercoin development team and provides a public gateway to EmcDNS zones. All EmcDNS domains are reachable through this gateway, provided the server hosting the domain is configured properly to receive connections from the gateway url. For example, if you have registered **emer.coin** on the Emercoin blockchain, then it can be reached by visiting: <http://emer.coin.emergate.net>
+**Emergate.net** - The emergate.net gateway is an example of [DNS tree integration](#Integration_into_a_regular_DNS_tree) maintained by the Emercoin development team and provides a public gateway to EmerDNS zones. All EmerDNS domains are reachable through this gateway, provided the server hosting the domain is configured properly to receive connections from the gateway url. For example, if you have registered **emer.coin** on the Emercoin blockchain, then it can be reached by visiting: <http://emer.coin.emergate.net>
 
 Creating and maintaining a DNS record
 -------------------------------------
@@ -157,7 +157,7 @@ converter](https://www.charset.org/punycode) and register the result:
 
 A general challenge with distributed DNS is that anyone can allocate any
 unique name, allowing someone to register a subdomain for a domain that
-they do not own. To remedy this situation, EmcDNS has special ways to
+they do not own. To remedy this situation, EmerDNS has special ways to
 manage subdomains:
 
 -   A subdomain (SD) record in the DNS parent's NVS value, permits
@@ -261,10 +261,10 @@ Integration into a regular DNS tree
 
 First, activate the [RFC1034](https://www.ietf.org/rfc/rfc1034.txt) DNS
 server in Emercoin by specifing two optional parameters in the
-**emercoin.conf** config file, **emcdns** and **emcdnsport**:
+**emercoin.conf** config file, **EmerDNS** and **EmerDNSport**:
 
-	emcdns=1 # Run DNS server. Default is 0 (don't run)
-	emcdnsport=NNN # Port for DNS, default is 5335
+	EmerDNS=1 # Run DNS server. Default is 0 (don't run)
+	EmerDNSport=NNN # Port for DNS, default is 5335
 
 To integrate Emercoin DNS server into a regular DNS tree, you can use
 full-service DNS or caching DNS. The standard Windows DNS-client is
@@ -287,7 +287,7 @@ website](http://mayakron.altervista.org/wikibase/show.php?id=AcrylicHome).
 After installation you should configure Acrylic to integrate Emercoin
 domain zones. A config file example is [available
 online](http://mayakron.altervista.org/wikibase/show.php?id=AcrylicConfiguration).
-To configure, you should forward all requests to EmcDNS zones (*\*.emc*,
+To configure, you should forward all requests to EmerDNS zones (*\*.emc*,
 *\*.coin*, *\*.lib*, *\*.bazar*) to the local Emercoin wallet, and all
 requests to other zones to the default DNS provider. This can be
 configured in the Acrylic config file as follows:
@@ -400,7 +400,7 @@ In this example the PC running Emercoin has the LAN IP address
 ### Public Internet, direct gateway
 
 The ability also exists to make a public gateway from a regular DNS tree
-into EmcDNS. In this case, you can lease any public domain or subdomain,
+into EmerDNS. In this case, you can lease any public domain or subdomain,
 and point the NS records for this domain to a machine that is running
 the Emercoin wallet with an active DNS server on port 53 (see in the
 next paragraph for how to define the port). Once you do this, all
@@ -441,7 +441,7 @@ parameter in **emercoin.conf**:
 
 ```text
 # enable emc dns
-emcdns=1
+EmerDNS=1
 ```
 
 This will activate Emercoin's DNS server and run it on default port
@@ -454,23 +454,23 @@ parameters:
 ```text
 # Gateway suffix. This suffix will be ignored when a request is passed to the internal gateway.
 # Requests for other domain suffixes will be ignored.
-emcdnssuffix=.emergate.net
+EmerDNSsuffix=.emergate.net
  
 # NS Server port 53 is the default NS port and must be used if the server is public and "not forward only".
-emcdnsport=53
+EmerDNSport=53
  
 # Filter for allowed zones. Protection for "cool hackers", who try to lookup any external domains through our server
 # or attack someone else by DNS amplification mechanism. Currently, only the four EMC-zones are allowed.
-emcdnsallowed=.coin|.emc|.lib|.bazar
+EmerDNSallowed=.coin|.emc|.lib|.bazar
  
 # Optional path for a file that contains names in the local gateway's NS zone (like www.emergate.net).
 # Must be full path. Example:
-emcdnslocalcf=/usr/share/emercoin/emcdnslocal.conf
+EmerDNSlocalcf=/usr/share/emercoin/EmerDNSlocal.conf
 ```
 
-The local config file (**emcdnslocal.conf** above) contains pairs in the
+The local config file (**EmerDNSlocal.conf** above) contains pairs in the
 format **"name=value"**. An empty name assumes "gateway as is". The
-values use the same format as EmcDNS values in the blockchain. For
+values use the same format as EmerDNS values in the blockchain. For
 example, the local file for **emergate.net** is as follows:
 
 ```text

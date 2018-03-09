@@ -1,4 +1,4 @@
-#EmcSSH
+#EmerSSH
 
 ## Установка
 

@@ -28,9 +28,9 @@ Emercoin logo (purple), transparent
     logo](http://develop.emercoin.com/content/EMC_logo_color.ai) (Adobe
     Illustrator .ai format)
 
-### EmcSSL Logo
+### EmerSSL Logo
 
-<div style="overflow:hidden;"><img style="float:left;" src="../images/EmcSSL_logo.png" alt="EmcSSL logo" width="256"></div>
+<div style="overflow:hidden;"><img style="float:left;" src="../images/EmerSSL_logo.png" alt="EmerSSL logo" width="256"></div>
 
 EmerSSL logo
 
@@ -69,7 +69,7 @@ Promotional Images
 
 <div style="overflow:hidden;"><img style="float:left;" src="../images/EMC_Services.jpeg" alt="" width="512"></div>
 
-<div style="overflow:hidden;"><img style="float:left;" src="../images/Emcssh-digital-key.png" alt="" width="512"></div>
+<div style="overflow:hidden;"><img style="float:left;" src="../images/EmerSSH-digital-key.png" alt="" width="512"></div>
 
 
 Font packages that include the Emercoin logo

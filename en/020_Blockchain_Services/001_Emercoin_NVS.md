@@ -57,15 +57,15 @@ recommend using the following supported service abbreviations:
 
   Service abbreviation  | Service description                                                     | Associated Emercoin Service
   ----------------------|------------------------------------------------------------------------|-----------------------------------
-  dns                   | DNS record                                                             |  [EmcDNS](../Blockchain_Services/EmcDNS/EmcDNS_Introduction)
-  ssh                   | SSH public key                                                         |  [EmcSSH](../Blockchain_Services/EmcSSH)
+  dns                   | DNS record                                                             |  [EmerDNS](../Blockchain_Services/EmerDNS/EmerDNS_Introduction)
+  ssh                   | SSH public key                                                         |  [EmerSSH](../Blockchain_Services/EmerSSH)
   gpg                   | GNU PGP public key|
   kx                    | [RFC2230](http://tools.ietf.org/html/rfc2230) public key|
-  ssl                   | SSL Certificate                                                        |  [EmcSSL](../Blockchain_Services/EmcSSL/EmcSSL_Introduction)
+  ssl                   | SSL Certificate                                                        |  [EmerSSL](../Blockchain_Services/EmerSSL/EmerSSL_Introduction)
   bls                   | BLS digital signature public key
   tts                   | [Trusted Timestamp](http://en.wikipedia.org/wiki/Trusted_timestamping)  | EmcTTS
   lnx                   | Advertising Link Exchanger                                              | [EmcLNX](../Blockchain_Services/EmcLNX)
-  dpo                   | Digital Proof-of-Ownership                                              | [EmcDPO](../Blockchain_Services/EmcDPO/EmcDPO_Introduction)
+  dpo                   | Digital Proof-of-Ownership                                              | [EmerDPO](../Blockchain_Services/EmerDPO/EmerDPO_Introduction)
   magnet                | BitTorrent magnet links                                                 | [EmcMAGNET](../Blockchain_Services/EmcMAGNET)
   swift                 | Bank's branch info for SWIFT transfers
   enum                  | [ENUM telephone record](http://www.voip-info.org/wiki/view/ENUM)       | [ENUMer](../Blockchain_Services/ENUMer)
@@ -185,7 +185,7 @@ List NVS pairs existing in the blockchain, returning `max-returned` entries (def
 
     sendtoname <name> <amount> [comment] [comment-to]
 
-Send an EMC payment to the address associated with the specified <name>. For instance, send a donation to the owner of a EMCDNS address of a website you visit:
+Send an EMC payment to the address associated with the specified <name>. For instance, send a donation to the owner of a EmerDNS address of a website you visit:
 - `amount` : EMC amount, rounded to the nearest 0.01.
 - `comment` and `comment-to` : will be stored in the local wallet, not in the blockchain.
 

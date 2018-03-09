@@ -44,8 +44,8 @@ To activate this feature, set some config params in
 **[emercoin.conf](../Running_Emercoin/emercoin.conf)**:
 
 ```text
-#emcdnsallowed=.coin|.emc|.lib|.bazar           # remove Allowed TLDs without ENUM
-emcdnsallowed=$enum|.coin|.emc|.lib|.bazar      # add Allowed TLDs with ENUM
+#EmerDNSallowed=.coin|.emc|.lib|.bazar           # remove Allowed TLDs without ENUM
+EmerDNSallowed=$enum|.coin|.emc|.lib|.bazar      # add Allowed TLDs with ENUM
 enumtrust=ver:enum
 enumtollfree=@enum:tollfree
 ```

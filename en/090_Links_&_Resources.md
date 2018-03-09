@@ -70,13 +70,13 @@ More exchanges can be found at
 -   [BTCSEC (Russian)](https://forum.btcsec.com/index.php?/topic/3408-emercoin/)
 -   [Facebook](https://www.facebook.com/EmercoinOfficial)
 
-### EmcDNS Services
+### EmerDNS Services
 
 -   [Peername.com Domains](https://peername.com/)
 -   [OpenNIC project](https://www.opennicproject.org)
 -   [Emerproxy](https://emerproxy.xyz/)
 
-### EmcDNS Browser Plugins
+### EmerDNS Browser Plugins
 
 -   [Peername.com browser
     extension](https://peername.com/browser-extension) (firefox,
@@ -86,16 +86,16 @@ More exchanges can be found at
 -   [friGate browser extension](https://fri-gate.org/) (firefox,
     chrome, opera)
 
-### EmcDPO Services
+### EmerDPO Services
 
--   [emcdpo.info](http://emcdpo.info)
--   [EmcDPO verifier](https://emercoin.mintr.org/dpo)
+-   [EmerDPO.info](http://EmerDPO.info)
+-   [EmerDPO verifier](https://emercoin.mintr.org/dpo)
 -   <https://letsnotar.me>
 
-### EmcSSL Services
+### EmerSSL Services
 
 -   <https://authorizer.io>
--   <http://emcssl.org> (Russian)
+-   <http://EmerSSL.org> (Russian)
 
 ### PoS Minting Info
 

@@ -1,8 +1,8 @@
 # Infocard
 
-EmcSSL InfoCard is a decentralized distributed "business card" system on
+EmerSSL InfoCard is a decentralized distributed "business card" system on
 the Emercoin blockchain that complements
-[EmcSSL](EmcSSL_Introduction)'s passwordless logins, allowing website
+[EmerSSL](EmerSSL_Introduction)'s passwordless logins, allowing website
 profiles to be automatically populated. InfoCard has the ability to
 organize information in a hierarchical structure, which can be useful
 for quick content updates to all cards within companies or other
@@ -11,7 +11,7 @@ organizations.
 InfoCard is a kind of *"business card system on the blockchain"* that
 contains information about its owner, such as email address, phone
 number, date of birth and so on. InfoCard can be used on sites with
-[EmcSSL](EmcSSL_Introduction) authorization to automatically populate
+[EmerSSL](EmerSSL_Introduction) authorization to automatically populate
 account details, This means that rather than entering personal details
 every time you create a new online account, you can provide your
 InfoCard virtual business card to fill in the data.
@@ -19,8 +19,8 @@ InfoCard virtual business card to fill in the data.
 Creating an InfoCard
 --------------------
 
-1. [Download](https://pool.emercoin.com/emcssl) the necessary scripts (or
-see <https://github.com/emercoin/emcssl> for the latest development
+1. [Download](https://pool.emercoin.com/EmerSSL) the necessary scripts (or
+see <https://github.com/emercoin/EmerSSL> for the latest development
 release).
 
 2. Next, rename the file in infocard\_example.info to
@@ -69,7 +69,7 @@ Please, deposit into Emercoin NVS pair:
 Key: info:e120319a479f4ac4
 Value: body of the file: infocard_<your_login_name>.info.ze
 
-To link your EMCSSL certificate to this info file, run ./gen_tpl.sh and use value for UID: info: e120319a479f4ac4: ac7c3821f171b6a8bd8cd33d829f5b
+To link your EmerSSL certificate to this info file, run ./gen_tpl.sh and use value for UID: info: e120319a479f4ac4: ac7c3821f171b6a8bd8cd33d829f5b
 ```
 
 *Please note that this information is not stored anywhere, so it is
@@ -86,4 +86,4 @@ normal. The **New address** field should be left blank.
 
 Click **submit** and you're done!
 
-5. Now, return to the [EmcSSL Guide](EmcSSL_Guide).
+5. Now, return to the [EmerSSL Guide](EmerSSL_Guide).
