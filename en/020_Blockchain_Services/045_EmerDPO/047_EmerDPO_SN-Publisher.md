@@ -1,11 +1,11 @@
-# The EmcDPO Serial Number Publisher
+# The EmerDPO Serial Number Publisher
 
-The EmcDPO Serial Number Publisher is a utility that automates the
-process of placing [EmcDPO](EmcDPO_Introduction) serial numbers into the
+The EmerDPO Serial Number Publisher is a utility that automates the
+process of placing [EmerDPO](EmerDPO_Introduction) serial numbers into the
 Emercoin blockchain from a table in [CSV
 format](https://en.wikipedia.org/wiki/Comma-separated_values).
 
-Download the EmcDPO SN-Publisher from [the SN-Publisher
+Download the EmerDPO SN-Publisher from [the SN-Publisher
 GitHub](https://github.com/emercoin/SN-Publisher/tree/master/Distrib).
 
 Preparation of a CSV serial number table
@@ -64,7 +64,7 @@ password.
 
 SN Publisher preparation:
 -------------------------
-The SN-Publisher utility is semi-automatic. It uses your enterprise root [EmcDPO](EmcDPO_Introduction) record (for example, **dpo:Raketa**) and links all serial numbers to the EMC-address of this record. To do this, after the installation:
+The SN-Publisher utility is semi-automatic. It uses your enterprise root [EmerDPO](EmerDPO_Introduction) record (for example, **dpo:Raketa**) and links all serial numbers to the EMC-address of this record. To do this, after the installation:
 
 1. Go to the folder with the SN Publisher installation utility: **C:\\Program Files (x86)\\EmerCoin\\Emercoin DPO SN Publisher**
 
@@ -117,6 +117,6 @@ For assistance
 [Github](https://github.com/emercoin/SN-Publisher), and code
 contributions are welcome.
 
-* If the EmcDPO SN-Publisher is missing any functions necessary to meet
+* If the EmerDPO SN-Publisher is missing any functions necessary to meet
 your needs or you want to adapt it for your business please [contact the
 Emercoin team](http://emercoin.com/contact).

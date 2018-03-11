@@ -1,19 +1,19 @@
-## EmcWEB wallet
+## EmerWEB wallet
 
-<div style="style=”width:50%”"><img style="float:left;" src="EmcWEB.png" alt="EmcWEB is a web-based wallet running on your own server." width="384"></div><div style="style=”width:50%”"><img src="EmcWEB_UI.png" alt="EmcWEB has a full user interface." width="384"></div>
+<div style="style=”width:50%”"><img style="float:left;" src="EmerWEB.png" alt="EmerWEB is a web-based wallet running on your own server." width="384"></div><div style="style=”width:50%”"><img src="EmerWEB_UI.png" alt="EmerWEB has a full user interface." width="384"></div>
 
 <br>
 
-EmcWEB is an emercoin daemon, EmcSSH installation, and web wallet configured for fast deployment on the Microsoft Azure platform, or hosted on your own server.
+EmerWEB is an emercoin daemon, EmerSSH installation, and web wallet configured for fast deployment on the Microsoft Azure platform, or hosted on your own server.
 
-### Fast Deploy EmcWEB on Microsoft Azure Marketplace
+### Fast Deploy EmerWEB on Microsoft Azure Marketplace
 
 For fast deployment on Azure, click the following button.
 <div style="overflow:hidden;"><a href="https://azure.microsoft.com/marketplace/partners/emercoin/emercoin/"><img style="float:left;" src="Deployaz.png" alt="Deploy on Microsoft Azure."></a></div>
 
 <br>
 
-### Deploy EmcWEB on your own server
+### Deploy EmerWEB on your own server
 
 Minimum system requirements are: 1 GB RAM or 512 MB RAM + SWAP 1 GB 
 
@@ -26,7 +26,7 @@ $ emcweb-setup -C
 ```
 Optionally, to quickly create a login and password to enter the web-wallet, use the command <code>emcweb-setup -G -C -R = ‘YOUR_MYSQL_ROOT_PASSWORD’</code> (Where ‘YOUR_MYSQL_ROOT_PASSWORD’ is the password of the user ‘root’ in MySQL that you specified during the installation process).
 
-After executing these commands, you need to go to the IP address of the web server and continue to configure emcweb already through the web interface.
+After executing these commands, you need to go to the IP address of the web server and continue to configure EmerWEB already through the web interface.
 Parameters for connecting to Emercoin RPC can be taken from the file <code>/etc/emercoin/emercoin.conf</code>
  
 #### For RedHat/CentOS 7:
@@ -38,7 +38,7 @@ $ systemctl enable  emercoind httpd supervisord redis mariadb
 $ emcweb-setup -C
 ```
 * Optionally, to quickly create a login and password to enter the web-wallet, use the command <code>emcweb-setup -G -C</code>
-After executing these commands, you need to go to the IP address of the web server and continue to configure emcweb already through the web interface.
+After executing these commands, you need to go to the IP address of the web server and continue to configure EmerWEB already through the web interface.
 Parameters for connecting to Emercoin RPC can be taken from the file <code>/etc/emercoin/emercoin.conf</code>
 
 After that, you can point your browser to the server’s IP and follow instructions to continue setup.
@@ -53,6 +53,6 @@ $ emcweb-setup -C
 ```
 * Optionally, to quickly create a login and password to enter the web-wallet, use the command <code>emcweb-setup -G -C -R = ‘YOUR_MYSQL_ROOT_PASSWORD’</code> (Where ‘YOUR_MYSQL_ROOT_PASSWORD’</code> is the password of the user ‘root’ in MySQL that you specified during the installation process).
 
-After executing these commands, you need to go to the IP address of the web server and continue to configure emcweb already through the web interface.
+After executing these commands, you need to go to the IP address of the web server and continue to configure EmerWEB already through the web interface.
 Parameters for connecting to Emercoin RPC can be taken from the file <code>/etc/emercoin/emercoin.conf</code>
 

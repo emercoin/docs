@@ -168,7 +168,7 @@ output for domain emercoin.com:
         $ dig emercoin.com TXT | grep emclnx
         emercoin.com.       299 IN  TXT "emclnx=EasxHoQ3xs33nZZoLWDnKMRDsafF9ZdqQq"
 
-    The domain can be a regular ICANN or [EmcDNS](./EmcDNS/EmcDNS_Introduction) domain.
+    The domain can be a regular ICANN or [EmerDNS](./EmerDNS/EmerDNS_Introduction) domain.
 
     Note: It is OK if multiple Hosts or contracts use the same EMC address.
 

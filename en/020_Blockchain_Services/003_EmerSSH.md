@@ -1,8 +1,8 @@
-<div style="overflow:hidden;"><img style="float:left;" src="EmcSSH_logo.png" alt="EmcSSH logo" width="256"></div>
+<div style="overflow:hidden;"><img style="float:left;" src="EmerSSH_logo.png" alt="EmerSSH logo" width="256"></div>
 
-# EmcSSH
+# EmerSSH
 
-EmcSSH is a system for [Public Key
+EmerSSH is a system for [Public Key
 Infrastructure](https://en.wikipedia.org/wiki/Public_key_infrastructure)
 (PKI) and [Access Control
 List](https://en.wikipedia.org/wiki/Access_control_list) (ACL)
@@ -14,10 +14,10 @@ cryptocurrency's blockchain. The result is a comfortable, safe and very
 flexible way to log in to multiple servers using the SSH protocol.
 
 A simple program
-**[emcssh](https://github.com/emercoin/emcssh/releases)** provides a
+**[EmerSSH](https://github.com/emercoin/EmerSSH/releases)** provides a
 bridge between OpenSSH and the Emercoin blockchain, allowing for secure,
 decentralized management of PKI. When OpenSSH is configured to refer to
-**emcssh**, the program will query the Emercoin blockchain to retrieve
+**EmerSSH**, the program will query the Emercoin blockchain to retrieve
 SSH credentials during the authentication process.
 
 Users can manage their own login credentials (public keys) by submitting
@@ -27,7 +27,7 @@ admins can manage user groups for their services that may contain
 references to other groups as well as individual users - allowing for
 the creation of recursive authentication trees.
 
-EmcSSH operates under the **"ssh"** service abbreviation in the
+EmerSSH operates under the **"ssh"** service abbreviation in the
 [Emercoin NVS](../Blockchain_Services/Emercoin_NVS). Records are considered secure
 and unalterable due to the [security provided by the Emercoin
 blockchain](../Introduction/Security_Principles).
@@ -35,8 +35,8 @@ blockchain](../Introduction/Security_Principles).
 Installation
 ------------
 
-Below are instructions for installing and configuring `emcssh` on
-Debian and derivative servers such as Ubuntu, and then using emcssh to
+Below are instructions for installing and configuring `EmerSSH` on
+Debian and derivative servers such as Ubuntu, and then using EmerSSH to
 log in to the server from a client computer. We assume that your server
 is already running the Emercoin wallet.
 
@@ -51,21 +51,21 @@ Now install curl and jansson:
 
     $ apt-get install libcurl4-openssl-dev libjansson-dev
 
-Next, you need to download and install the <u>latest</u> [emcssh release](https://github.com/emercoin/emcssh/releases):
+Next, you need to download and install the <u>latest</u> [EmerSSH release](https://github.com/emercoin/EmerSSH/releases):
 
-    $ wget https://github.com/emercoin/emcssh/archive/0.0.4.tar.gz  (change to whatever is the latest release)
+    $ wget https://github.com/emercoin/EmerSSH/archive/0.0.4.tar.gz  (change to whatever is the latest release)
     $ tar xfz 0.0.4.tar.gz
-    $ cd emcssh-0.0.4
+    $ cd EmerSSH-0.0.4
     $ make
     $ make install
 
-### Setting up EmcSSH
+### Setting up EmerSSH
 
-Now you need to edit the config file `/usr/local/etc/emercoin/emcssh.conf`
+Now you need to edit the config file `/usr/local/etc/emercoin/EmerSSH.conf`
 and change the setting for `emcurl`. Settings need to match those in
 your **emercoin.conf** file.
 
-    $ nano /usr/local/etc/emercoin/emcssh.conf
+    $ nano /usr/local/etc/emercoin/EmerSSH.conf
 
 Change the value for `emcurl`:
 
@@ -74,7 +74,7 @@ Change the value for `emcurl`:
 The values for `emccoinrpc` and `rpcpassword` should be taken from your **emercoin.conf** file. Other
 parameters can be left as is.
 
-*Important: the `emcssh.conf` file should have permissions set to read
+*Important: the `EmerSSH.conf` file should have permissions set to read
 and write only by the root user. Do not change the permissions on this file as it
 contains the `rpcpassword`.*
 
@@ -114,9 +114,9 @@ The installation script asks whether to disable password authentication.
 The best response is not to be able to log in the traditional way.
 
 In addition, users of Debian will need to change the file location
-emcssh:
+EmerSSH:
 
-    $ mv /usr/local/sbin/emcssh /usr/sbin/emcssh
+    $ mv /usr/local/sbin/EmerSSH /usr/sbin/EmerSSH
 
 ### Configure OpenSSH
 
@@ -128,12 +128,12 @@ It is necessary to add some lines:
 
 For Debian:
 
-    AuthorizedKeysCommand /usr/sbin/emcssh
+    AuthorizedKeysCommand /usr/sbin/EmerSSH
     AuthorizedKeysCommandUser root
 
 For other operating systems:
 
-    AuthorizedKeysCommand /usr/local/sbin/emcssh
+    AuthorizedKeysCommand /usr/local/sbin/EmerSSH
     AuthorizedKeysCommandUser root
 
 Now, restart sshd with the new configuration:
@@ -151,12 +151,12 @@ If the user is running Windows, we recommend using
 
 Run PuTTYgen, change the number of bits to 4096 and click **Generate**.
 
-![PuTTYgen](Emcssh-01.png "PuTTYgen")
+![PuTTYgen](EmerSSH-01.png "PuTTYgen")
 
 Wave the mouse cursor on the screen during key generation, after which
 you should see something like this:
 
-![PuTTYgen](Emcssh-02.png "PuTTYgen")
+![PuTTYgen](EmerSSH-02.png "PuTTYgen")
 
 Click **Save Private Key** and store the key on your computer. Password
 protection is not needed, therefore, you can agree to save without a
@@ -175,14 +175,14 @@ In the **value** field paste your public key from PuTTYgen. The **new
 address** field can be left blank. Specify the number of days, and click
 **Submit.**
 
-![Emercoin Wallet](Emcssh-wallet.png "Emercoin Wallet")
+![Emercoin Wallet](EmerSSH-wallet.png "Emercoin Wallet")
 
 Now we need to wait for confirmation of our transaction. To save time
 while waiting for confirmation, you can now go back to your server, and
-add a new user to the file **emcssh\_keys**:
+add a new user to the file **EmerSSH\_keys**:
 
     $ cd $HOME/.ssh/
-    $ nano emcssh_keys
+    $ nano EmerSSH_keys
 
 In the document, simply add your user with @. In my case it is:
 
@@ -190,10 +190,10 @@ In the document, simply add your user with @. In my case it is:
 
 Save and close the file.
 
-It should be noted that Emercoin's EmcSSH technology allows not only
+It should be noted that Emercoin's EmerSSH technology allows not only
 individual users, but also entire groups. Let's say you want to give
 three other people access to your servers. You could individually add
-all users to the **emcssh\_keys** file, but it is inconvenient, because
+all users to the **EmerSSH\_keys** file, but it is inconvenient, because
 every time you add or remove a user you will need to edit this file on
 all servers. However, there is a more versatile and easy way. Simply
 create an entry in the Emercoin blockchain, for example kamilloFriends
@@ -204,7 +204,7 @@ and list all your friends. The fields for such an entry are as follows:
 
 If you need to add or remove someone from the group, it will be enough
 to make a **Name\_Update** on this entry in the Emercoin wallet. Thus,
-if in the file emcssh\_keys I specify the group @kamilloFriends, the
+if in the file EmerSSH\_keys I specify the group @kamilloFriends, the
 system can authorize any of my friends.
 
 ### Operability test
@@ -212,16 +212,16 @@ system can authorize any of my friends.
 To make sure that everything works as expected, run the following
 command:
 
-    $ emcssh <username>
+    $ EmerSSH <username>
 
 On my test server I work from the root user, so the command for my
 username would be:
 
-    $ emcssh root
+    $ EmerSSH root
 
 In response, we get the following message:
 
-    #INFO: verbose=2; maxkeys=4096 recursion=30 emcssh_keys=/root/.ssh/emcssh_keys; emcurl=@127.0.0.1:8775/
+    #INFO: verbose=2; maxkeys=4096 recursion=30 EmerSSH_keys=/root/.ssh/EmerSSH_keys; emcurl=@127.0.0.1:8775/
     #Path=/
     #Path=/kamillo/
     ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAgEAgmzL............
@@ -232,7 +232,7 @@ Without closing the current session, authorize PuTTY to log in without a
 password. To do this, open a new PuTTY window, enter the IP address of
 your server then navigate to **SSH &gt; Auth** in PuTTY:
 
-![PuTTY](Emcssh-03.png "PuTTY")
+![PuTTY](EmerSSH-03.png "PuTTY")
 
 Click **Browse ...** and specify the path to your private key.
 
@@ -240,7 +240,7 @@ On the tab **Connection &gt; Data** we can specify the user under which
 we want to connect. If not specified, don't worry - in this case the
 server will ask for the user name when you connect.
 
-![PuTTY](Emcssh-04.png "PuTTY")
+![PuTTY](EmerSSH-04.png "PuTTY")
 
 Click **Open** and connect to the server. If it connects then
 congratulations, you have succeeded!
@@ -260,7 +260,7 @@ in:
 
 ### Supplementary info for MacOS X users
 
-To be able to log in to an EmcSSH enabled server via the terminal in OS
+To be able to log in to an EmerSSH enabled server via the terminal in OS
 X, you first need to convert your private key to the desired format. I
 did the conversion in Windows through the program PuTTYgen. It is better
 to set a password for your key since OS X will complain about it (in the
@@ -270,7 +270,7 @@ Run PuTTYgen, click **Load** and choose our key \*.ppk. Next, set a
 password in **Key passphrase** and **Confirm passphrase.** Go to the tab
 **Conversions** and export key in the format of OpenSSH:
 
-![PuTTYgen](Emcssh-05.png "PuTTYgen")
+![PuTTYgen](EmerSSH-05.png "PuTTYgen")
 
 Now we want to add the key to the OS X system. Open a terminal and
 navigate to the folder where you exported the key. I have a folder named

@@ -122,10 +122,10 @@ More Information on Microsoft Azure Website[/url]
 [size=10pt][b]Member and Full Member[/b][/size]
 
 [hr]
-[url=https://bitcointalk.org/index.php?topic=362513]░▒▒▓▓▓ [b][color=#7c15d8]Emercoin[/color][/b] ▓▓▓▒▒░ [color=#9f0fea]▪[/color] EmcSSH [color=#9f0fea]▪ EmcSSL[/color] ▪ EMCDNS [color=#9f0fea]▪ INFOCARD[/color] ▪ MAGNET [color=#9f0fea]▪ EMCLNX[/color] ▪ EmcDPO[color=#9f0fea] ▪[/color] Innovative blockchain services for business and personal use.[/url]
+[url=https://bitcointalk.org/index.php?topic=362513]░▒▒▓▓▓ [b][color=#7c15d8]Emercoin[/color][/b] ▓▓▓▒▒░ [color=#9f0fea]▪[/color] EmerSSH [color=#9f0fea]▪ EmerSSL[/color] ▪ EmerDNS [color=#9f0fea]▪ INFOCARD[/color] ▪ MAGNET [color=#9f0fea]▪ EMCLNX[/color] ▪ EmerDPO[color=#9f0fea] ▪[/color] Innovative blockchain services for business and personal use.[/url]
 [hr]
 
-[code][url=/index.php?topic=362513]░▒▒▓▓▓ [b][color=#7c15d8]Emercoin[/color][/b] ▓▓▓▒▒░ [color=#9f0fea]▪[/color] EmcSSH [color=#9f0fea]▪ EmcSSL[/color] ▪ EMCDNS [color=#9f0fea]▪ INFOCARD[/color] ▪ MAGNET [color=#9f0fea]▪ EMCLNX[/color] ▪ EmcDPO[color=#9f0fea] ▪[/color] Innovative blockchain services for business and personal use.[/url][/code]
+[code][url=/index.php?topic=362513]░▒▒▓▓▓ [b][color=#7c15d8]Emercoin[/color][/b] ▓▓▓▒▒░ [color=#9f0fea]▪[/color] EmerSSH [color=#9f0fea]▪ EmerSSL[/color] ▪ EmerDNS [color=#9f0fea]▪ INFOCARD[/color] ▪ MAGNET [color=#9f0fea]▪ EMCLNX[/color] ▪ EmerDPO[color=#9f0fea] ▪[/color] Innovative blockchain services for business and personal use.[/url][/code]
 
 
 [size=10pt][b]Senior Member, Hero and Legendary[/b][/size]
@@ -156,7 +156,7 @@ More Information on Microsoft Azure Website[/url]
 ╎
 [/td]
 [td][url=https://bitcointalk.org/index.php?topic=362513][COLOR=#2d6698][font=arial][size=14pt]BLOCKCHAIN SERVICES FOR [color=#7c15d8][b]BUSINESS AND PERSONAL USE[/b][/url]
-[center][url=https://bitcointalk.org/index.php?topic=362513]EmcSSH [color=#7c15d8]▪ EmcSSL[/color] ▪ EMCDNS [color=#7c15d8]▪ InfoCard[/color] ▪ MAGNET [color=#7c15d8]▪ EMCLNX[/color] ▪ EmcDPO [/url][/center]
+[center][url=https://bitcointalk.org/index.php?topic=362513]EmerSSH [color=#7c15d8]▪ EmerSSL[/color] ▪ EmerDNS [color=#7c15d8]▪ InfoCard[/color] ▪ MAGNET [color=#7c15d8]▪ EMCLNX[/color] ▪ EmerDPO [/url][/center]
 [/td]
 [td]
 [COLOR=#0754a4]╎
@@ -197,7 +197,7 @@ More Information on Microsoft Azure Website[/url]
 ╎
 [/td]
 [td][url=/index.php?topic=362513][COLOR=#2d6698][font=arial][size=14pt]BLOCKCHAIN SERVICES FOR [color=#7c15d8][b]BUSINESS AND PERSONAL USE[/b][/url]
-[center][url=/index.php?topic=362513]EmcSSH [color=#7c15d8]▪ EmcSSL[/color] ▪ EMCDNS [color=#7c15d8]▪ InfoCard[/color] ▪ MAGNET [color=#7c15d8]▪ EMCLNX[/color] ▪ EmcDPO [/url][/center]
+[center][url=/index.php?topic=362513]EmerSSH [color=#7c15d8]▪ EmerSSL[/color] ▪ EmerDNS [color=#7c15d8]▪ InfoCard[/color] ▪ MAGNET [color=#7c15d8]▪ EMCLNX[/color] ▪ EmerDPO [/url][/center]
 [/td]
 [td]
 [COLOR=#0754a4]╎
@@ -238,7 +238,7 @@ More Information on Microsoft Azure Website[/url]
 A new bitcoin 10.2 core
 
 [size=12pt][b]v 0.3.4[/b] [/size]
-Added alternative seed search mechanism, based on emcDNS system. Improved PoS minting. Added and activated config option -[i]walletnotify[/i]
+Added alternative seed search mechanism, based on EmerDNS system. Improved PoS minting. Added and activated config option -[i]walletnotify[/i]
 
 [size=12pt][b]v 0.3.3[/b][/size] 
 Added improvements PoS - reduced load on the CPU

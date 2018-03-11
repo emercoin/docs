@@ -1,4 +1,4 @@
-# I2P Domain Name Registration with EmcDNS
+# I2P Domain Name Registration with EmerDNS
 
 Traditionally, [I2P](https://en.wikipedia.org/wiki/I2P) does not have a single domain name system. There are
 several independent registrars with their own rules. Although among some
