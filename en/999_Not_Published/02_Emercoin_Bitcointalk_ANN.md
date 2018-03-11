@@ -273,7 +273,7 @@ Add QT Debug window
 [size=12pt][b]v 0.1.2-0.1.4[/b] [/size]
 Now payment links open correctly as in qt-Bitcoin client.
 You can integrate EMC reception on their sites using the links format [b]emercoin:EMCAdress?Amount=x[/b] (where x - number of coins).
-Also available in the source code of the payment gateway - https://github.com/A...mercoin_payment
+Also available in the source code of the payment gateway - https://github.com/Alex014/emercoin_payment
 Test Gateway - http://192.241.241.153/emercoin
 
 [size=12pt][b]v 0.1.1[/b][/size]

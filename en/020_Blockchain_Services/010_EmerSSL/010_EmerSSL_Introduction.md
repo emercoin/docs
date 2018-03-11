@@ -32,12 +32,10 @@ EmerSSL resources
 
 Visit the following EmerSSL resources:
 
--   [EmerSSL white paper](http://emercoin.com/content/EmerSSL.pdf)
+-   [EmerSSL white paper](http://emercoin.com/content/EMCSSL.pdf)
 -   [EmerSSL InfoCard](EmerSSL_InfoCard)
--   [EmerSSL Guide](EmerSSL_Guide)
--   [EmerSSL toolkit page](https://pool.emercoin.com/EmerSSL/)
--   [EmerSSL and Infocard module for
-    Drupal](https://www.drupal.org/project/emc_ssl)
--   [EmerSSL certificate generator](https://EmerSSL.org) (Russian)
--   [EmerSSL on Github](https://github.com/emercoin/EmerSSL)
-
+-   [EmerSSL Guide](EmcSSL_Guide)
+-   [EmerSSL toolkit page](https://pool.emercoin.com/emcssl/)
+-   [EmerSSL and Infocard module for Drupal](https://www.drupal.org/project/emc_ssl)
+-   [EmerSSL certificate generator](https://emcssl.org) (Russian)
+-   [EmerSSL on Github](https://github.com/emercoin/emcssl)
