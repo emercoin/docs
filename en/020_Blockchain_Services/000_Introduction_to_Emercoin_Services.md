@@ -11,7 +11,7 @@ Among the current services are:
 -   [EmerSSL](../Blockchain_Services/EmerSSL/EmerSSL_Introduction) - Passwordless logins and proof
     of identity.
 -   [ENUMer](../Blockchain_Services/ENUMer) - ENUM telephone record management.
--   [EmcMAGNET](../Blockchain_Services/EmcMAGNET) - BitTorrent links.
--   [EmcLNX](../Blockchain_Services/EmcLNX) - Peer-to-peer text-based advertisement
+-   [EmerMAGNET](../Blockchain_Services/EmerMAGNET) - BitTorrent links.
+-   [EmerLNX](../Blockchain_Services/EmerLNX) - Peer-to-peer text-based advertisement
     link exchange network.
 
