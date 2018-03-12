@@ -64,9 +64,9 @@ recommend using the following supported service abbreviations:
   ssl                   | SSL Certificate                                                        |  [EmerSSL](../Blockchain_Services/EmerSSL/EmerSSL_Introduction)
   bls                   | BLS digital signature public key
   tts                   | [Trusted Timestamp](http://en.wikipedia.org/wiki/Trusted_timestamping)  | EmcTTS
-  lnx                   | Advertising Link Exchanger                                              | [EmcLNX](../Blockchain_Services/EmcLNX)
+  lnx                   | Advertising Link Exchanger                                              | [EmerLNX](../Blockchain_Services/EmerLNX)
   dpo                   | Digital Proof-of-Ownership                                              | [EmerDPO](../Blockchain_Services/EmerDPO/EmerDPO_Introduction)
-  magnet                | BitTorrent magnet links                                                 | [EmcMAGNET](../Blockchain_Services/EmcMAGNET)
+  magnet                | BitTorrent magnet links                                                 | [EmerMAGNET](../Blockchain_Services/EmerMAGNET)
   swift                 | Bank's branch info for SWIFT transfers
   enum                  | [ENUM telephone record](http://www.voip-info.org/wiki/view/ENUM)       | [ENUMer](../Blockchain_Services/ENUMer)
 
