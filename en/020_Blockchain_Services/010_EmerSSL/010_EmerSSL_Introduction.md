@@ -34,7 +34,7 @@ Visit the following EmerSSL resources:
 
 -   [EmerSSL white paper](http://emercoin.com/content/EMCSSL.pdf)
 -   [EmerSSL InfoCard](EmerSSL_InfoCard)
--   [EmerSSL Guide](EmcSSL_Guide)
+-   [EmerSSL Guide](EmerSSL_Guide)
 -   [EmerSSL toolkit page](https://pool.emercoin.com/emcssl/)
 -   [EmerSSL and Infocard module for Drupal](https://www.drupal.org/project/emc_ssl)
 -   [EmerSSL certificate generator](https://emcssl.org) (Russian)
