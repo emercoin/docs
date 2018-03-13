@@ -19,8 +19,8 @@ InfoCard virtual business card to fill in the data.
 Creating an InfoCard
 --------------------
 
-1. [Download](https://pool.emercoin.com/EmerSSL) the necessary scripts (or
-see <https://github.com/emercoin/EmerSSL> for the latest development
+1. [Download](https://pool.emercoin.com/emcssl) the necessary scripts (or
+see <https://github.com/emercoin/emcssl> for the latest development
 release).
 
 2. Next, rename the file in infocard\_example.info to

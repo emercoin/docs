@@ -7,18 +7,18 @@ This article will guide you through step by step instructions for using
 [EmerSSL](EmerSSL_Introduction) to create a new certificate and use it to
 log in without a password to a website that supports it. The guide assumes you are running the <b>Emercoin GUI wallet</b> and have some [EMC](../../Introduction/The_EMC_Currency) in your wallet balance.
 
-Follow these steps:
+	Follow these steps:
 
-1. First, download the [EmerSSL bundle](https://pool.emercoin.com/EmerSSL/)
-(or get the latest from [GitHub](https://github.com/emercoin/EmerSSL)).
+	1. First, download the [EmerSSL bundle](https://pool.emercoin.com/emcssl/)
+	(or get the latest from [GitHub](https://github.com/emercoin/emcssl)).
 
-2. Next, create an Emercoin [InfoCard](EmerSSL_InfoCard) on the
-Emercoin blockchain. Creating an InfoCard is optional, but can be useful
-if you would like to auto-fill some default info about yourself with
-each website you create a login for.
+	2. Next, create an Emercoin [InfoCard](EmerSSL_InfoCard) on the
+	Emercoin blockchain. Creating an InfoCard is optional, but can be useful
+	if you would like to auto-fill some default info about yourself with
+	each website you create a login for.
 
-3. Template Generation: To generate a template in Linux, the script **gen_tpl.sh** is used,
-which is in the same [bundle](https://pool.emercoin.com/EmerSSL/) as the InfoCard. Unpack the archive with the script, open a terminal and go to the folder X509, and run **gen_tpl.sh**.
+	3. Template Generation: To generate a template in Linux, the script **gen_tpl.sh** is used,
+	which is in the same [bundle](https://pool.emercoin.com/emcssl/) as the InfoCard. Unpack the archive with the script, open a terminal and go to the folder X509, and run **gen_tpl.sh**.
 
     ```
     $ cd downloads/X509
@@ -69,7 +69,7 @@ which is in the same [bundle](https://pool.emercoin.com/EmerSSL/) as the InfoCar
     - [IE](http://ipswitchmsg.force.com/kb/articles/FAQ/Using-client-SSL-certificates-in-Internet-Explorer-1307739573570).<br><br>
 
 6. Verifying the certificate: You can check the operation of the certificate in the Emercoin pool. To
-get started, click [here](https://pool.emercoin.com/EmerSSL/InfoCard.php). If you see something like this, it means everything is in order:
+get started, click [here](https://pool.emercoin.com/emcssl/InfoCard.php). If you see something like this, it means everything is in order:
     ```text
     pid=30275
     main: SSL-certificate presented

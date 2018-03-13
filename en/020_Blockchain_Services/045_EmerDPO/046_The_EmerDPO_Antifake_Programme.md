@@ -148,7 +148,7 @@ Using your smartphone (no specialized app required) you scan the tag on
 a product.
 
 If the code is valid then a web page opens (similar to
-[this](https://EmerDPO.info/key/DEMO-1030)) displaying information about
+[this](https://emcDPO.info/key/DEMO-1030)) displaying information about
 the manufacturer and that particular product, and informing you that the
 product is genuine and for sale. In that case, if you like the product
 you can go ahead and buy it with an added sense of security!
@@ -157,7 +157,7 @@ However, if the code is invalid, there will either be no page, or a page
 with an error message. In the case that an attacker copied a tag from an
 original product and reproduced it, you will receive a warning message
 that the product has already been purchased (similar to
-[this](https://EmerDPO.info/key/DEMO-1001)).
+[this](https://EmcDPO.info/key/DEMO-1001)).
 
 ### After buying a genuine product
 
@@ -244,7 +244,7 @@ More info
     Blockchain](https://medium.com/@emer.tech/how-to-protect-your-products-against-counterfeiting-using-blockchain-78b4f5096324).
 2.  Please [contact the Emercoin team](http://emercoin.com/contact) if
     you would like to join our pilot program.
-3.  You can also visit [EmerDPO.info](https://EmerDPO.info)
+3.  You can also visit [EmerDPO.info](https://EmcDPO.info)
 
 Todo
 ----

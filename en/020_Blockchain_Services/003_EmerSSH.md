@@ -14,7 +14,7 @@ cryptocurrency's blockchain. The result is a comfortable, safe and very
 flexible way to log in to multiple servers using the SSH protocol.
 
 A simple program
-**[EmerSSH](https://github.com/emercoin/EmerSSH/releases)** provides a
+**[EmerSSH](https://github.com/emercoin/emcssh/releases)** provides a
 bridge between OpenSSH and the Emercoin blockchain, allowing for secure,
 decentralized management of PKI. When OpenSSH is configured to refer to
 **EmerSSH**, the program will query the Emercoin blockchain to retrieve
@@ -51,9 +51,9 @@ Now install curl and jansson:
 
     $ apt-get install libcurl4-openssl-dev libjansson-dev
 
-Next, you need to download and install the <u>latest</u> [EmerSSH release](https://github.com/emercoin/EmerSSH/releases):
+Next, you need to download and install the <u>latest</u> [EmerSSH release](https://github.com/emercoin/emcssh/releases):
 
-    $ wget https://github.com/emercoin/EmerSSH/archive/0.0.4.tar.gz  (change to whatever is the latest release)
+    $ wget https://github.com/emercoin/emcssh/archive/0.0.4.tar.gz  (change to whatever is the latest release)
     $ tar xfz 0.0.4.tar.gz
     $ cd EmerSSH-0.0.4
     $ make
