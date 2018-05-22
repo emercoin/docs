@@ -1,12 +1,12 @@
-<div style="overflow:hidden;"><img style="float:left;" src="ENUMer.png" alt="ENUMer image" width="356"></div>
+<div style="overflow:hidden;"><img style="float:left;" src="ENUMER.png" alt="ENUMER image" width="356"></div>
 <br>
 
-ENUMer is a system for supporting [ENUM telephone
+ENUMER is a system for supporting [ENUM telephone
 records](http://www.voip-info.org/wiki/view/ENUM) on Emercoin's
 blockchain, under the **"enum"** service abbreviation in the [Emercoin
 NVS](/Emercoin_NVS).
 
-ENUMer Introduction
+ENUMER Introduction
 -------------------
 
 ENUM (E.164 Number to URI Mapping)
@@ -20,7 +20,7 @@ A softswitch can send ENUM requests to a wallet:
     $ dig -t naptr +short 08068886681.enum
     100 10 "u" "E2U+sip" "!^(.*)$!sip:\\1@tollfree.alcazarnetworks.com!" .
 
-or public ENUMer gateway:
+or public ENUMER gateway:
 
     $ dig -t naptr +short 08068886681.enum.enumer.org
     100 10 "u" "E2U+sip" "!^(.*)$!sip:\\1@tollfree.alcazarnetworks.com!" .
@@ -79,7 +79,7 @@ here](https://emercoin.mintr.org/nvs/enum///25/0/1).
 Registration
 ------------
 
-To register your phone number with ENUMer (Emercoin ENUM), you will need
+To register your phone number with ENUMER (Emercoin ENUM), you will need
 to:
 
 1.  Obtain a signature (as this is not currently automated, please
