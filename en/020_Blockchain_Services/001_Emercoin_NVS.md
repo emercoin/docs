@@ -68,7 +68,7 @@ recommend using the following supported service abbreviations:
   dpo                   | Digital Proof-of-Ownership                                              | [EmerDPO](../Blockchain_Services/EmerDPO/EmerDPO_Introduction)
   magnet                | BitTorrent magnet links                                                 | [EmerMAGNET](../Blockchain_Services/EmerMAGNET)
   swift                 | Bank's branch info for SWIFT transfers
-  enum                  | [ENUM telephone record](http://www.voip-info.org/wiki/view/ENUM)       | [ENUMer](../Blockchain_Services/ENUMer)
+  enum                  | [ENUM telephone record](http://www.voip-info.org/wiki/view/ENUM)       | [ENUMER](../Blockchain_Services/ENUMER)
 
 Managing NVS entries with the GUI
 -------------
