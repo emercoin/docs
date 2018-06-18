@@ -1,0 +1,41 @@
+files:
+   about-emercoin: {
+      name: About Emercoin,
+      sort: 050,
+      meta: {
+        title: About Emercoin - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   emercoin-api: {
+      name: Emercoin API,
+      sort: 250,
+      meta: {
+        title: Emercoin API - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   emercoin-press-kit: {
+      name: Emercoin Press Kit,
+      sort: 400,
+      meta: {
+        title: Emercoin Press Kit - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   links-resources: {
+      name: Links & Resources,
+      sort: 450,
+      meta: {
+        title: Links & Resources - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }

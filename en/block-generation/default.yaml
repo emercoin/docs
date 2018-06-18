@@ -1,0 +1,23 @@
+name: Block Generation
+sort: 350
+files:
+   proof-of-stake-minting: {
+      name: Proof-of-Stake Minting,
+      sort: 050,
+      meta: {
+        title: Proof-of-Stake Minting - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   proof-of-work-mining: {
+      name: Proof-of-Work Mining,
+      sort: 100,
+      meta: {
+        title: Proof-of-Work Mining - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }

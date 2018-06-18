@@ -1,0 +1,53 @@
+name: EmerSSL
+sort: 200
+files:
+   emerssl-introduction: {
+      name: EmerSSL Introduction,
+      sort: 050,
+      meta: {
+        title: EmerSSL Introduction - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   emerssl-guide: {
+      name: EmerSSL Guide,
+      sort: 100,
+      meta: {
+        title: EmerSSL Guide - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   emerssl-infocard: {
+      name: EmerSSL InfoCard,
+      sort: 150,
+      meta: {
+        title: EmerSSL InfoCard - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   ports: {
+      name: Ports,
+      sort: 200,
+      meta: {
+        title: Ports - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   testnet: {
+      name: Testnet,
+      sort: 250,
+      meta: {
+        title: Testnet - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }

@@ -1,0 +1,33 @@
+name: EmerDPO
+sort: 300
+files:
+   emerdpo-introduction: {
+      name: EmerDPO Introduction,
+      sort: 050,
+      meta: {
+        title: EmerDPO Introduction - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   the-emerdpo-antifake-programme: {
+      name: The EmerDPO Antifake Programme,
+      sort: 100,
+      meta: {
+        title: The EmerDPO Antifake Programme - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   emerdpo-sn-publisher: {
+      name: EmerDPO SN-Publisher,
+      sort: 150,
+      meta: {
+        title: EmerDPO SN-Publisher - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }

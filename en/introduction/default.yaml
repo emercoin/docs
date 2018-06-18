@@ -1,0 +1,53 @@
+name: Introduction
+sort: 100
+files:
+   the-emc-currency: {
+      name: The EMC Currency,
+      sort: 050,
+      meta: {
+        title: The EMC Currency - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   specifications: {
+      name: Emercoin Specifications,
+      sort: 100,
+      meta: {
+        title: Emercoin Specifications - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   technology-tree: {
+      name: Emercoin Tech Tree,
+      sort: 150,
+      meta: {
+        title: Emercoin Tech Tree - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   security-principles: {
+      name: Emercoin Security Principles,
+      sort: 200,
+      meta: {
+        title: Emercoin Security Principles - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   roadmap-&-achievements: {
+      name: Roadmap and Achievements,
+      sort: 250,
+      meta: {
+        title: Roadmap and Achievements - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }

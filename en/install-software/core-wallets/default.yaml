@@ -1,0 +1,33 @@
+name: Core Wallets
+sort: 100
+files:
+   gui-wallet: {
+      name: GUI wallet,
+      sort: 050,
+      meta: {
+        title: GUI wallet - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   cli-daemon: {
+      name: CLI daemon,
+      sort: 100,
+      meta: {
+        title: CLI daemon - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
+   emerweb-wallet: {
+      name: EmerWEB wallet,
+      sort: 150,
+      meta: {
+        title: EmerWEB wallet - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }

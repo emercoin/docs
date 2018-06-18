@@ -1,0 +1,13 @@
+name: Install Software
+sort: 150
+files:
+   other-wallets: {
+      name: Other Wallets,
+      sort: 150,
+      meta: {
+        title: Other Wallets - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
