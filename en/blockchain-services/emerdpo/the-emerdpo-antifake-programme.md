@@ -124,7 +124,7 @@ Example scenarios
 ### You (manufacturer) would like us to create a series of test tags for you
 
 If you are a manufacturer who would like our help to trial EMC Antifake
-during its pilot stage then please <a href="http://emercoin.com/en/contact">contact the Emercoin team</a> today. During the pilot we may be
+during its pilot stage then please <a href="http://emercoin.com/contacts">contact the Emercoin team</a> today. During the pilot we may be
 willing to take on all of the work, to produce several dozen labels for
 you and provide the required cryptographic keys, all free of charge
 within the timeframe of a few days. **All you'll need to do is apply the
