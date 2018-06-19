@@ -32,7 +32,7 @@ EmerSSL resources
 
 Visit the following EmerSSL resources:
 
--   <a target="_blank" href="https://emercoin.com/images/uploads/docs/EMCSSL.pdf">EmerSSL white paper</a>
+-   <a target="_blank" href="https://emercoin.com/files/documentation/EMCSSL.pdf">EmerSSL white paper</a>
 -   [EmerSSL InfoCard](/en/blockchain-services/emerssl/emerssl-infocard.md)
 -   [EmerSSL Guide](/en/blockchain-services/emerssl/emerssl-guide.md)
 -   <a target="_blank" rel="nofollow" href="https://pool.emercoin.com/emcssl/">EmerSSL toolkit page</a>
