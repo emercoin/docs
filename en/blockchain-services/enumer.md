@@ -79,7 +79,7 @@ To register your phone number with ENUMER (Emercoin ENUM), you will need
 to:
 
 1.  Obtain a signature (as this is not currently automated, please
-    <a href="https://emercoin.com/en/contacts">contact the Emercoin team</a> for manual
+    <a href="https://emercoin.com/contacts">contact the Emercoin team</a> for manual
     verification),
 2.  Insert the signature in the **"enum"** record for your phone number
     into the [Emercoin NVS](/en/blockchain-services/emernvs.md).
