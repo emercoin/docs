@@ -1,4 +1,6 @@
-<div style="boxOverflow"><img src="/images/EmerSSL_logo.png" alt="EmerSSL logo" width="256"></div>
+<div style="boxOverflow">
+  <img src="/images/EmerSSL_logo.png" alt="EmerSSL logo" width="256">
+</div>
 <br>
 
 # EmerSSL
@@ -21,8 +23,7 @@ malicious attack upon authorization servers. In addition, it is not
 possible for a user to have their accounts globally suspended at the
 whim of a single authority.
 
-Associated with the EmerSSL technology is [EmerSSL
-InfoCard](/en/blockchain-services/emerssl/emerssl-infocard.md) - a "business card" system that
+Associated with the EmerSSL technology is [EmerSSL InfoCard](/en/blockchain-services/emerssl/emerssl-infocard.md) - a "business card" system that
 complements EmerSSL's passwordless logins by allowing website profiles to
 be automatically populated from data residing on the Emercoin
 blockchain.
