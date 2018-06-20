@@ -257,6 +257,8 @@ Because record \[1\] does not contain any SD or NS records, all
 subdomains will be resolved to the "parent domain" example.coin. Record
 \[2\] will be ignored, and will not participate in DNS resolution.
 
+<span id="integration-into-a-regular-dns-tree"></span>
+
 Integration into a regular DNS tree
 -----------------------------------
 
