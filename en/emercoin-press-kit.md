@@ -41,7 +41,7 @@ EmerSSL logo
 
 ### Website Favicon
 
--   <a target="_blank" rel="nofollow" href="https://emercoin.com/favicon.ico">favicon.ico</a> (website icon)
+-   <a target="_blank" rel="nofollow" href="https://emercoin.com/assets/images/favicon/apple-touch-icon.png">favicon.ico</a> (website icon)
 
 Promotional Images
 ------------------
