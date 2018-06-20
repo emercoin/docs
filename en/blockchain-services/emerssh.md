@@ -29,8 +29,7 @@ the creation of recursive authentication trees.
 
 EmerSSH operates under the **"ssh"** service abbreviation in the
 [Emercoin NVS](/en/blockchain-services/emernvs.md). Records are considered secure
-and unalterable due to the [security provided by the Emercoin
-blockchain](/en/introduction/security-principles.md).
+and unalterable due to the [security provided by the Emercoin blockchain](/en/introduction/security-principles.md).
 
 Installation
 ------------
