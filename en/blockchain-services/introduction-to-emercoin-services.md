@@ -8,7 +8,7 @@ Among the current services are:
 -   [EmerDPO](/en/blockchain-services/emerdpo/emerdpo-introduction.md) - Digital Proof of Ownership.
 -   [EmerSSH](/en/blockchain-services/emerssh.md) - PKI and Access Control List management
     for servers.
--   [EmerSSL](/en/blockchain-services/emerssl/emerdpo-introduction.md) - Passwordless logins and proof
+-   [EmerSSL](/en/blockchain-services/emerssl/emerssl-introduction.md) - Passwordless logins and proof
     of identity.
 -   [ENUMER](/en/blockchain-services/enumer.md) - ENUM telephone record management.
 -   [EmerMAGNET](/en/blockchain-services/emermagnet.md) - BitTorrent links.
