@@ -306,7 +306,7 @@ SecondaryServerPort=5335
 Proxy\\*
 
 Alternately, you can download this
-<a target="_blank" rel="nofollow" href="http://emercoin.com/files/AcrylicConfiguration.ini">AcrylicConfiguration.ini</a>
+<a target="_blank" href="http://emercoin.com/files/AcrylicConfiguration.ini">AcrylicConfiguration.ini</a>
 file, pre-configured to use <a target="_blank" rel="nofollow" href="https://www.opendns.com/">OpenDNS</a> as the
 primary & secondary DNS-provider (for regular DNS-tree), and local
 Emercoin wallet as the ternary provider, for domain zones *\*.emc*,
