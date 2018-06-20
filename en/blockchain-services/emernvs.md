@@ -50,6 +50,8 @@ address for the pair is created in the local wallet.
 You can manage NVS entries either through the Emercoin <a target="_blank" rel="nofollow" href="https://emercoin.com/benefits#download">wallet GUI</a>, or via the
 [emercoin-cli](/en/running-emercoin/command-line.md).
 
+<span id="service-abbreviations"></span>
+
 Service abbreviations
 --------------
 While you are free to create your own services using Emercoin's NVS, we
@@ -80,8 +82,7 @@ Managing NVS entries with the GUI
 
 The "Manage Names" tab includes the following elements:
 
--   **name:** If this NVS entry will be used with a particular [service
-    abbreviation](#service-abbreviations) (dns:, ssl:,
+-   **name:** If this NVS entry will be used with a particular [service abbreviation](#service-abbreviations) (dns:, ssl:,
     ssh:, etc) then characters allowed by the appropriate service prefix
     should be used. e.g.
 
