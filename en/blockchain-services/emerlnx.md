@@ -362,7 +362,7 @@ FAQ
 Unfortunately the EMCLNX project is frozen until it can be further
 developed
 
-<s>There is a <a href="http://emercoin.com/emclnx/user_page.php">test page</a> on
+<s>There is a [test page](/en/blockchain-services/emerlnx.md) on
 emercoin.com, and <a target="_blank" rel="nofollow" href="https://cryptor.net">cryptor</a> (see gray ad line on
 top of page).</s>
 
