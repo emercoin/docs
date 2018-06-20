@@ -10,8 +10,7 @@ suitable structure already exists: Blockchain.
 
 In the heart of the cryptocurrency <a href="http://emercoin.com/en/">Emercoin</a> is a
 special version of blockchain having additional functionality that is -
-recording and storing arbitrary pairs of the **name-&gt;value** pairs, [Name /
-Value Storage - NVS](/en/blockchain-services/emernvs.md). This technology is already applied to various blockchain services, in
+recording and storing arbitrary pairs of the **name-&gt;value** pairs, [Name / Value Storage - NVS](/en/blockchain-services/emernvs.md). This technology is already applied to various blockchain services, in
 particular, in decentralized, uncensorable DNS zones for .lib, .emc,
 .coin, .bazar, and DNS server built right into emercoin wallet.
 
