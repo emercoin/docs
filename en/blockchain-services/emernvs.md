@@ -47,7 +47,7 @@ payment address is able to modify or delete the pair, or transfer
 ownership to another address. When a new pair is created, a new payment
 address for the pair is created in the local wallet.
 
-You can manage NVS entries either through the Emercoin <a target="_blank" rel="nofollow" href="http://emercoin.com#download">wallet GUI</a>, or via the
+You can manage NVS entries either through the Emercoin <a target="_blank" rel="nofollow" href="https://emercoin.com/benefits#download">wallet GUI</a>, or via the
 [emercoin-cli](/en/running-emercoin/command-line.md).
 
 Service abbreviations
