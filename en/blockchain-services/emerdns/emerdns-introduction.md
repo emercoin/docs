@@ -152,6 +152,8 @@ Then we must transcribe it using a <a target="_blank" rel="nofollow" href="https
 
 	dns:xn--d1abbgf6aiiy.emc
 
+<span id="subdomains"></span>
+
 ### Subdomains
 
 A general challenge with distributed DNS is that anyone can allocate any
