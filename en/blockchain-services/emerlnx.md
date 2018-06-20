@@ -50,8 +50,7 @@ Installation
     installation instructions for this and assume you already have
     this running.
 
-2.  You need to [install the Emercoin wallet
-    daemon](/en/install-software/core-wallets/cli-daemon.md) on your web server.
+2.  You need to [install the Emercoin wallet daemon](/en/install-software/core-wallets/cli-daemon.md) on your web server.
 
 EMCLNX uses the [emercoin API](/en/emercoin-api.md)
 JSONRPC interface, so ensure you have set suitable parameters related to
