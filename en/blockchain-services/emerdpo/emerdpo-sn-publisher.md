@@ -122,4 +122,4 @@ For assistance
 contributions are welcome.
 
 * If the EmerDPO SN-Publisher is missing any functions necessary to meet
-your needs or you want to adapt it for your business please <a href="http://emercoin.com/en/contact">contact the Emercoin team</a>.
+your needs or you want to adapt it for your business please <a href="http://emercoin.com/contacts">contact the Emercoin team</a>.
