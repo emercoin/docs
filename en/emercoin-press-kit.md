@@ -55,11 +55,9 @@ Promotional Images
 <div class="boxOverflow">
   <img src="/images/Emc-circuit(purple).jpg" alt="" width="512">
 </div>
-<!--
 <div class="boxOverflow">
-  <img src="/images/EMC_Evolve_Planet.jpeg" alt="" width="512">
+  <img src="/images/EMC_Evolve_Planet.jpg" alt="" width="512">
 </div>
--->
 <div class="boxOverflow">
   <img src="/images/EMC_Evolve.png" alt="" width="512">
 </div>
