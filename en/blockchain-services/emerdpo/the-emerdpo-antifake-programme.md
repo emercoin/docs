@@ -11,8 +11,7 @@ Emercoin's [EmerDPO](/en/blockchain-services/emerdpo/emerdpo-introduction.md) bl
 **EMC Antifake** allows manufacturers to create a unique ID or "digital
 passport" for each and every product unit that comes off their
 production line. These *"digital passports"* are stored by the
-manufacturer in Emercoin's [secure
-blockchain](/en/introduction/security-principles.md), thus allowing the
+manufacturer in Emercoin's [secure blockchain](/en/introduction/security-principles.md), thus allowing the
 manufacturer and their customers to verify the authenticity of every
 product.
 
