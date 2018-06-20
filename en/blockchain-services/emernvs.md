@@ -81,7 +81,7 @@ Managing NVS entries with the GUI
 The "Manage Names" tab includes the following elements:
 
 -   **name:** If this NVS entry will be used with a particular [service
-    abbreviation](#page_service-abbreviations) (dns:, ssl:,
+    abbreviation](#service-abbreviations) (dns:, ssl:,
     ssh:, etc) then characters allowed by the appropriate service prefix
     should be used. e.g.
 
