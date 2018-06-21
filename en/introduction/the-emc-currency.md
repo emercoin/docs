@@ -9,8 +9,7 @@ Obtaining EMC
 
 There are several main ways to obtain EMC:
 
--   Trade EMC on [one of the participating exchanges](/en/links-resources.md#exchanges) that supports EMC.
 -   Mint EMC with [Proof-of-Stake](/en/block-generation/proof-of-stake-minting.md) minting (PoS).
 -   Mine EMC with [Proof of Work](/en/block-generation/proof-of-work-mining.md) mining (PoW).
 -   Earn EMC by providing products or services in return for it.
-
+-   Trade EMC on one of the participating exchanges that supports EMC.
