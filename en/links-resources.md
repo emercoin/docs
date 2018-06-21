@@ -31,9 +31,7 @@ Links to third-party websites, projects and services relating to Emercoin. Inclu
 -   <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org/">Emercoin Explorer</a>
 -   <a target="_blank" rel="nofollow" href="https://testnet.emercoin.mintr.org/">Emercoin Testnet Explorer</a>
 
-### Exchanges
-
-The following exchanges trade EMC:
+### Web-sites to acquire Emercoin:
 
 -   <a target="_blank" rel="nofollow" href="https://livecoin.net?from=Livecoin-AvWvBbqA">Livecoin</a>
 -   <a target="_blank" rel="nofollow" href="https://bittrex.com/Market/Index?MarketName=BTC-EMC">Bittrex</a>
