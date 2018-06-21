@@ -101,6 +101,9 @@ More exchanges can be found at
 ### PoW Mining Info
 
 -   <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org/poscal">Emercoin PoW calculator</a>
+-   <a target="_blank" rel="nofollow" href="http://www.f2pool.com">F2pool</a>
+-   <a target="_blank" rel="nofollow" href="http://p2pool.org/">p2pool</a> (and <a target="_blank" rel="nofollow" href="https://bitcointalk.org/index.php?topic=1921525.0">p2pool merge-mining guide</a>)
+-   <a target="_blank" rel="nofollow" href="http://www.criptoman.net">http://www.criptoman.net</a> (no merge mining)
 
 ### Other Blogs
 
