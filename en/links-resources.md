@@ -98,7 +98,7 @@ More exchanges can be found at
 
 -   <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org/poscal">Emercoin PoS calculator</a>
 
-### PoW Mining Info
+### Infrustructure security partners
 
 -   <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org/poscal">Emercoin PoW calculator</a>
 -   <a target="_blank" rel="nofollow" href="http://www.f2pool.com">F2pool</a>
