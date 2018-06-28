@@ -56,9 +56,6 @@ OpenNIC is a simple and convenient method to seamlessly access all websites regi
 -   <a target="_blank" rel="nofollow" href="http://proxy.opennicproject.org">OpenNIC Proxy</a>
 -   <a target="_blank" rel="nofollow" href="https://emerproxy.xyz">Emerproxy.xyz</a>
 
-### EmerDNS gateways
-
-**Emergate.net** - The emergate.net gateway is an example of [DNS tree integration](#integration-into-a-regular-dns-tree) maintained by the Emercoin development team and provides a public gateway to EmerDNS zones. All EmerDNS domains are reachable through this gateway, provided the server hosting the domain is configured properly to receive connections from the gateway url. For example, if you have registered **emer.coin** on the Emercoin blockchain, then it can be reached by visiting: <a target="_blank" rel="nofollow" href="http://emer.coin.emergate.net">http://emer.coin.emergate.net</a>
 
 Creating and maintaining a DNS record
 -------------------------------------
