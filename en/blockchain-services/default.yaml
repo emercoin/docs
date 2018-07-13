@@ -31,16 +31,6 @@ files:
         author: Emercoin Community
       }
     }
-   emerlnx: {
-      name: EmerLNX,
-      sort: 350,
-      meta: {
-        title: EmerLNX - Emercoin Community Documentation,
-        description: Emercoin Community Documentation,
-        keywords: ,
-        author: Emercoin Community
-      }
-    }
    emermagnet: {
       name: EmerMAGNET,
       sort: 400,
