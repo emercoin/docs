@@ -5,7 +5,6 @@ Links to third-party websites, projects and services relating to Emercoin. Inclu
 ### General Information
 
 -   <a href="http://emercoin.com/">emercoin.com</a>
--   <a target="_blank" rel="nofollow" href="http://wiki.emercoin.com">Emercoin Wiki</a>
 -   <a target="_blank" rel="nofollow" href="http://blockchainengine.org">Blockchain Engine</a>
 -   <a target="_blank" rel="nofollow" href="http://emercoin.info">emercoin.info (Chinese)</a>
 -   <a target="_blank" rel="nofollow" href="https://emer.tech">emer.tech</a>
