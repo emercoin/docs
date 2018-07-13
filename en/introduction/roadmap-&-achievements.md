@@ -28,7 +28,6 @@ Emercoin added to Microsoft's Azure marketplace | Complete! | January 6th, 2016
 Milestone | Status | Notes
 ---|---|---
 Peering agreement with OpenNIC 		| Complete! | January 15th, 2015
-Introduction of EmcLNX 		| Complete! | September 27th, 2015
 
 2014 Achievements
 -----------------
