@@ -69,7 +69,7 @@ More exchanges can be found at
 ### EmerDNS Services
 
 -   <a target="_blank" rel="nofollow" href="https://peername.com">Peername.com Domains</a>
--   <a target="_blank" rel="nofollow" href="https://www.opennicproject.org">OpenNIC project</a>
+-   <a target="_blank" rel="nofollow" href="https://www.opennic.org">OpenNIC project</a>
 -   <a target="_blank" rel="nofollow" href="https://emerproxy.xyz">Emerproxy</a>
 
 ### EmerDNS Browser Plugins
