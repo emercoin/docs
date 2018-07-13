@@ -12,6 +12,4 @@ Among the current services are:
     of identity.
 -   [ENUMER](/en/blockchain-services/enumer.md) - ENUM telephone record management.
 -   [EmerMAGNET](/en/blockchain-services/emermagnet.md) - BitTorrent links.
--   [EmerLNX](/en/blockchain-services/emerlnx.md) - Peer-to-peer text-based advertisement
-    link exchange network.
 
