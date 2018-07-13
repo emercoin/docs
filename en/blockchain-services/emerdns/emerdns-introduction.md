@@ -45,7 +45,7 @@ Several 3rd-party browser plugins exist which allow you to easily visit EmerDNS 
 A more updated list of browser extensions that support EmerDNS may be found [here](/en/links-resources.md#emerdns-browser-plugins).
 
 ### OpenNIC
-Emercoin maintains a peering agreement with the DNS provider <a target="_blank" rel="nofollow" href="http://opennicproject.org">OpenNIC</a> which means domains registered with EmerDNS are accessible by default to all users of OpenNIC DNS servers. Emercoin domain zones are thus accessible by visiting <a target="_blank" rel="nofollow" href="http://opennicproject.org">opennicproject.org</a> and following their <a target="_blank" rel="nofollow" href="http://wiki.opennicproject.org/GettingStarted">guide</a> for setting your DNS resolver to OpenNIC servers.
+Emercoin maintains a peering agreement with the DNS provider <a target="_blank" rel="nofollow" href="http://opennicproject.org">OpenNIC</a> which means domains registered with EmerDNS are accessible by default to all users of OpenNIC DNS servers. Emercoin domain zones are thus accessible by visiting <a target="_blank" rel="nofollow" href="http://opennicproject.org">opennicproject.org</a> and following their <a target="_blank" rel="nofollow" href="https://wiki.opennic.org/doku.php">guide</a> for setting your DNS resolver to OpenNIC servers.
 
 OpenNIC is a simple and convenient method to seamlessly access all websites registered in the Emercoin blockchain, as well as all other domain zones that OpenNIC supports.
 
