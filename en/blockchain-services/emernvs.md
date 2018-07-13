@@ -65,7 +65,7 @@ recommend using the following supported service abbreviations:
   kx                    | <a target="_blank" rel="nofollow" href="http://tools.ietf.org/html/rfc2230">[RFC2230</a>]() public key|
   ssl                   | SSL Certificate                                                        |  [EmerSSL](/en/blockchain-services/emerssl/emerssl-introduction.md)
   bls                   | BLS digital signature public key
-  tts                   | <a target="_blank" rel="nofollow" href="http://en.wikipedia.org/wiki/Trusted_timestamping">Trusted Timestamp</a>  | EmcTTS
+  tts                   | <a target="_blank" rel="nofollow" href="http://en.wikipedia.org/wiki/Trusted_timestamping">Trusted Timestamp</a>  | <a target="_blank" rel="nofollow" href="http://emercoin.info/en/info/emctts.html">EmcTTS</a>
   lnx                   | Advertising Link Exchanger                                              | [EmerLNX](/en/blockchain-services/emerlnx.md)
   dpo                   | Digital Proof-of-Ownership                                              | [EmerDPO](/en/blockchain-services/emerdpo/emerdpo-introduction.md)
   magnet                | BitTorrent magnet links                                                 | [EmerMAGNET](/en/blockchain-services/emermagnet.md)
