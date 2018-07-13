@@ -27,7 +27,7 @@ Links to third-party websites, projects and services relating to Emercoin. Inclu
 ### Block Explorers
 
 -   <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org/">Emercoin Explorer</a>
--   <a target="_blank" rel="nofollow" href="https://testnet.emercoin.mintr.org/">Emercoin Testnet Explorer</a>
+-   <a target="_blank" rel="nofollow" href="https://explorer.emercoin.com">Emercoin Testnet Explorer</a>
 
 ### Web-sites to acquire Emercoin:
 
