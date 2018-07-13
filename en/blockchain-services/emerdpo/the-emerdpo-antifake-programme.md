@@ -50,7 +50,7 @@ How does it work in a practical sense?
 ------------
 
 <div class="boxOverflow">
-<img src="/images/EmerDPO_2.jpg" alt="EmerDPO_2.jpg">
+<img src="/images/EmcDPO_2.jpg" alt="EmerDPO_2.jpg">
 </div>
 
 **For products still at the factory (or distributor’s storage)**, QR
