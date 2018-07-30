@@ -6,6 +6,8 @@
 ENUMER is a system for supporting <a target="_blank" rel="nofollow" href="http://www.voip-info.org/wiki/view/ENUM">ENUM telephone records</a> on Emercoin's
 blockchain, under the **"enum"** service abbreviation in the [Emercoin NVS](/en/blockchain-services/emernvs.md).
 
+Read more about ENUMER on the site <a target="_blank" rel="nofollow" href="http://enumer.org/">enumer.org</a>.
+
 ENUMER Introduction
 -------------------
 
