@@ -957,7 +957,7 @@ Examples:
 > emercoin-cli getnetworkhashps
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getnetworkhashps", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
-prioritisetransaction &lt;txid&gt; &lt;priority delta&gt; &lt;fee delta&gt;
+<b>prioritisetransaction &lt;txid&gt; &lt;priority delta&gt; &lt;fee delta&gt;</b>
 ```
 Accepts the transaction into mined blocks at a higher (or lower) priority
 
