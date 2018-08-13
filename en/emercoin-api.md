@@ -2771,7 +2771,7 @@ Examples:
 > emercoin-cli sendtoaddress "1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd" 0.1 "" "" true
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "sendtoaddress", "params": ["1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd", 0.1, "donation", "seans outpost"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
-<b>sendtoname &ltname&gt; &ltamount&gt; &#91;comment&#93; &#91;comment-to&#93;</b>
+<b>sendtoname &lt;name&gt; &lt;amount&gt; &#91;comment&#93; &#91;comment-to&#93;</b>
 ```
 <amount> is a real and is rounded to the nearest 0.01
 ```
