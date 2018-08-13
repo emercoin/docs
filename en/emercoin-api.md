@@ -160,12 +160,6 @@ settxfee amount
 signmessage "address" "message"
 ```
 
-<b>`gettxlistfor <fromblock> <toblock> <address> [type=0] [verbose=0]`</b>
-```
-[type]: 0 - sent/received, 1 - received, 2 - sent
-[verbose]: 0 - false, 1 - true
-```
-
 *Note: An important command, `reencodeoldprivkey`, is missing from the current debug help that may be helpful for users of older wallet versions prior to 0.5.x:*
 
 
