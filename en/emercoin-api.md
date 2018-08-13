@@ -1488,7 +1488,7 @@ Send the transaction (signed hex)
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "sendrawtransaction", "params": ["signedhex"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
-signrawtransaction "hexstring" ( &#91;{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...&#93; &#91;"privatekey1",...&#93; sighashtype )
+<b>signrawtransaction "hexstring" ( &#91;{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...&#93; &#91;"privatekey1",...&#93; sighashtype )</b>
 ```
 Sign inputs for raw transaction (serialized, hex-encoded).
 The second optional argument (may be null) is an array of previous transaction outputs that
