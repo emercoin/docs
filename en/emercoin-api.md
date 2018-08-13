@@ -1338,6 +1338,10 @@ Arguments:
 1. "state" (boolean, required) true to enable networking, false to disable
 ```
 
+<b><h3>== Rawtransactions ==</h3></b>
+
+<b>`createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} ( locktime )`</b>
+
 <b><h3>== Util ==</h3></b>
 
 <b>`createmultisig nrequired ["key",...]`</b>
