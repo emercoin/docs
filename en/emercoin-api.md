@@ -1961,7 +1961,7 @@ The total amount in the wallet at least 5 blocks confirmed
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getbalance", "params": ["*", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
-getnewaddress ( "account" )
+<b>getnewaddress ( "account" )</b>
 ```
 Returns a new Emercoin address for receiving payments.
 If 'account' is specified (DEPRECATED), it is added to the address book
