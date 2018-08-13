@@ -2585,7 +2585,7 @@ Unlock the transaction again
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "lockunspent", "params": [false, "[{\"txid\":\"a08e6907dbbd3d809776dbfc5d82e371b764ed838b5655e72f463568df1aadf0\",\"vout\":1}]"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
-makekeypair &#91;prefix&#93;
+<b>makekeypair &#91;prefix&#93;</b>
 ```
 Make a public/private key pair.
 [prefix] is optional preferred prefix for the public key.
