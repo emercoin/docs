@@ -1351,20 +1351,12 @@ it is not stored in the wallet or transmitted to the network.
 
 Arguments:
 1. "inputs" (array, required) A json array of json objects
-[
-{
-"txid":"id", (string, required) The transaction id
+[{"txid":"id", (string, required) The transaction id
 "vout":n, (numeric, required) The output number
-"sequence":n (numeric, optional) The sequence number
-}
-,...
-]
+"sequence":n (numeric, optional) The sequence number},...]
 2. "outputs" (object, required) a json object with outputs
-{
-"address": x.xxx, (numeric or string, required) The key is the emercoin address, the numeric value (can be string) is the EMC amount
-"data": "hex" (string, required) The key is "data", the value is hex encoded data
-,...
-}
+{"address": x.xxx, (numeric or string, required) The key is the emercoin address, the numeric value (can be string) is the EMC amount
+"data": "hex" (string, required) The key is "data", the value is hex encoded data,...}
 3. locktime (numeric, optional, default=0) Raw locktime. Non-0 value also locktime-activates inputs
 
 Result:
