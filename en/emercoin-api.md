@@ -160,7 +160,7 @@ settxfee amount
 signmessage "address" "message"
 ```
 
-<b>gettxlistfor `<fromblock> <toblock> <address> [type=0] [verbose=0]`</b>
+<b>`gettxlistfor <fromblock> <toblock> <address> [type=0] [verbose=0]`</b>
 ```
 [type]: 0 - sent/received, 1 - received, 2 - sent
 [verbose]: 0 - false, 1 - true
