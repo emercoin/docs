@@ -1079,6 +1079,593 @@ Examples:
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "submitblock", "params": ["mydata"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
 
+<b><h3>== Network ==</h3></b>
+
+<b>`addnode "node" "add|remove|onetry"`</b>
+
+```
+Attempts add or remove a node from the addnode list.
+Or try a connection to a node once.
+
+Arguments:
+1. "node" (string, required) The node (see getpeerinfo for nodes)
+2. "command" (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once
+
+Examples:
+> emercoin-cli addnode "192.168.0.6:8333" "onetry"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "addnode", "params": ["192.168.0.6:8333", "onetry"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`clearbanned`</b>
+
+```
+Clear all banned IPs.
+
+Examples:
+> emercoin-cli clearbanned
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "clearbanned", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`disconnectnode "address"`</b>
+
+```
+Immediately disconnects from the specified node.
+
+Arguments:
+1. "address" (string, required) The IP address/port of the node
+
+Examples:
+> emercoin-cli disconnectnode "192.168.0.6:8333"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "disconnectnode", "params": ["192.168.0.6:8333"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`getaddednodeinfo ( "node" )`</b>
+
+```
+Returns information about the given added node, or all added nodes
+(note that onetry addnodes are not listed here)
+
+Arguments:
+1. "node" (string, optional) If provided, return information about this specific node, otherwise all nodes are returned.
+
+Result:
+[
+{
+"addednode" : "192.168.0.201", (string) The node ip address or name (as provided to addnode)
+"connected" : true|false, (boolean) If connected
+"addresses" : [ (list of objects) Only when connected = true
+{
+"address" : "192.168.0.201:8333", (string) The emercoin server IP and port we're connected to
+"connected" : "outbound" (string) connection, inbound or outbound
+}
+]
+}
+,...
+]
+
+Examples:
+> emercoin-cli getaddednodeinfo true
+> emercoin-cli getaddednodeinfo true "192.168.0.201"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getaddednodeinfo", "params": [true, "192.168.0.201"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`getcheckpoint`</b>
+
+```
+Show info of synchronized checkpoint.
+```
+
+<b>`getconnectioncount`</b>
+
+```
+Returns the number of connections to other nodes.
+
+Result:
+n (numeric) The connection count
+
+Examples:
+> emercoin-cli getconnectioncount
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getconnectioncount", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`getnettotals`</b>
+
+```
+Returns information about network traffic, including bytes in, bytes out,
+and current time.
+
+Result:
+{
+"totalbytesrecv": n, (numeric) Total bytes received
+"totalbytessent": n, (numeric) Total bytes sent
+"timemillis": t, (numeric) Current UNIX time in milliseconds
+"uploadtarget":
+{
+"timeframe": n, (numeric) Length of the measuring timeframe in seconds
+"target": n, (numeric) Target in bytes
+"target_reached": true|false, (boolean) True if target is reached
+"serve_historical_blocks": true|false, (boolean) True if serving historical blocks
+"bytes_left_in_cycle": t, (numeric) Bytes left in current time cycle
+"time_left_in_cycle": t (numeric) Seconds left in current time cycle
+}
+}
+
+Examples:
+> emercoin-cli getnettotals
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getnettotals", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`getnetworkinfo`</b>
+
+```
+Returns an object containing various state info regarding P2P networking.
+
+Result:
+{
+"version": xxxxx, (numeric) the server version
+"subversion": "/Satoshi:x.x.x/", (string) the server subversion string
+"protocolversion": xxxxx, (numeric) the protocol version
+"localservices": "xxxxxxxxxxxxxxxx", (string) the services we offer to the network
+"localrelay": true|false, (bool) true if transaction relay is requested from peers
+"timeoffset": xxxxx, (numeric) the time offset
+"connections": xxxxx, (numeric) the number of connections
+"networkactive": true|false, (bool) whether p2p networking is enabled
+"networks": [ (array) information per network
+{
+"name": "xxx", (string) network (ipv4, ipv6 or onion)
+"limited": true|false, (boolean) is the network limited using -onlynet?
+"reachable": true|false, (boolean) is the network reachable?
+"proxy": "host:port" (string) the proxy that is used for this network, or empty if none
+"proxy_randomize_credentials": true|false, (string) Whether randomized credentials are used
+}
+,...
+],
+"relayfee": x.xxxxxxxx, (numeric) minimum relay fee for non-free transactions in EMC/kB
+"incrementalfee": x.xxxxxxxx, (numeric) minimum fee increment for mempool limiting or BIP 125 replacement in EMC/kB
+"localaddresses": [ (array) list of local addresses
+{
+"address": "xxxx", (string) network address
+"port": xxx, (numeric) network port
+"score": xxx (numeric) relative score
+}
+,...
+]
+"warnings": "..." (string) any network warnings
+}
+
+Examples:
+> emercoin-cli getnetworkinfo
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getnetworkinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`getpeerinfo`</b>
+
+```
+Returns data about each connected network node as a json array of objects.
+
+Result:
+[
+{
+"id": n, (numeric) Peer index
+"addr":"host:port", (string) The ip address and port of the peer
+"addrlocal":"ip:port", (string) local address
+"services":"xxxxxxxxxxxxxxxx", (string) The services offered
+"relaytxes":true|false, (boolean) Whether peer has asked us to relay transactions to it
+"lastsend": ttt, (numeric) The time in seconds since epoch (Jan 1 1970 GMT) of the last send
+"lastrecv": ttt, (numeric) The time in seconds since epoch (Jan 1 1970 GMT) of the last receive
+"bytessent": n, (numeric) The total bytes sent
+"bytesrecv": n, (numeric) The total bytes received
+"conntime": ttt, (numeric) The connection time in seconds since epoch (Jan 1 1970 GMT)
+"timeoffset": ttt, (numeric) The time offset in seconds
+"pingtime": n, (numeric) ping time (if available)
+"minping": n, (numeric) minimum observed ping time (if any at all)
+"pingwait": n, (numeric) ping wait (if non-zero)
+"version": v, (numeric) The peer version, such as 7001
+"subver": "/Satoshi:0.8.5/", (string) The string version
+"inbound": true|false, (boolean) Inbound (true) or Outbound (false)
+"addnode": true|false, (boolean) Whether connection was due to addnode and is using an addnode slot
+"startingheight": n, (numeric) The starting height (block) of the peer
+"banscore": n, (numeric) The ban score
+"synced_headers": n, (numeric) The last header we have in common with this peer
+"synced_blocks": n, (numeric) The last block we have in common with this peer
+"inflight": [
+n, (numeric) The heights of blocks we're currently asking from this peer
+...
+],
+"whitelisted": true|false, (boolean) Whether the peer is whitelisted
+"bytessent_per_msg": {
+"addr": n, (numeric) The total bytes sent aggregated by message type
+...
+},
+"bytesrecv_per_msg": {
+"addr": n, (numeric) The total bytes received aggregated by message type
+...
+}
+}
+,...
+]
+
+Examples:
+> emercoin-cli getpeerinfo
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getpeerinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`listbanned`</b>
+
+```
+List all banned IPs/Subnets.
+
+Examples:
+> emercoin-cli listbanned
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listbanned", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`ping`</b>
+
+```
+Requests that a ping be sent to all other nodes, to measure ping time.
+Results provided in getpeerinfo, pingtime and pingwait fields are decimal seconds.
+Ping command is handled in queue with all other commands, so it measures processing backlog, not just network ping.
+
+Examples:
+> emercoin-cli ping
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "ping", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`setban "subnet" "add|remove" (bantime) (absolute)`</b>
+
+```
+Attempts add or remove a IP/Subnet from the banned list.
+
+Arguments:
+1. "subnet" (string, required) The IP/Subnet (see getpeerinfo for nodes ip) with a optional netmask (default is /32 = single ip)
+2. "command" (string, required) 'add' to add a IP/Subnet to the list, 'remove' to remove a IP/Subnet from the list
+3. "bantime" (numeric, optional) time in seconds how long (or until when if [absolute] is set) the ip is banned (0 or empty means using the default time of 24h which can also be overwritten by the -bantime startup argument)
+4. "absolute" (boolean, optional) If set, the bantime must be a absolute timestamp in seconds since epoch (Jan 1 1970 GMT)
+
+Examples:
+> emercoin-cli setban "192.168.0.6" "add" 86400
+> emercoin-cli setban "192.168.0.0/24" "add"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "setban", "params": ["192.168.0.6", "add", 86400] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`setnetworkactive true|false`</b>
+
+```
+Disable/enable all p2p network activity.
+
+Arguments:
+1. "state" (boolean, required) true to enable networking, false to disable
+```
+
+<b><h3>== Rawtransactions ==</h3></b>
+
+<b>`createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} ( locktime )`</b>
+
+```
+Create a transaction spending the given inputs and creating new outputs.
+Outputs can be addresses or data.
+Returns hex-encoded raw transaction.
+Note that the transaction's inputs are not signed, and
+it is not stored in the wallet or transmitted to the network.
+
+Arguments:
+1. "inputs" (array, required) A json array of json objects
+[
+{
+"txid":"id", (string, required) The transaction id
+"vout":n, (numeric, required) The output number
+"sequence":n (numeric, optional) The sequence number
+}
+,...
+]
+2. "outputs" (object, required) a json object with outputs
+{
+"address": x.xxx, (numeric or string, required) The key is the emercoin address, the numeric value (can be string) is the EMC amount
+"data": "hex" (string, required) The key is "data", the value is hex encoded data
+,...
+}
+3. locktime (numeric, optional, default=0) Raw locktime. Non-0 value also locktime-activates inputs
+
+Result:
+"transaction" (string) hex string of the transaction
+
+Examples:
+> emercoin-cli createrawtransaction "[{\"txid\":\"myid\",\"vout\":0}]" "{\"address\":0.01}"
+> emercoin-cli createrawtransaction "[{\"txid\":\"myid\",\"vout\":0}]" "{\"data\":\"00010203\"}"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "createrawtransaction", "params": ["[{\"txid\":\"myid\",\"vout\":0}]", "{\"address\":0.01}"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "createrawtransaction", "params": ["[{\"txid\":\"myid\",\"vout\":0}]", "{\"data\":\"00010203\"}"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`decoderawtransaction "hexstring"`</b>
+
+```
+Return a JSON object representing the serialized, hex-encoded transaction.
+
+Arguments:
+1. "hexstring" (string, required) The transaction hex string
+
+Result:
+{
+"txid" : "id", (string) The transaction id
+"hash" : "id", (string) The transaction hash (differs from txid for witness transactions)
+"size" : n, (numeric) The transaction size
+"vsize" : n, (numeric) The virtual transaction size (differs from size for witness transactions)
+"version" : n, (numeric) The version
+"locktime" : ttt, (numeric) The lock time
+"vin" : [ (array of json objects)
+{
+"txid": "id", (string) The transaction id
+"vout": n, (numeric) The output number
+"scriptSig": { (json object) The script
+"asm": "asm", (string) asm
+"hex": "hex" (string) hex
+},
+"txinwitness": ["hex", ...] (array of string) hex-encoded witness data (if any)
+"sequence": n (numeric) The script sequence number
+}
+,...
+],
+"vout" : [ (array of json objects)
+{
+"value" : x.xxx, (numeric) The value in EMC
+"n" : n, (numeric) index
+"scriptPubKey" : { (json object)
+"asm" : "asm", (string) the asm
+"hex" : "hex", (string) the hex
+"reqSigs" : n, (numeric) The required sigs
+"type" : "pubkeyhash", (string) The type, eg 'pubkeyhash'
+"addresses" : [ (json array of string)
+"12tvKAXCxZjSmdNbao16dKXC8tRWfcF5oc" (string) emercoin address
+,...
+]
+}
+}
+,...
+],
+}
+
+Examples:
+> emercoin-cli decoderawtransaction "hexstring"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "decoderawtransaction", "params": ["hexstring"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`decodescript "hexstring"`</b>
+
+```
+Decode a hex-encoded script.
+
+Arguments:
+1. "hexstring" (string) the hex encoded script
+
+Result:
+{
+"asm":"asm", (string) Script public key
+"hex":"hex", (string) hex encoded public key
+"type":"type", (string) The output type
+"reqSigs": n, (numeric) The required signatures
+"addresses": [ (json array of string)
+"address" (string) emercoin address
+,...
+],
+"p2sh","address" (string) address of P2SH script wrapping this redeem script (not returned if the script is already a P2SH).
+}
+
+Examples:
+> emercoin-cli decodescript "hexstring"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "decodescript", "params": ["hexstring"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`fundrawtransaction "hexstring" ( options )`</b>
+
+```
+Add inputs to a transaction until it has enough in value to meet its out value.
+This will not modify existing inputs, and will add at most one change output to the outputs.
+No existing outputs will be modified unless "subtractFeeFromOutputs" is specified.
+Note that inputs which were signed may need to be resigned after completion since in/outputs have been added.
+The inputs added will not be signed, use signrawtransaction for that.
+Note that all existing inputs must have their previous output transaction be in the wallet.
+Note that all inputs selected must be of standard form and P2SH scripts must be
+in the wallet using importaddress or addmultisigaddress (to calculate fees).
+You can see whether this is the case by checking the "solvable" field in the listunspent output.
+Only pay-to-pubkey, multisig, and P2SH versions thereof are currently supported for watch-only
+
+Arguments:
+1. "hexstring" (string, required) The hex string of the raw transaction
+2. options (object, optional)
+{
+"changeAddress" (string, optional, default pool address) The emercoin address to receive the change
+"changePosition" (numeric, optional, default random) The index of the change output
+"includeWatching" (boolean, optional, default false) Also select inputs which are watch only
+"lockUnspents" (boolean, optional, default false) Lock selected unspent outputs
+"reserveChangeKey" (boolean, optional, default true) Reserves the change output key from the keypool
+"feeRate" (numeric, optional, default not set: makes wallet determine the fee) Set a specific feerate (EMC per KB)
+"subtractFeeFromOutputs" (array, optional) A json array of integers.
+The fee will be equally deducted from the amount of each specified output.
+The outputs are specified by their zero-based index, before any change output is added.
+Those recipients will receive less emercoins than you enter in their corresponding amount field.
+If no outputs are specified here, the sender pays the fee.
+[vout_index,...]
+}
+for backward compatibility: passing in a true instead of an object will result in {"includeWatching":true}
+
+Result:
+{
+"hex": "value", (string) The resulting raw transaction (hex-encoded string)
+"fee": n, (numeric) Fee in EMC the resulting transaction pays
+"changepos": n (numeric) The position of the added change output, or -1
+}
+
+Examples:
+
+Create a transaction with no inputs
+> emercoin-cli createrawtransaction "[]" "{\"myaddress\":0.01}"
+
+Add sufficient unsigned inputs to meet the output value
+> emercoin-cli fundrawtransaction "rawtransactionhex"
+
+Sign the transaction
+> emercoin-cli signrawtransaction "fundedtransactionhex"
+
+Send the transaction
+> emercoin-cli sendrawtransaction "signedtransactionhex"
+```
+
+<b>`getrawtransaction "txid" ( verbose )`</b>
+
+```
+NOTE: By default this function only works for mempool transactions. If the -txindex option is
+enabled, it also works for blockchain transactions.
+DEPRECATED: for now, it also works for transactions with unspent outputs.
+
+Return the raw transaction data.
+
+If verbose is 'true', returns an Object with information about 'txid'.
+If verbose is 'false' or omitted, returns a string that is serialized, hex-encoded data for 'txid'.
+
+Arguments:
+1. "txid" (string, required) The transaction id
+2. verbose (bool, optional, default=false) If false, return a string, otherwise return a json object
+
+Result (if verbose is not set or set to false):
+"data" (string) The serialized, hex-encoded data for 'txid'
+
+Result (if verbose is set to true):
+{
+"hex" : "data", (string) The serialized, hex-encoded data for 'txid'
+"txid" : "id", (string) The transaction id (same as provided)
+"hash" : "id", (string) The transaction hash (differs from txid for witness transactions)
+"size" : n, (numeric) The serialized transaction size
+"vsize" : n, (numeric) The virtual transaction size (differs from size for witness transactions)
+"version" : n, (numeric) The version
+"locktime" : ttt, (numeric) The lock time
+"vin" : [ (array of json objects)
+{
+"txid": "id", (string) The transaction id
+"vout": n, (numeric)
+"scriptSig": { (json object) The script
+"asm": "asm", (string) asm
+"hex": "hex" (string) hex
+},
+"sequence": n (numeric) The script sequence number
+"txinwitness": ["hex", ...] (array of string) hex-encoded witness data (if any)
+}
+,...
+],
+"vout" : [ (array of json objects)
+{
+"value" : x.xxx, (numeric) The value in EMC
+"n" : n, (numeric) index
+"scriptPubKey" : { (json object)
+"asm" : "asm", (string) the asm
+"hex" : "hex", (string) the hex
+"reqSigs" : n, (numeric) The required sigs
+"type" : "pubkeyhash", (string) The type, eg 'pubkeyhash'
+"addresses" : [ (json array of string)
+"address" (string) emercoin address
+,...
+]
+}
+}
+,...
+],
+"blockhash" : "hash", (string) the block hash
+"confirmations" : n, (numeric) The confirmations
+"time" : ttt, (numeric) The transaction time in seconds since epoch (Jan 1 1970 GMT)
+"blocktime" : ttt (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)
+}
+
+Examples:
+> emercoin-cli getrawtransaction "mytxid"
+> emercoin-cli getrawtransaction "mytxid" true
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getrawtransaction", "params": ["mytxid", true] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`sendrawtransaction "hexstring" ( allowhighfees )`</b>
+
+```
+Submits raw transaction (serialized, hex-encoded) to local node and network.
+
+Also see createrawtransaction and signrawtransaction calls.
+
+Arguments:
+1. "hexstring" (string, required) The hex string of the raw transaction)
+2. allowhighfees (boolean, optional, default=false) Allow high fees
+
+Result:
+"hex" (string) The transaction hash in hex
+
+Examples:
+
+Create a transaction
+> emercoin-cli createrawtransaction "[{\"txid\" : \"mytxid\",\"vout\":0}]" "{\"myaddress\":0.01}"
+Sign the transaction, and get back the hex
+> emercoin-cli signrawtransaction "myhex"
+
+Send the transaction (signed hex)
+> emercoin-cli sendrawtransaction "signedhex"
+
+As a json rpc call
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "sendrawtransaction", "params": ["signedhex"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype )`</b>
+
+```
+Sign inputs for raw transaction (serialized, hex-encoded).
+The second optional argument (may be null) is an array of previous transaction outputs that
+this transaction depends on but may not yet be in the block chain.
+The third optional argument (may be null) is an array of base58-encoded private
+keys that, if given, will be the only keys used to sign the transaction.
+
+
+Arguments:
+1. "hexstring" (string, required) The transaction hex string
+2. "prevtxs" (string, optional) An json array of previous dependent transaction outputs
+[ (json array of json objects, or 'null' if none provided)
+{
+"txid":"id", (string, required) The transaction id
+"vout":n, (numeric, required) The output number
+"scriptPubKey": "hex", (string, required) script key
+"redeemScript": "hex", (string, required for P2SH or P2WSH) redeem script
+"amount": value (numeric, required) The amount spent
+}
+,...
+]
+3. "privkeys" (string, optional) A json array of base58-encoded private keys for signing
+[ (json array of strings, or 'null' if none provided)
+"privatekey" (string) private key in base58-encoding
+,...
+]
+4. "sighashtype" (string, optional, default=ALL) The signature hash type. Must be one of
+"ALL"
+"NONE"
+"SINGLE"
+"ALL|ANYONECANPAY"
+"NONE|ANYONECANPAY"
+"SINGLE|ANYONECANPAY"
+
+Result:
+{
+"hex" : "value", (string) The hex-encoded raw transaction with signature(s)
+"complete" : true|false, (boolean) If the transaction has a complete set of signatures
+"errors" : [ (json array of objects) Script verification errors (if there are any)
+{
+"txid" : "hash", (string) The hash of the referenced, previous transaction
+"vout" : n, (numeric) The index of the output to spent and used as input
+"scriptSig" : "hex", (string) The hex-encoded signature script
+"sequence" : n, (numeric) Script sequence number
+"error" : "text" (string) Verification or signing error related to the input
+}
+,...
+]
+}
+
+Examples:
+> emercoin-cli signrawtransaction "myhex"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "signrawtransaction", "params": ["myhex"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
 *Note: An important command, `reencodeoldprivkey`, is missing from the current debug help that may be helpful for users of older wallet versions prior to 0.5.x:*
 
 ```text
