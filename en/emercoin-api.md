@@ -1230,7 +1230,7 @@ Arguments:
 1. "state" (boolean, required) true to enable networking, false to disable
 ```
 
-<b>== Rawtransactions ==
+<b>== Rawtransactions ==</br>
 createrawtransaction &#91;{"txid":"id","vout":n},...&#93; {"address":amount,"data":"hex",...} ( locktime )</b>
 ```
 Create a transaction spending the given inputs and creating new outputs.
