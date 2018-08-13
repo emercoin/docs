@@ -21,64 +21,79 @@ Or to get a list of all possible commands:
 
 	$ emc help
 
-The following API commands are accurate as of Emercoin Core version <b>v0.6.2.0</b>:
+The following API commands are accurate as of Emercoin Core version <b>v0.6.3</b>:
 
 
 
 ```text
 == Blockchain ==
 getbestblockhash
-getblock "hash" ( verbose )
+getblock "blockhash" ( verbose )
 getblockchaininfo
 getblockcount
-getblockhash index
+getblockhash height
+getblockheader "hash" ( verbose )
 getchaintips
 getdifficulty
+getmempoolancestors txid (verbose)
+getmempooldescendants txid (verbose)
+getmempoolentry txid
 getmempoolinfo
 getrawmempool ( verbose )
-gettxlistfor <from block> <to block> <address> [type=0] [verbose=0]
-gettxout "txid" n ( includemempool )
+gettxlistfor <fromblock> <toblock> <address> [type=0] [verbose=0]
+gettxout "txid" n ( include_mempool )
+gettxoutproof ["txid",...] ( blockhash )
 gettxoutsetinfo
 name_filter [regexp] [maxage=0] [from=0] [nb=0] [stat] [valuetype]
 name_history <name> [fullhistory] [valuetype]
 name_mempool [valuetype]
-name_scan [start-name] [max-returned] [max-value-length=-1] [valuetype]
+name_scan [start-name] [max-returned] [max-value-length=0] [valuetype]
+name_scan_address <address> [max-value-length=0] [valuetype]
 name_show <name> [valuetype] [filepath]
-verifychain ( checklevel numblocks )
+preciousblock "blockhash"
+verifychain ( checklevel nblocks )
+verifytxoutproof "proof"
 
 == Control ==
 getinfo
+getmemoryinfo
 help ( "command" )
-reservebalance [<reserve> [amount]]
 stop
 
 == Generating ==
+generate nblocks ( maxtries )
+generatetoaddress nblocks address (maxtries)
 getgenerate
-gethashespersec
 setgenerate generate ( genproclimit )
 
 == Mining ==
 getauxblock [<hash> <auxpow>]
-getblocktemplate ( "jsonrequestobject" )
+getblocktemplate ( TemplateRequest )
 getmininginfo
-getnetworkhashps ( blocks height )
+getnetworkhashps ( nblocks height )
 prioritisetransaction <txid> <priority delta> <fee delta>
 submitblock "hexdata" ( "jsonparametersobject" )
 
 == Network ==
 addnode "node" "add|remove|onetry"
-getaddednodeinfo dns ( "node" )
+clearbanned
+disconnectnode "address" 
+getaddednodeinfo ( "node" )
 getcheckpoint
 getconnectioncount
 getnettotals
 getnetworkinfo
 getpeerinfo
+listbanned
 ping
+setban "subnet" "add|remove" (bantime) (absolute)
+setnetworkactive true|false
 
 == Rawtransactions ==
-createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,...}
+createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} ( locktime )
 decoderawtransaction "hexstring"
-decodescript "hex"
+decodescript "hexstring"
+fundrawtransaction "hexstring" ( options )
 getrawtransaction "txid" ( verbose )
 sendrawtransaction "hexstring" ( allowhighfees )
 signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype )
@@ -87,53 +102,62 @@ signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","re
 createmultisig nrequired ["key",...]
 estimatefee nblocks
 estimatepriority nblocks
+estimatesmartpriority nblocks
+signmessagewithprivkey "privkey" "message"
 validateaddress "emercoinaddress"
-verifymessage "emercoinaddress" "signature" "message"
+verifymessage "address" "signature" "message"
 
 == Wallet ==
+abandontransaction "txid"
 addmultisigaddress nrequired ["key",...] ( "account" )
+addwitnessaddress "address"
 backupwallet "destination"
-dumpprivkey "emercoinaddress"
+bumpfee "txid" ( options ) 
+dumpprivkey "address"
 dumpwallet "filename"
 encryptwallet "passphrase"
-getaccount "emercoinaddress"
+getaccount "address"
 getaccountaddress "account"
 getaddressesbyaccount "account"
-getbalance ( "account" minconf includeWatchonly )
+getbalance ( "account" minconf include_watchonly )
 getnewaddress ( "account" )
 getrawchangeaddress
 getreceivedbyaccount "account" ( minconf )
-getreceivedbyaddress "emercoinaddress" ( minconf )
-gettransaction "txid" ( includeWatchonly )
+getreceivedbyaddress "address" ( minconf )
+gettransaction "txid" ( include_watchonly )
 getunconfirmedbalance
 getwalletinfo
-importaddress "address" ( "label" rescan )
-importprivkey "emercoinprivkey" ( "label" rescan )
+importaddress "address" ( "label" rescan p2sh )
+importmulti "requests" "options"
+importprivkey "emercoinprivkey" ( "label" ) ( rescan )
+importprunedfunds
+importpubkey "pubkey" ( "label" rescan )
 importwallet "filename"
 keypoolrefill ( newsize )
-listaccounts ( minconf includeWatchonly)
+listaccounts ( minconf include_watchonly)
 listaddressgroupings
 listlockunspent
-listreceivedbyaccount ( minconf includeempty includeWatchonly)
-listreceivedbyaddress ( minconf includeempty includeWatchonly)
-listsinceblock ( "blockhash" target-confirmations includeWatchonly)
-listtransactions ( "account" count from includeWatchonly)
-listunspent ( minconf maxconf  ["address",...] )
-lockunspent unlock [{"txid":"txid","vout":n},...]
+listreceivedbyaccount ( minconf include_empty include_watchonly)
+listreceivedbyaddress ( minconf include_empty include_watchonly)
+listsinceblock ( "blockhash" target_confirmations include_watchonly)
+listtransactions ( "account" count skip include_watchonly)
+listunspent ( minconf maxconf  ["addresses",...] [include_unsafe] )
+lockunspent unlock ([{"txid":"txid","vout":n},...])
 makekeypair [prefix]
 move "fromaccount" "toaccount" amount ( minconf "comment" )
 name_delete <name>
 name_list [name] [valuetype]
 name_new <name> <value> <days> [toaddress] [valuetype]
 name_update <name> <value> <days> [toaddress] [valuetype]
-dumpprivkey "emercoinprivkey"
-sendfrom "fromaccount" "toemercoinaddress" amount ( minconf "comment" "comment-to" )
-sendmany "fromaccount" {"address":amount,...} ( minconf "comment" )
-sendtoaddress "emercoinaddress" amount ( "comment" "comment-to" )
+removeprunedfunds "txid"
+reservebalance [<reserve> [amount]]
+sendfrom "fromaccount" "toaddress" amount ( minconf "comment" "comment_to" )
+sendmany "fromaccount" {"address":amount,...} ( minconf "comment" ["address",...] )
+sendtoaddress "address" amount ( "comment" "comment_to" subtractfeefromamount )
 sendtoname <name> <amount> [comment] [comment-to]
-setaccount "emercoinaddress" "account"
+setaccount "address" "account"
 settxfee amount
-signmessage "emercoinaddress" "message"
+signmessage "address" "message"
 ```
 
 
