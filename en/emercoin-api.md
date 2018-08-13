@@ -159,7 +159,7 @@ settxfee amount
 signmessage "address" "message"
 ```
 
-<b>== Blockchain ==</b>
+<b><h3>== Blockchain ==</h3></b>
 
 <b>`getbestblockhash`</b>
 
@@ -758,6 +758,78 @@ Arguments:
 
 Result:
 ["txid"] (array, strings) The txid(s) which the proof commits to, or empty array if the proof is invalid
+```
+
+<b>== Control ==</b>
+
+<b>`getinfo`</b>
+
+```
+DEPRECATED. Returns an object containing various state info.
+
+Result:
+{
+"version": xxxxx, (numeric) the server version
+"protocolversion": xxxxx, (numeric) the protocol version
+"walletversion": xxxxx, (numeric) the wallet version
+"balance": xxxxxxx, (numeric) the total emercoin balance of the wallet
+"blocks": xxxxxx, (numeric) the current number of blocks processed in the server
+"timeoffset": xxxxx, (numeric) the time offset
+"connections": xxxxx, (numeric) the number of connections
+"proxy": "host:port", (string, optional) the proxy used by the server
+"difficulty": xxxxxx, (numeric) the current difficulty
+"testnet": true|false, (boolean) if the server is using testnet or not
+"keypoololdest": xxxxxx, (numeric) the timestamp (seconds since Unix epoch) of the oldest pre-generated key in the key pool
+"keypoolsize": xxxx, (numeric) how many new keys are pre-generated
+"unlocked_until": ttt, (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked
+"paytxfee": x.xxxx, (numeric) the transaction fee set in EMC/kB
+"relayfee": x.xxxx, (numeric) minimum relay fee for non-free transactions in EMC/kB
+"errors": "..." (string) any error messages
+}
+
+Examples:
+> emercoin-cli getinfo
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`getmemoryinfo`</b>
+
+```
+Returns an object containing information about memory usage.
+
+Result:
+{
+"locked": { (json object) Information about locked memory manager
+"used": xxxxx, (numeric) Number of bytes used
+"free": xxxxx, (numeric) Number of bytes available in current arenas
+"total": xxxxxxx, (numeric) Total number of bytes managed
+"locked": xxxxxx, (numeric) Amount of bytes that succeeded locking. If this number is smaller than total, locking pages failed at some point and key data could be swapped to disk.
+"chunks_used": xxxxx, (numeric) Number allocated chunks
+"chunks_free": xxxxx, (numeric) Number unused chunks
+}
+}
+
+Examples:
+> emercoin-cli getmemoryinfo
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getmemoryinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`help ( "command" )`</b>
+
+```
+List all commands, or get help for a specified command.
+
+Arguments:
+1. "command" (string, optional) The command to get help on
+
+Result:
+"text" (string) The help text
+```
+
+<b>`stop`</b>
+
+```
+Stop Emercoin server.
 ```
 
 *Note: An important command, `reencodeoldprivkey`, is missing from the current debug help that may be helpful for users of older wallet versions prior to 0.5.x:*
