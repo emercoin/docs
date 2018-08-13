@@ -1727,7 +1727,7 @@ Examples:
 > emercoin-cli abandontransaction "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "abandontransaction", "params": ["1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
-addmultisigaddress nrequired &#91;"key",...&#93; ( "account" )
+<b>addmultisigaddress nrequired &#91;"key",...&#93; ( "account" )</b>
 ```
 Add a nrequired-to-sign multisignature address to the wallet.
 Each key is a Emercoin address or hex-encoded public key.
