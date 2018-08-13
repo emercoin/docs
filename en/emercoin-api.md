@@ -760,7 +760,7 @@ Result:
 ["txid"] (array, strings) The txid(s) which the proof commits to, or empty array if the proof is invalid
 ```
 
-<b>== Control ==</b>
+<b><h3>== Control ==</h3></b>
 
 <b>`getinfo`</b>
 
@@ -832,9 +832,254 @@ Result:
 Stop Emercoin server.
 ```
 
+<b><h3>== Generating ==</h3></b>
+
+<b>`generate nblocks ( maxtries )`</b>
+
+```
+Mine up to nblocks blocks immediately (before the RPC call returns)
+
+Arguments:
+1. nblocks (numeric, required) How many blocks are generated immediately.
+2. maxtries (numeric, optional) How many iterations to try (default = 1000000).
+
+Result:
+[ blockhashes ] (array) hashes of blocks generated
+
+Examples:
+
+Generate 11 blocks
+> emercoin-cli generate 11
+```
+
+<b>`generatetoaddress nblocks address (maxtries)`</b>
+
+```
+Mine blocks immediately to a specified address (before the RPC call returns)
+
+Arguments:
+1. nblocks (numeric, required) How many blocks are generated immediately.
+2. address (string, required) The address to send the newly generated emercoin to.
+3. maxtries (numeric, optional) How many iterations to try (default = 1000000).
+
+Result:
+[ blockhashes ] (array) hashes of blocks generated
+
+Examples:
+
+Generate 11 blocks to myaddress
+> emercoin-cli generatetoaddress 11 "myaddress"
+```
+
+<b>`getgenerate`</b>
+
+```
+Return if the server is set to generate coins or not. The default is false.
+It is set with the command line argument -gen (or emercoin.conf setting gen)
+It can also be set with the setgenerate call.
+
+Result
+true|false (boolean) If the server is set to generate coins or not
+
+Examples:
+> emercoin-cli getgenerate
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getgenerate", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`setgenerate generate ( genproclimit )`</b>
+
+```
+Set 'generate' true or false to turn generation on or off.
+Generation is limited to 'genproclimit' processors, -1 is unlimited.
+See the getgenerate call for the current setting.
+
+Arguments:
+1. generate (boolean, required) Set to true to turn on generation, off to turn off.
+2. genproclimit (numeric, optional) Set the processor limit for when generation is on. Can be -1 for unlimited.
+
+Examples:
+
+Set the generation on with a limit of one processor
+> emercoin-cli setgenerate true 1
+
+Check the setting
+> emercoin-cli getgenerate
+
+Turn off generation
+> emercoin-cli setgenerate false
+
+Using json rpc
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "setgenerate", "params": [true, 1] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b><h3>== Mining ==</h3></b>
+
+<b>`getauxblock [<hash> <auxpow>]`</b>
+
+```
+create a new blockIf <hash>, <auxpow> is not specified, returns a new block hash.
+If <hash>, <auxpow> is specified, tries to solve the block based on the aux proof of work and returns true if it was successful.
+```
+
+<b>`getblocktemplate ( TemplateRequest )`</b>
+
+```
+If the request parameters include a 'mode' key, that is used to explicitly select between the default 'template' request or a 'proposal'.
+It returns data needed to construct a block to work on.
+For full specification, see BIPs 22, 23, 9, and 145:
+https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki
+https://github.com/bitcoin/bips/blob/master/bip-0023.mediawiki
+https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki#getblocktemplate_changes
+https://github.com/bitcoin/bips/blob/master/bip-0145.mediawiki
+
+Arguments:
+1. template_request (json object, optional) A json object in the following spec
+{
+"mode":"template" (string, optional) This must be set to "template", "proposal" (see BIP 23), or omitted
+"capabilities":[ (array, optional) A list of strings
+"support" (string) client side supported feature, 'longpoll', 'coinbasetxn', 'coinbasevalue', 'proposal', 'serverlist', 'workid'
+,...
+],
+"rules":[ (array, optional) A list of strings
+"support" (string) client side supported softfork deployment
+,...
+]
+}
+
+
+Result:
+{
+"version" : n, (numeric) The preferred block version
+"rules" : [ "rulename", ... ], (array of strings) specific block rules that are to be enforced
+"previousblockhash" : "xxxx", (string) The hash of current highest block
+"transactions" : [ (array) contents of non-coinbase transactions that should be included in the next block
+{
+"data" : "xxxx", (string) transaction data encoded in hexadecimal (byte-for-byte)
+"txid" : "xxxx", (string) transaction id encoded in little-endian hexadecimal
+"hash" : "xxxx", (string) hash encoded in little-endian hexadecimal (including witness data)
+"depends" : [ (array) array of numbers
+n (numeric) transactions before this one (by 1-based index in 'transactions' list) that must be present in the final block if this one is
+,...
+],
+"fee": n, (numeric) difference in value between transaction inputs and outputs (in Satoshis); for coinbase transactions, this is a negative Number of the total collected block fees (ie, not including the block subsidy); if key is not present, fee is unknown and clients MUST NOT assume there isn't one
+"sigops" : n, (numeric) total SigOps cost, as counted for purposes of block limits; if key is not present, sigop cost is unknown and clients MUST NOT assume it is zero
+"weight" : n, (numeric) total transaction weight, as counted for purposes of block limits
+"required" : true|false (boolean) if provided and true, this transaction must be in the final block
+}
+,...
+],
+"coinbaseaux" : { (json object) data that should be included in the coinbase's scriptSig content
+"flags" : "xx" (string) key name is to be ignored, and value included in scriptSig
+},
+"coinbasevalue" : n, (numeric) maximum allowable input to coinbase transaction, including the generation award and transaction fees (in Satoshis)
+"coinbasetxn" : { ... }, (json object) information for coinbase transaction
+"target" : "xxxx", (string) The hash target
+"mintime" : xxx, (numeric) The minimum timestamp appropriate for next block time in seconds since epoch (Jan 1 1970 GMT)
+"mutable" : [ (array of string) list of ways the block template may be changed
+"value" (string) A way the block template may be changed, e.g. 'time', 'transactions', 'prevblock'
+,...
+],
+"noncerange" : "00000000ffffffff",(string) A range of valid nonces
+"sigoplimit" : n, (numeric) limit of sigops in blocks
+"sizelimit" : n, (numeric) limit of block size
+"weightlimit" : n, (numeric) limit of block weight
+"curtime" : ttt, (numeric) current timestamp in seconds since epoch (Jan 1 1970 GMT)
+"bits" : "xxxxxxxx", (string) compressed target of next block
+"height" : n (numeric) The height of the next block
+}
+
+Examples:
+> emercoin-cli getblocktemplate
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblocktemplate", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`getmininginfo`</b>
+
+```
+Returns a json object containing mining-related information.
+Result:
+{
+"blocks": nnn, (numeric) The current block
+"currentblocksize": nnn, (numeric) The last block size
+"currentblockweight": nnn, (numeric) The last block weight
+"currentblocktx": nnn, (numeric) The last block transaction
+"difficulty": xxx.xxxxx (numeric) The current difficulty
+"errors": "..." (string) Current errors
+"generate": true|false (boolean) If the generation is on or off (see getgenerate or setgenerate calls)
+"genproclimit": n (numeric) The processor limit for generation. -1 if no generation. (see getgenerate or setgenerate calls)
+"networkhashps": nnn, (numeric) The network hashes per second
+"pooledtx": n (numeric) The size of the mempool
+"chain": "xxxx", (string) current network name as defined in BIP70 (main, test, regtest)
+}
+
+Examples:
+> emercoin-cli getmininginfo
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getmininginfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`getnetworkhashps ( nblocks height )`</b>
+
+```
+Returns the estimated network hashes per second based on the last n blocks.
+Pass in [blocks] to override # of blocks, -1 specifies since last difficulty change.
+Pass in [height] to estimate the network speed at the time when a certain block was found.
+
+Arguments:
+1. nblocks (numeric, optional, default=120) The number of blocks, or -1 for blocks since last difficulty change.
+2. height (numeric, optional, default=-1) To estimate at the time of the given height.
+
+Result:
+x (numeric) Hashes per second estimated
+
+Examples:
+> emercoin-cli getnetworkhashps
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getnetworkhashps", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`prioritisetransaction <txid> <priority delta> <fee delta>`</b>
+
+```
+Accepts the transaction into mined blocks at a higher (or lower) priority
+
+Arguments:
+1. "txid" (string, required) The transaction id.
+2. priority_delta (numeric, required) The priority to add or subtract.
+The transaction selection algorithm considers the tx as it would have a higher priority.
+(priority of a transaction is calculated: coinage * value_in_satoshis / txsize)
+3. fee_delta (numeric, required) The fee value (in satoshis) to add (or subtract, if negative).
+The fee is not actually paid, only the algorithm for selecting transactions into a block
+considers the transaction as it would have paid a higher (or lower) fee.
+
+Result:
+true (boolean) Returns true
+
+Examples:
+> emercoin-cli prioritisetransaction "txid" 0.0 10000
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "prioritisetransaction", "params": ["txid", 0.0, 10000] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
+<b>`submitblock "hexdata" ( "jsonparametersobject" )`</b>
+
+```
+Attempts to submit new block to network.
+The 'jsonparametersobject' parameter is currently ignored.
+See https://en.bitcoin.it/wiki/BIP_0022 for full specification.
+
+Arguments
+1. "hexdata" (string, required) the hex-encoded block data to submit
+2. "parameters" (string, optional) object of optional parameters
+{
+"workid" : "id" (string, optional) if the server provided a workid, it MUST be included with submissions
+}
+
+Result:
+
+Examples:
+> emercoin-cli submitblock "mydata"
+> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "submitblock", "params": ["mydata"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+```
+
 *Note: An important command, `reencodeoldprivkey`, is missing from the current debug help that may be helpful for users of older wallet versions prior to 0.5.x:*
-
-
 
 ```text
 reencodeoldprivkey XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
