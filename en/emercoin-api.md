@@ -160,7 +160,9 @@ signmessage "address" "message"
 ```
 
 <b>== Blockchain ==</b></br>
+
 <b>`getbestblockhash`</b>
+
 ```
 Returns the hash of the best (tip) block in the longest blockchain.
 
@@ -171,7 +173,9 @@ Examples:
 > emercoin-cli getbestblockhash
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getbestblockhash", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getblock "blockhash" ( verbose )`</b>
+
 ```
 If verbose is false, returns a string that is serialized, hex-encoded data for block 'hash'.
 If verbose is true, returns an Object with information about block <hash>.
@@ -212,7 +216,9 @@ Examples:
 > emercoin-cli getblock "00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblock", "params": ["00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getblockchaininfo`</b>
+
 ```
 Returns an object containing various state info regarding blockchain processing.
 
@@ -243,7 +249,9 @@ Examples:
 > emercoin-cli getblockchaininfo
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblockchaininfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getblockcount`</b>
+
 ```
 Returns the number of blocks in the longest blockchain.
 
@@ -254,7 +262,9 @@ Examples:
 > emercoin-cli getblockcount
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblockcount", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getblockhash height`</b>
+
 ```
 Returns hash of block in best-block-chain at height provided.
 
@@ -268,7 +278,9 @@ Examples:
 > emercoin-cli getblockhash 1000
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblockhash", "params": [1000] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getblockheader "hash" ( verbose )`</b>
+
 ```
 If verbose is false, returns a string that is serialized, hex-encoded data for blockheader 'hash'.
 If verbose is true, returns an Object with information about blockheader <hash>.
@@ -302,7 +314,9 @@ Examples:
 > emercoin-cli getblockheader "00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblockheader", "params": ["00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getchaintips`</b>
+
 ```
 Return information about all known tips in the block tree, including the main chain as well as orphaned branches.
 
@@ -332,7 +346,9 @@ Examples:
 > emercoin-cli getchaintips 
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getchaintips", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getdifficulty`</b>
+
 ```
 Returns the proof-of-work difficulty as a multiple of the minimum difficulty.
 
@@ -343,7 +359,9 @@ Examples:
 > emercoin-cli getdifficulty
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getdifficulty", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getmempoolancestors txid (verbose)`</b>
+
 ```
 If txid is in the mempool, returns all in-mempool ancestors.
 
@@ -383,7 +401,9 @@ Examples:
 > emercoin-cli getmempoolancestors "mytxid"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getmempoolancestors", "params": ["mytxid"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getmempooldescendants txid (verbose)`</b>
+
 ```
 If txid is in the mempool, returns all in-mempool descendants.
 
@@ -423,7 +443,9 @@ Examples:
 > emercoin-cli getmempooldescendants "mytxid"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getmempooldescendants", "params": ["mytxid"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getmempoolentry txid`</b>
+
 ```
 Returns mempool data for given transaction
 
@@ -454,7 +476,9 @@ Examples:
 > emercoin-cli getmempoolentry "mytxid"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getmempoolentry", "params": ["mytxid"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getmempoolinfo`</b>
+
 ```
 Returns details on the active state of the TX memory pool.
 
@@ -471,7 +495,9 @@ Examples:
 > emercoin-cli getmempoolinfo
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getmempoolinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getrawmempool ( verbose )`</b>
+
 ```
 Returns all transaction ids in memory pool as a json array of string transaction ids.
 
@@ -510,12 +536,16 @@ Examples:
 > emercoin-cli getrawmempool true
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getrawmempool", "params": [true] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`gettxlistfor <fromblock> <toblock> <address> [type=0] [verbose=0]`</b>
+
 ```
 [type]: 0 - sent/received, 1 - received, 2 - sent
 [verbose]: 0 - false, 1 - true
 ```
+
 <b>`gettxout "txid" n ( include_mempool )`</b>
+
 ```
 Returns details about an unspent transaction output.
 
@@ -554,7 +584,9 @@ View the details
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "gettxout", "params": ["txid", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`gettxoutproof ["txid",...] ( blockhash )`</b>
+
 ```
 Returns a hex-encoded proof that "txid" was included in a block.
 
@@ -574,7 +606,9 @@ Arguments:
 Result:
 "data" (string) A string that is a serialized, hex-encoded data for the proof.
 ```
+
 <b>`gettxoutsetinfo`</b>
+
 ```
 Returns statistics about the unspent transaction output set.
 Note this call may take some time.
@@ -594,7 +628,9 @@ Examples:
 > emercoin-cli gettxoutsetinfo
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "gettxoutsetinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`name_filter [regexp] [maxage=0] [from=0] [nb=0] [stat] [valuetype]`</b>
+
 ```
 scan and filter names
 [regexp] : apply [regexp] on names, empty means all names
@@ -607,7 +643,9 @@ name_filter "" 5 # list names updated in last 5 blocks
 name_filter "^id/" # list all names from the "id" namespace
 name_filter "^id/" 0 0 0 stat # display stats (number of names) on active names from the "id" namespace
 ```
+
 <b>`name_history <name> [fullhistory] [valuetype]`</b>
+
 ```
 Look up the current and all past data for the given name.
 
@@ -626,7 +664,9 @@ Examples:
 > emercoin-cli name_history "myname"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "name_history", "params": ["myname"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`name_mempool [valuetype]`</b>
+
 ```
 Arguments:
 1. valuetype (string, optional) If "hex" or "base64" is specified then it will print value in corresponding format instead of string.
@@ -643,19 +683,25 @@ Examples:
 > emercoin-cli name_mempool
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "name_mempool", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`name_scan [start-name] [max-returned] [max-value-length=0] [valuetype]`</b>
+
 ```
 Scan all names, starting at [start-name] and returning [max-returned] number of entries (default 500)
 [max-value-length] : control how much of value is shown (0 = full value)
 [valuetype] : if "hex" or "base64" is specified then it will print value in corresponding format instead of a string.
 ```
+
 <b>`name_scan_address <address> [max-value-length=0] [valuetype]`</b>
+	
 ```
 Print names that belong to specific address
 [max-value-length] : control how much of name value is shown (0 = full value)
 [valuetype] : if "hex" or "base64" is specified then it will print value in corresponding format instead of a string.
 ```
+
 <b>`name_show <name> [valuetype] [filepath]`</b>
+
 ```
 Show values of a name.
 
@@ -664,7 +710,9 @@ Arguments:
 2. valuetype (string, optional) If "hex" or "base64" is specified then it will print value in corresponding format instead of string.
 3. filepath (string, optional) save name value in binary format in specified file (file will be overwritten!).
 ```
+
 <b>`preciousblock "blockhash"`</b>
+
 ```
 Treats a block as if it were received before others with the same work.
 
@@ -681,7 +729,9 @@ Examples:
 > emercoin-cli preciousblock "blockhash"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "preciousblock", "params": ["blockhash"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`verifychain ( checklevel nblocks )`</b>
+
 ```
 Verifies blockchain database.
 
@@ -696,7 +746,9 @@ Examples:
 > emercoin-cli verifychain
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "verifychain", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`verifytxoutproof "proof"`</b>
+
 ```
 Verifies that a proof points to a transaction in a block, returning the transaction it commits to
 and throwing an RPC error if the block is not in our best chain
@@ -708,7 +760,9 @@ Result:
 ["txid"] (array, strings) The txid(s) which the proof commits to, or empty array if the proof is invalid
 ```
 <b>== Control ==</b></br>
+
 <b>`getinfo`</b>
+
 ```
 DEPRECATED. Returns an object containing various state info.
 
@@ -736,7 +790,9 @@ Examples:
 > emercoin-cli getinfo
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getmemoryinfo`</b>
+
 ```
 Returns an object containing information about memory usage.
 
@@ -756,7 +812,9 @@ Examples:
 > emercoin-cli getmemoryinfo
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getmemoryinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`help ( "command" )`</b>
+
 ```
 List all commands, or get help for a specified command.
 
@@ -766,12 +824,17 @@ Arguments:
 Result:
 "text" (string) The help text
 ```
+
 <b>`stop`</b>
+
 ```
 Stop Emercoin server.
 ```
+
 <b>== Generating ==</b></br>
+
 <b>`generate nblocks ( maxtries )`</b>
+
 ```
 Mine up to nblocks blocks immediately (before the RPC call returns)
 
@@ -787,7 +850,9 @@ Examples:
 Generate 11 blocks
 > emercoin-cli generate 11
 ```
+
 <b>`generatetoaddress nblocks address (maxtries)`</b>
+
 ```
 Mine blocks immediately to a specified address (before the RPC call returns)
 
@@ -804,7 +869,9 @@ Examples:
 Generate 11 blocks to myaddress
 > emercoin-cli generatetoaddress 11 "myaddress"
 ```
+
 <b>`getgenerate`</b>
+
 ```
 Return if the server is set to generate coins or not. The default is false.
 It is set with the command line argument -gen (or emercoin.conf setting gen)
@@ -817,7 +884,9 @@ Examples:
 > emercoin-cli getgenerate
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getgenerate", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`setgenerate generate ( genproclimit )`</b>
+
 ```
 Set 'generate' true or false to turn generation on or off.
 Generation is limited to 'genproclimit' processors, -1 is unlimited.
@@ -841,13 +910,18 @@ Turn off generation
 Using json rpc
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "setgenerate", "params": [true, 1] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>== Mining ==</b></br>
+
 <b>`getauxblock [<hash> <auxpow>]`</b>
+
 ```
 create a new blockIf <hash>, <auxpow> is not specified, returns a new block hash.
 If <hash>, <auxpow> is specified, tries to solve the block based on the aux proof of work and returns true if it was successful.
 ```
+
 <b>`getblocktemplate ( TemplateRequest )`</b>
+
 ```
 If the request parameters include a 'mode' key, that is used to explicitly select between the default 'template' request or a 'proposal'.
 It returns data needed to construct a block to work on.
@@ -917,7 +991,9 @@ Examples:
 > emercoin-cli getblocktemplate
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblocktemplate", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getmininginfo`</b>
+
 ```
 Returns a json object containing mining-related information.
 Result:
@@ -939,7 +1015,9 @@ Examples:
 > emercoin-cli getmininginfo
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getmininginfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getnetworkhashps ( nblocks height )`</b>
+
 ```
 Returns the estimated network hashes per second based on the last n blocks.
 Pass in [blocks] to override # of blocks, -1 specifies since last difficulty change.
@@ -956,7 +1034,9 @@ Examples:
 > emercoin-cli getnetworkhashps
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getnetworkhashps", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`prioritisetransaction <txid> <priority delta> <fee delta>`</b>
+
 ```
 Accepts the transaction into mined blocks at a higher (or lower) priority
 
@@ -976,7 +1056,9 @@ Examples:
 > emercoin-cli prioritisetransaction "txid" 0.0 10000
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "prioritisetransaction", "params": ["txid", 0.0, 10000] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`submitblock "hexdata" ( "jsonparametersobject" )`</b>
+
 ```
 Attempts to submit new block to network.
 The 'jsonparametersobject' parameter is currently ignored.
@@ -997,7 +1079,9 @@ Examples:
 ```
 
 <b>== Network ==</b></br>
+
 <b>`addnode "node" "add|remove|onetry"`</b>
+
 ```
 Attempts add or remove a node from the addnode list.
 Or try a connection to a node once.
@@ -1010,7 +1094,9 @@ Examples:
 > emercoin-cli addnode "192.168.0.6:8333" "onetry"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "addnode", "params": ["192.168.0.6:8333", "onetry"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`clearbanned`</b>
+
 ```
 Clear all banned IPs.
 
@@ -1018,7 +1104,9 @@ Examples:
 > emercoin-cli clearbanned
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "clearbanned", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`disconnectnode "address"`</b>
+
 ```
 Immediately disconnects from the specified node.
 
@@ -1029,7 +1117,9 @@ Examples:
 > emercoin-cli disconnectnode "192.168.0.6:8333"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "disconnectnode", "params": ["192.168.0.6:8333"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getaddednodeinfo ( "node" )`</b>
+
 ```
 Returns information about the given added node, or all added nodes
 (note that onetry addnodes are not listed here)
@@ -1057,11 +1147,15 @@ Examples:
 > emercoin-cli getaddednodeinfo true "192.168.0.201"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getaddednodeinfo", "params": [true, "192.168.0.201"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getcheckpoint`</b>
+
 ```
 Show info of synchronized checkpoint.
 ```
+
 <b>`getconnectioncount`</b>
+
 ```
 Returns the number of connections to other nodes.
 
@@ -1072,7 +1166,9 @@ Examples:
 > emercoin-cli getconnectioncount
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getconnectioncount", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getnettotals`</b>
+
 ```
 Returns information about network traffic, including bytes in, bytes out,
 and current time.
@@ -1097,7 +1193,9 @@ Examples:
 > emercoin-cli getnettotals
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getnettotals", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getnetworkinfo`</b>
+
 ```
 Returns an object containing various state info regarding P2P networking.
 
@@ -1138,7 +1236,9 @@ Examples:
 > emercoin-cli getnetworkinfo
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getnetworkinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getpeerinfo`</b>
+
 ```
 Returns data about each connected network node as a json array of objects.
 
@@ -1188,7 +1288,9 @@ Examples:
 > emercoin-cli getpeerinfo
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getpeerinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`listbanned`</b>
+
 ```
 List all banned IPs/Subnets.
 
@@ -1196,7 +1298,9 @@ Examples:
 > emercoin-cli listbanned
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listbanned", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`ping`</b>
+
 ```
 Requests that a ping be sent to all other nodes, to measure ping time.
 Results provided in getpeerinfo, pingtime and pingwait fields are decimal seconds.
@@ -1206,7 +1310,9 @@ Examples:
 > emercoin-cli ping
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "ping", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`setban "subnet" "add|remove" (bantime) (absolute)`</b>
+
 ```
 Attempts add or remove a IP/Subnet from the banned list.
 
@@ -1221,7 +1327,9 @@ Examples:
 > emercoin-cli setban "192.168.0.0/24" "add"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "setban", "params": ["192.168.0.6", "add", 86400] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`setnetworkactive true|false`</b>
+
 ```
 Disable/enable all p2p network activity.
 
@@ -1230,7 +1338,9 @@ Arguments:
 ```
 
 <b>== Rawtransactions ==</b></br>
+
 <b>`createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} ( locktime )`</b>
+
 ```
 Create a transaction spending the given inputs and creating new outputs.
 Outputs can be addresses or data.
@@ -1265,7 +1375,9 @@ Examples:
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "createrawtransaction", "params": ["[{\"txid\":\"myid\",\"vout\":0}]", "{\"address\":0.01}"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "createrawtransaction", "params": ["[{\"txid\":\"myid\",\"vout\":0}]", "{\"data\":\"00010203\"}"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`decoderawtransaction "hexstring"`</b>
+
 ```
 Return a JSON object representing the serialized, hex-encoded transaction.
 
@@ -1316,7 +1428,9 @@ Examples:
 > emercoin-cli decoderawtransaction "hexstring"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "decoderawtransaction", "params": ["hexstring"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`decodescript "hexstring"`</b>
+
 ```
 Decode a hex-encoded script.
 
@@ -1340,7 +1454,9 @@ Examples:
 > emercoin-cli decodescript "hexstring"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "decodescript", "params": ["hexstring"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`fundrawtransaction "hexstring" ( options )`</b>
+
 ```
 Add inputs to a transaction until it has enough in value to meet its out value.
 This will not modify existing inputs, and will add at most one change output to the outputs.
@@ -1393,7 +1509,9 @@ Sign the transaction
 Send the transaction
 > emercoin-cli sendrawtransaction "signedtransactionhex"
 ```
+
 <b>`getrawtransaction "txid" ( verbose )`</b>
+
 ```
 NOTE: By default this function only works for mempool transactions. If the -txindex option is
 enabled, it also works for blockchain transactions.
@@ -1461,7 +1579,9 @@ Examples:
 > emercoin-cli getrawtransaction "mytxid" true
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getrawtransaction", "params": ["mytxid", true] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`sendrawtransaction "hexstring" ( allowhighfees )`</b>
+
 ```
 Submits raw transaction (serialized, hex-encoded) to local node and network.
 
@@ -1487,7 +1607,9 @@ Send the transaction (signed hex)
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "sendrawtransaction", "params": ["signedhex"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype )`</b>
+
 ```
 Sign inputs for raw transaction (serialized, hex-encoded).
 The second optional argument (may be null) is an array of previous transaction outputs that
@@ -1544,7 +1666,9 @@ Examples:
 ```
 
 <b>== Util ==</b></br>
+
 <b>`createmultisig nrequired ["key",...]`</b>
+
 ```
 Creates a multi-signature address with n signature of m keys required.
 It returns a json object with the address and redeemScript.
@@ -1571,7 +1695,9 @@ Create a multisig address from 2 addresses
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "createmultisig", "params": [2, "[\"16sSauSf5pF2UkUwvKGq4qjNRzBZYqgEL5\",\"171sgjn4YtPu27adkKGrdDwzRTxnRkBfKV\"]"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`estimatefee nblocks`</b>
+
 ```
 Estimates the approximate fee per kilobyte needed for a transaction to begin
 confirmation within nblocks blocks. Uses virtual transaction size of transaction
@@ -1591,7 +1717,9 @@ a fee that is high enough to get reliably included in the next block.
 Example:
 > emercoin-cli estimatefee 6
 ```
+
 <b>`estimatepriority nblocks`</b>
+
 ```
 DEPRECATED. Estimates the approximate priority a zero-fee transaction needs to begin
 confirmation within nblocks blocks.
@@ -1608,7 +1736,9 @@ have been observed to make an estimate.
 Example:
 > emercoin-cli estimatepriority 6
 ```
+
 <b>`estimatesmartpriority nblocks`</b>
+
 ```
 DEPRECATED. WARNING: This interface is unstable and may disappear or change!
 
@@ -1632,7 +1762,9 @@ However if the mempool reject fee is set it will return 1e9 * MAX_MONEY.
 Example:
 > emercoin-cli estimatesmartpriority 6
 ```
+
 <b>`signmessagewithprivkey "privkey" "message"`</b>
+
 ```
 Sign a message with the private key of an address
 
@@ -1654,7 +1786,9 @@ Verify the signature
 As json rpc
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "signmessagewithprivkey", "params": ["privkey", "my message"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`validateaddress "emercoinaddress"`</b>
+
 ```
 Return information about the given emercoin address.
 
@@ -1681,7 +1815,9 @@ Examples:
 > emercoin-cli validateaddress "1PSSGeFHDnKNxiEyFrD1wcEaHr9hrQDDWc"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "validateaddress", "params": ["1PSSGeFHDnKNxiEyFrD1wcEaHr9hrQDDWc"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`verifymessage "address" "signature" "message"`</b>
+
 ```
 Verify a signed message
 
@@ -1709,7 +1845,9 @@ As json rpc
 ```
 
 <b>== Wallet ==</b></br>
+
 <b>`abandontransaction "txid"`</b>
+
 ```
 Mark in-wallet transaction <txid> as abandoned
 This will mark this transaction and all its in-wallet descendants as abandoned which will allow
@@ -1726,7 +1864,9 @@ Examples:
 > emercoin-cli abandontransaction "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "abandontransaction", "params": ["1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`addmultisigaddress nrequired ["key",...] ( "account" )`</b>
+
 ```
 Add a nrequired-to-sign multisignature address to the wallet.
 Each key is a Emercoin address or hex-encoded public key.
@@ -1752,7 +1892,9 @@ Add a multisig address from 2 addresses
 As json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "addmultisigaddress", "params": [2, "[\"16sSauSf5pF2UkUwvKGq4qjNRzBZYqgEL5\",\"171sgjn4YtPu27adkKGrdDwzRTxnRkBfKV\"]"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`addwitnessaddress "address"`</b>
+
 ```
 Add a witness address for a script (with pubkey or redeemscript known).
 It returns the witness script.
@@ -1764,7 +1906,9 @@ Result:
 "witnessaddress", (string) The value of the new address (P2SH of witness script).
 }
 ```
+
 <b>`backupwallet "destination"`</b>
+
 ```
 Safely copies current wallet file to destination, which can be a directory or a path with filename.
 
@@ -1775,7 +1919,9 @@ Examples:
 > emercoin-cli backupwallet "backup.dat"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "backupwallet", "params": ["backup.dat"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`bumpfee "txid" ( options )`</b>
+
 ```
 Bumps the fee of an opt-in-RBF transaction T, replacing it with a new transaction B.
 An opt-in RBF transaction with the given txid must be in the wallet.
@@ -1820,7 +1966,9 @@ Examples:
 Bump the fee, get the new transaction's txid
 > emercoin-cli bumpfee <txid>
 ```
+
 <b>`dumpprivkey "address"`</b>
+
 ```
 Reveals the private key corresponding to 'address'.
 Then the importprivkey can be used with this output
@@ -1836,7 +1984,9 @@ Examples:
 > emercoin-cli importprivkey "mykey"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "dumpprivkey", "params": ["myaddress"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`dumpwallet "filename"`</b>
+
 ```
 Dumps all wallet keys in a human-readable format.
 
@@ -1847,7 +1997,9 @@ Examples:
 > emercoin-cli dumpwallet "test"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "dumpwallet", "params": ["test"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`encryptwallet "passphrase"`</b>
+
 ```
 Encrypts the wallet with 'passphrase'. This is for first time encryption.
 After this, any calls that interact with private keys such as sending or signing
@@ -1876,7 +2028,9 @@ Now lock the wallet again by removing the passphrase
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "encryptwallet", "params": ["my pass phrase"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getaccount "address"`</b>
+
 ```
 DEPRECATED. Returns the account associated with the given address.
 
@@ -1890,7 +2044,9 @@ Examples:
 > emercoin-cli getaccount "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getaccount", "params": ["1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getaccountaddress "account"`</b>
+
 ```
 DEPRECATED. Returns the current Emercoin address for receiving payments to this account.
 
@@ -1906,7 +2062,9 @@ Examples:
 > emercoin-cli getaccountaddress "myaccount"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getaccountaddress", "params": ["myaccount"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getaddressesbyaccount "account"`</b>
+
 ```
 DEPRECATED. Returns the list of addresses for the given account.
 
@@ -1923,7 +2081,9 @@ Examples:
 > emercoin-cli getaddressesbyaccount "tabby"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getaddressesbyaccount", "params": ["tabby"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getbalance ( "account" minconf include_watchonly )`</b>
+
 ```
 If account is not specified, returns the server's total available balance.
 If account is specified (DEPRECATED), returns the balance in the account.
@@ -1960,7 +2120,9 @@ The total amount in the wallet at least 5 blocks confirmed
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getbalance", "params": ["*", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getnewaddress ( "account" )`</b>
+
 ```
 Returns a new Emercoin address for receiving payments.
 If 'account' is specified (DEPRECATED), it is added to the address book
@@ -1976,7 +2138,9 @@ Examples:
 > emercoin-cli getnewaddress
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getnewaddress", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getrawchangeaddress`</b>
+
 ```
 Returns a new Emercoin address, for receiving change.
 This is for use with raw transactions, NOT normal use.
@@ -1988,7 +2152,9 @@ Examples:
 > emercoin-cli getrawchangeaddress
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getrawchangeaddress", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getreceivedbyaccount "account" ( minconf )`</b>
+
 ```
 DEPRECATED. Returns the total amount received by addresses with <account> in transactions with at least [minconf] confirmations.
 
@@ -2013,7 +2179,9 @@ The amount with at least 6 confirmation, very safe
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getreceivedbyaccount", "params": ["tabby", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getreceivedbyaddress "address" ( minconf )`</b>
+
 ```
 Returns the total amount received by the given address in transactions with at least minconf confirmations.
 
@@ -2038,7 +2206,9 @@ The amount with at least 6 confirmation, very safe
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getreceivedbyaddress", "params": ["1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`gettransaction "txid" ( include_watchonly )`</b>
+
 ```
 Get detailed information about in-wallet transaction <txid>
 
@@ -2083,11 +2253,15 @@ Examples:
 > emercoin-cli gettransaction "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d" true
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "gettransaction", "params": ["1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`getunconfirmedbalance`</b>
+
 ```
 Returns the server's total unconfirmed balance
 ```
+
 <b>`getwalletinfo`</b>
+
 ```
 Returns an object containing various wallet state info.
 
@@ -2109,7 +2283,9 @@ Examples:
 > emercoin-cli getwalletinfo
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getwalletinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`importaddress "address" ( "label" rescan p2sh )`</b>
+
 ```
 Adds a script (in hex) or address that can be watched as if it were in your wallet but cannot be used to spend.
 
@@ -2136,7 +2312,9 @@ Import using a label without rescan
 As a JSON-RPC call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "importaddress", "params": ["myscript", "testing", false] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`importmulti "requests" "options"`</b>
+
 ```
 Import addresses/scripts (with private or public keys, redeem script (P2SH)), rescanning all addresses in one-shot-only (rescan can be disabled via options).
 
@@ -2172,7 +2350,9 @@ Examples:
 Response is an array with the same size as the input that has the execution result :
 [{ "success": true } , { "success": false, "error": { "code": -1, "message": "Internal Server Error"} }, ... ]
 ```
+
 <b>`importprivkey "emercoinprivkey" ( "label" ) ( rescan )`</b>
+
 ```
 Adds a private key (as returned by dumpprivkey) to your wallet.
 
@@ -2200,7 +2380,9 @@ Import using default blank label and without rescan
 As a JSON-RPC call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "importprivkey", "params": ["mykey", "testing", false] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`importprunedfunds`</b>
+
 ```
 Imports funds without rescan. Corresponding address or script must previously be included in wallet. Aimed towards pruned wallets. The end-user is responsible to import additional transactions that subsequently spend the imported outputs or rescan after the point in the blockchain the transaction is included.
 
@@ -2208,7 +2390,9 @@ Arguments:
 1. "rawtransaction" (string, required) A raw transaction in hex funding an already-existing address in wallet
 2. "txoutproof" (string, required) The hex output from gettxoutproof that contains the transaction
 ```
+
 <b>`importpubkey "pubkey" ( "label" rescan )`</b>
+
 ```
 Adds a public key (in hex) that can be watched as if it were in your wallet but cannot be used to spend.
 
@@ -2230,7 +2414,9 @@ Import using a label without rescan
 As a JSON-RPC call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "importpubkey", "params": ["mypubkey", "testing", false] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`importwallet "filename"`</b>
+
 ```
 Imports keys from a wallet dump file (see dumpwallet).
 
@@ -2248,7 +2434,9 @@ Import the wallet
 Import using the json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "importwallet", "params": ["test"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`keypoolrefill ( newsize )`</b>
+
 ```
 Fills the keypool.
 
@@ -2259,7 +2447,9 @@ Examples:
 > emercoin-cli keypoolrefill
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "keypoolrefill", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`listaccounts ( minconf include_watchonly)`</b>
+
 ```
 DEPRECATED. Returns Object that has account names as keys, account balances as values.
 
@@ -2287,7 +2477,9 @@ List account balances for 6 or more confirmations
 As json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listaccounts", "params": [6] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`listaddressgroupings`</b>
+
 ```
 Lists groups of addresses which have had their common ownership
 made public by common use as inputs or as the resulting change
@@ -2310,7 +2502,9 @@ Examples:
 > emercoin-cli listaddressgroupings
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listaddressgroupings", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`listlockunspent`</b>
+
 ```
 Returns list of temporarily unspendable outputs.
 See the lockunspent call to lock and unlock transactions for spending.
@@ -2341,7 +2535,9 @@ Unlock the transaction again
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listlockunspent", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`listreceivedbyaccount ( minconf include_empty include_watchonly)`</b>
+
 ```
 DEPRECATED. List balances by account.
 
@@ -2367,7 +2563,9 @@ Examples:
 > emercoin-cli listreceivedbyaccount 6 true
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listreceivedbyaccount", "params": [6, true, true] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`listreceivedbyaddress ( minconf include_empty include_watchonly)`</b>
+
 ```
 List balances by receiving address.
 
@@ -2398,7 +2596,9 @@ Examples:
 > emercoin-cli listreceivedbyaddress 6 true
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listreceivedbyaddress", "params": [6, true, true] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`listsinceblock ( "blockhash" target_confirmations include_watchonly)`</b>
+
 ```
 Get all transactions in blocks since block [blockhash], or all transactions if omitted
 
@@ -2439,7 +2639,9 @@ Examples:
 > emercoin-cli listsinceblock "000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad" 6
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listsinceblock", "params": ["000000000000000bacf66f7497b7dc45ef753ee9a7d38571037cdb1a57f663ad", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`listtransactions ( "account" count skip include_watchonly)`</b>
+
 ```
 Returns up to 'count' most recent transactions skipping the first 'from' transactions for account 'account'.
 
@@ -2502,7 +2704,9 @@ List transactions 100 to 120
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listtransactions", "params": ["*", 20, 100] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`listunspent ( minconf maxconf ["addresses",...] [include_unsafe] )`</b>
+
 ```
 Returns array of unspent transaction outputs
 with between minconf and maxconf (inclusive) confirmations.
@@ -2543,7 +2747,9 @@ Examples
 > emercoin-cli listunspent 6 9999999 "[\"1PGFqEzfmQch1gKD3ra4k18PNj3tTUUSqg\",\"1LtvqCaApEdUGFkpKMM4MstjcaL4dKg8SP\"]"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listunspent", "params": [6, 9999999 "[\"1PGFqEzfmQch1gKD3ra4k18PNj3tTUUSqg\",\"1LtvqCaApEdUGFkpKMM4MstjcaL4dKg8SP\"]"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`lockunspent unlock ([{"txid":"txid","vout":n},...])`</b>
+
 ```
 Updates list of temporarily unspendable outputs.
 Temporarily lock (unlock=false) or unlock (unlock=true) specified transaction outputs.
@@ -2584,12 +2790,16 @@ Unlock the transaction again
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "lockunspent", "params": [false, "[{\"txid\":\"a08e6907dbbd3d809776dbfc5d82e371b764ed838b5655e72f463568df1aadf0\",\"vout\":1}]"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`makekeypair [prefix]`</b>
+
 ```
 Make a public/private key pair.
 [prefix] is optional preferred prefix for the public key.
 ```
+
 <b>`move "fromaccount" "toaccount" amount ( minconf "comment" )`</b>
+
 ```
 DEPRECATED. Move a specified amount from one account in your wallet to another.
 
@@ -2614,11 +2824,15 @@ Move 0.01 EMC timotei to akiko with a comment and funds have 6 confirmations
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "move", "params": ["timotei", "akiko", 0.01, 6, "happy birthday!"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`name_delete <name>`</b>
+
 ```
 Delete a name if you own it. Others may do name_new after this command.
 ```
+
 <b>`name_list [name] [valuetype]`</b>
+
 ```
 list my own names.
 
@@ -2626,7 +2840,9 @@ Arguments:
 1. name (string, required) Restrict output to specific name.
 2. valuetype (string, optional) If "hex" or "base64" is specified then it will print value in corresponding format instead of string.
 ```
+
 <b>`name_new <name> <value> <days> [toaddress] [valuetype]`</b>
+
 ```
 Creates new key->value pair which expires after specified number of days.
 Cost is square root of (1% of last PoW + 1% per year of last PoW).
@@ -2640,7 +2856,9 @@ not specified or empty - Write value as a unicode string.
 "hex" or "base64" - Decode value string as a binary data in hex or base64 string format.
 otherwise - Decode value string as a filepath from which to read the data.
 ```
+
 <b>`name_update <name> <value> <days> [toaddress] [valuetype]`</b>
+
 ```
 Update name value, add days to expiration time and possibly transfer a name to diffrent address.
 
@@ -2654,7 +2872,9 @@ not specified or empty - Write value as a unicode string.
 "hex" or "base64" - Decode value string as a binary data in hex or base64 string format.
 otherwise - Decode value string as a filepath from which to read the data.
 ```
+
 <b>`removeprunedfunds "txid"`</b>
+
 ```
 Deletes the specified transaction from the wallet. Meant for use with pruned wallets and as a companion to importprunedfunds. This will effect wallet balances.
 
@@ -2667,14 +2887,18 @@ Examples:
 As a JSON-RPC call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "removprunedfunds", "params": ["a8d0c0184dde994a09ec054286f1ce581bebf46446a512166eae7628734ea0a5"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`reservebalance [<reserve> [amount]]`</b>
+	
 ```
 <reserve> is true or false to turn balance reserve on or off.
 <amount> is a real and rounded to cent.
 Set reserve amount not participating in network protection.
 If no parameters provided current setting is printed.
 ```
+
 <b>`sendfrom "fromaccount" "toaddress" amount ( minconf "comment" "comment_to" )`</b>
+
 ```
 DEPRECATED (use sendtoaddress). Sent an amount from an account to a emercoin address.
 
@@ -2706,7 +2930,9 @@ Send 0.01 from the tabby account to the given address, funds must have at least 
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "sendfrom", "params": ["tabby", "1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd", 0.01, 6, "donation", "seans outpost"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`sendmany "fromaccount" {"address":amount,...} ( minconf "comment" ["address",...] )`</b>
+
 ```
 Send multiple times. Amounts are double-precision floating point numbers.
 
@@ -2746,7 +2972,9 @@ Send two amounts to two different addresses, subtract fee from amount:
 As a json rpc call
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "sendmany", "params": ["", "{\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\":0.01,\"1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\":0.02}", 6, "testing"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`sendtoaddress "address" amount ( "comment" "comment_to" subtractfeefromamount )`</b>
+
 ```
 Send an amount to a given address.
 
@@ -2770,11 +2998,15 @@ Examples:
 > emercoin-cli sendtoaddress "1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd" 0.1 "" "" true
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "sendtoaddress", "params": ["1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd", 0.1, "donation", "seans outpost"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`sendtoname <name> <amount> [comment] [comment-to]`</b>
+	
 ```
 <amount> is a real and is rounded to the nearest 0.01
 ```
+
 <b>`setaccount "address" "account"`</b>
+
 ```
 DEPRECATED. Sets the account associated with the given address.
 
@@ -2786,7 +3018,9 @@ Examples:
 > emercoin-cli setaccount "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" "tabby"
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "setaccount", "params": ["1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX", "tabby"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`settxfee amount`</b>
+
 ```
 Set the transaction fee per kB. Overwrites the paytxfee parameter.
 
@@ -2800,7 +3034,9 @@ Examples:
 > emercoin-cli settxfee 0.00001
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "settxfee", "params": [0.00001] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
 ```
+
 <b>`signmessage "address" "message"`</b>
+
 ```
 Sign a message with the private key of an address
 
