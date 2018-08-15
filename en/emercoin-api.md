@@ -1342,7 +1342,7 @@ Arguments:
 
 <b>`createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} ( locktime )`</b>
 
-````
+```
 Create a transaction spending the given inputs and creating new outputs.
 Outputs can be addresses or data.
 Returns hex-encoded raw transaction.
