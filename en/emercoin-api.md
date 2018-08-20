@@ -21,7 +21,7 @@ Or to get a list of all possible commands:
 
 	$ emc help
 
-The following API commands are accurate as of Emercoin Core version <b>v0.6.3</b>:
+The following API commands are accurate as of Emercoin Core version <b>v0.7.1</b>:
 
 
 ```text
