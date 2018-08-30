@@ -218,7 +218,7 @@ NVS Storage Fees
 The price of inserting data into the blockchain is computed by the
 formula:
 
-    p = sqrt(0.01 * R * y) + s / 128
+    p = sqrt(0.0005 * R * y) + s / 128
 
 Where:
 
@@ -233,9 +233,9 @@ For example, on Sep 30 2014 the PoW reward was 140EMC, or 14000EMC cents
 (EMc).
 
 So if you wanted to lease a name (length 100 bytes) for 1 year, you
-would have paid **0.17EMC**:
+would have paid **0.044EMC**:
 
-    p = sqrt(0.01 * 14000 * (1[create new name] + 1[one year lease])) + (floor)(100 / 128) = 17EMc = 0.17EMC
+    p = sqrt(0.0005 * 14000 * (1[create new name] + 1[one year lease])) + (floor)(100 / 128) = 4.4EMc = 0.044EMC
 
 All fees are "burnt" and become unrecoverable (transaction output is
 less than input).
