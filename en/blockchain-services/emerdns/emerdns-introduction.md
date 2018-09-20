@@ -263,8 +263,8 @@ First, activate the <a target="_blank" rel="nofollow" href="https://www.ietf.org
 server in Emercoin by specifing two optional parameters in the
 **emercoin.conf** config file, **EmerDNS** and **EmerDNSport**:
 
-	EmerDNS=1 # Run DNS server. Default is 0 (don't run)
-	EmerDNSport=NNN # Port for DNS, default is 5335
+	emcdns=1 # Run DNS server. Default is 0 (don't run)
+	emcdnsport=NNN # Port for DNS, default is 5335
 
 To integrate Emercoin DNS server into a regular DNS tree, you can use
 full-service DNS or caching DNS. The standard Windows DNS-client is
