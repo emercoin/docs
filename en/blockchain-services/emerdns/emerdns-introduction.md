@@ -430,7 +430,7 @@ parameter in **emercoin.conf**:
 
 ```text
 # enable emc dns
-EmerDNS=1
+emcdns=1
 ```
 
 This will activate Emercoin's DNS server and run it on default port
@@ -443,18 +443,18 @@ parameters:
 ```text
 # Gateway suffix. This suffix will be ignored when a request is passed to the internal gateway.
 # Requests for other domain suffixes will be ignored.
-EmerDNSsuffix=.emergate.net
+emcdnssuffix=.emergate.net
  
 # NS Server port 53 is the default NS port and must be used if the server is public and "not forward only".
-EmerDNSport=53
+emcdnsport=53
  
 # Filter for allowed zones. Protection for "cool hackers", who try to lookup any external domains through our server
 # or attack someone else by DNS amplification mechanism. Currently, only the four EMC-zones are allowed.
-EmerDNSallowed=.coin|.emc|.lib|.bazar
+emcdnsallowed=.coin|.emc|.lib|.bazar
  
 # Optional path for a file that contains names in the local gateway's NS zone (like www.emergate.net).
 # Must be full path. Example:
-EmerDNSlocalcf=/usr/share/emercoin/EmerDNSlocal.conf
+emcdnslocalcf=/usr/share/emercoin/emcdnslocal.conf
 ```
 
 The local config file (**EmerDNSlocal.conf** above) contains pairs in the
