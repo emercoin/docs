@@ -11,13 +11,3 @@ files:
         author: Emercoin Community
       }
     }
-   emercert: {
-      name: Emercert,
-      sort: 200,
-      meta: {
-        title: Emercert - Emercoin Community Documentation,
-        description: Emercoin Community Documentation,
-        keywords: ,
-        author: Emercoin Community
-      }
-    }
