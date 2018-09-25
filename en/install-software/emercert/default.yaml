@@ -1,0 +1,13 @@
+name: Emercert
+sort: 200
+files:
+   trusted-diploma: {
+      name: Trusted Diploma,
+      sort: 150,
+      meta: {
+        title: Trusted Diploma - Emercoin Community Documentation,
+        description: Emercoin Community Documentation,
+        keywords: ,
+        author: Emercoin Community
+      }
+    }
