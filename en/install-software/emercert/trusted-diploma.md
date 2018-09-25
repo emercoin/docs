@@ -1,10 +1,10 @@
-## Trusted Diploma GUI from EmerCert
+# Trusted Diploma GUI from EmerCert
 
 Trusted Diploma is a system for storing academic certificates. It is built on Emercoin blockchain and can be used for the authenticity verification of diplomas and educational certificates.
 
 <span style="text-decoration: underline;">EmerCert</span> program is used for the registration of universities and verification of diplomas.
 
-### University adding
+## University adding
 
 Install and run the program (<a href="https://github.com/emercoin/EmerCert/releases/tag/rc4" target="_blank" rel="nofollow">link</a>). Open ___Trusted Diploma___ tab
 
@@ -28,7 +28,8 @@ If you are a representative of a __university, and you need to register an educa
 
 3.  ___Website, email and phone number___ – fill in the relevant data (https://tbu.edu.com/; mail@tbu.edu) and add phone number in the format of +124-000-000.
 
-4.  If you have additional information about the university you want to add to the blockchain, such as the address, you can add it in the large field ___Any other data___. Format – `name=value`, there the value can contain spaces and any character (e.g. `Address= 2701 Summer St, Stamford, CT 06905, USA; type=private`), and other parameters are entered on a new line.
+4.  If you have additional information about the university you want to add to the blockchain, such as the address, you can add it in the large field ___Any other data___. 
+Format – `name=value`, there the value can contain spaces and any character (e.g. `Address= 2701 Summer St, Stamford, CT 06905, USA; type=private`), and other parameters are entered on a new line.
 
 5.  Now that all data has been prepared, it must be copied from the two lower fields  – ___Name___ and ___Value___, – where it was automatically updated as you were entering the text:
 
