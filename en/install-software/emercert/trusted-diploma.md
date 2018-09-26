@@ -1,6 +1,6 @@
 # Trusted Diploma GUI from EmerCert
 
-Trusted Diploma is a system for storing academic certificates. It is built on Emercoin blockchain and can be used for the authenticity verification of diplomas and educational certificates.
+<a href="https://trusted-diploma.com/" target="_blank" rel="nofollow">Trusted Diploma</a> is a system for storing academic certificates. It is built on Emercoin blockchain and can be used for the authenticity verification of diplomas and educational certificates.
 
 <span style="text-decoration: underline;">EmerCert</span> program is used for the registration of universities and verification of diplomas.
 
