@@ -26,8 +26,8 @@ Links to third-party websites, projects and services relating to Emercoin. Inclu
 
 ### Block Explorers
 
--   <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org/">Emercoin Explorer</a>
--   <a target="_blank" rel="nofollow" href="https://explorer.emercoin.com">Emercoin Testnet Explorer</a>
+-   <a target="_blank" rel="nofollow" href="https://explorer.emercoin.com">Emercoin Explorer</a>
+-   <a target="_blank" rel="nofollow" href="https://testnet.emercoin.com">Emercoin Testnet Explorer</a>
 
 ### Web-sites to acquire Emercoin:
 
@@ -84,7 +84,7 @@ More exchanges can be found at
 ### EmerDPO Services
 
 -   <a target="_blank" rel="nofollow" href="http://EmerDPO.info">EmerDPO.info</a>
--   <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org/dpo">EmerDPO verifier</a>
+-   <a target="_blank" rel="nofollow" href="https://explorer.emercoin.com/dpo">EmerDPO verifier</a>
 -   <a target="_blank" rel="nofollow" href="https://letsnotar.me">https://letsnotar.me</a>
 
 ### EmerSSL Services
@@ -94,11 +94,11 @@ More exchanges can be found at
 
 ### PoS Minting Info
 
--   <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org/poscal">Emercoin PoS calculator</a>
+-   <a target="_blank" rel="nofollow" href="https://explorer.emercoin.com/poscal">Emercoin PoS calculator</a>
 
 ### Infrustructure security partners
 
--   <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org/poscal">Emercoin PoW calculator</a>
+-   <a target="_blank" rel="nofollow" href="https://explorer.emercoin.com/poscal">Emercoin PoW calculator</a>
 -   <a target="_blank" rel="nofollow" href="http://www.f2pool.com">F2pool</a>
 -   <a target="_blank" rel="nofollow" href="http://p2pool.org/">p2pool</a> (and <a target="_blank" rel="nofollow" href="https://bitcointalk.org/index.php?topic=1921525.0">p2pool merge-mining guide</a>)
 -   <a target="_blank" rel="nofollow" href="http://www.criptoman.net">http://www.criptoman.net</a> (no merge mining)
