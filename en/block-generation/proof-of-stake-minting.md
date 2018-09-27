@@ -106,15 +106,15 @@ minting PoS blocks and to support the Emercoin network.
 ### Checking your PoS statistics
 
 -   There is PoS calculator provided at
-    <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org/poscal">https://emercoin.mintr.org/poscal</a>.
+    <a target="_blank" rel="nofollow" href="https://explorer.emercoin.com/poscal">https://explorer.emercoin.com/poscal</a>.
 
 -   Additional statistics particular to your EMC address are also
     available:
 
     -   Visit the Emercoin blockchain explorer at
-        <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org">https://emercoin.mintr.org</a> and search for your EMC address(es)
+        <a target="_blank" rel="nofollow" href="https://explorer.emercoin.com">https://explorer.emercoin.com</a> and search for your EMC address(es)
         that are currently staking.
-    -   Run the staking calculator tool for your EMC address on <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org">https://emercoin.mintr.org</a> (press the purple "leaf" icon and you will
+    -   Run the staking calculator tool for your EMC address on <a target="_blank" rel="nofollow" href="https://explorer.emercoin.com">https://explorer.emercoin.com</a> (press the purple "leaf" icon and you will
         see the results on your minting %, coin age, and several other variables).
 
 ### Preventing your wallet from staking
@@ -144,7 +144,7 @@ e.g. to unlock for minting for 604800 seconds (1 week):
 ### Troubleshooting tips
 
 -   Check your expected PoS rewards at
-    <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org/poscal">https://emercoin.mintr.org/poscal</a>
+    <a target="_blank" rel="nofollow" href="https://explorer.emercoin.com/poscal">https://explorer.emercoin.com/poscal</a>
 -   Check your minting statistics for your EMC address (see above).
 -   Ensure the EMC
     <a target="_blank" rel="nofollow" href="https://bitcoin.org/en/glossary/unspent-transaction-output">UTXO</a>
