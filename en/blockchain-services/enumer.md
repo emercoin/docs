@@ -72,7 +72,7 @@ And the result:
 ```
 
 You can view ENUM records that have already been deployed in the Emercoin
-blockchain on a blockexplorer, by <a target="_blank" rel="nofollow" href="https://emercoin.mintr.org/nvs/enum///25/0/1">clicking here</a>.
+blockchain on a blockexplorer, by <a target="_blank" rel="nofollow" href="https://explorer.emercoin.com/nvs/enum///25/0/1">clicking here</a>.
 
 Registration
 ------------
