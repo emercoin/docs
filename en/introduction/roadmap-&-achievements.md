@@ -13,7 +13,7 @@ Secure Smart Contracts  | in progress... | ...
 -----------------
 Milestone | Status | Notes
 ---|---|---
-Light-weight EMC wallet based on Electrum 	| Complete!| (see [Emercoin SW](/en/install-software/mobile-wallets/emercoin-sw.md))
+Light-weight EMC wallet based on Electrum 	| Complete!| (see <a href="https://emercoin.com/for-coinholders#mobilewallets">Emercoin SW</a>)
 Establish Advisory Board | Complete!| ...
 Merge-mining with Bitcoin Blockchain | Complete!| March 17th, 2017
 
