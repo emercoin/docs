@@ -12,3 +12,4 @@ releases and new features.
 -   The testnet blockchain will be stored in the `/testnet` directory.
 -   If you need testnet coins, contact the Emercoin developers.
 
+You can get 10 coins for test. <a href="https://emercoin.com/en/for-developers#get-coins">Apply</a>.
