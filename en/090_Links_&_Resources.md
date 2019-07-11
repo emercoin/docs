@@ -19,7 +19,6 @@ Links to third-party websites, projects and services relating to Emercoin. Inclu
 
 ### Online Wallets
 
--   [Cryptonator](https://www.cryptonator.com/)
 -   [Paper Wallet](https://walletgenerator.net/?currency=Emercoin)
 
 ### Block Explorers
