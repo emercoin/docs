@@ -5,10 +5,6 @@ Links to third-party websites, projects and services relating to Emercoin. Inclu
 ### General Information
 
 -   [emercoin.com](http://emercoin.com)
--   [Emercoin Wiki](http://wiki.emercoin.com)
--   [Blockchain Engine](http://blockchainengine.org)
--   [emercoin.info (Chinese)](http://emercoin.info)
--   [emer.tech](https://emer.tech)
 
 ### Core Wallets (Windows/Mac/Linux)
 
