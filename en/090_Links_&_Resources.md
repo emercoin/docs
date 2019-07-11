@@ -28,8 +28,8 @@ Links to third-party websites, projects and services relating to Emercoin. Inclu
 
 ### Block Explorers
 
--   [Emercoin Explorer](https://emercoin.mintr.org/)
--   [Emercoin Testnet Explorer](https://testnet.emercoin.mintr.org/)
+-   [Emercoin Explorer](https://explorer.emercoin.com/)
+-   [Emercoin Testnet Explorer](https://testnet.emercoin.com/)
 
 ### Exchanges
 
@@ -56,7 +56,6 @@ More exchanges can be found at
 
 ### Forums & Social
 
--   [Slack Group](https://emercoin-slack-invite.herokuapp.com)
 -   [Telegram Group](https://t.me/emercoin_official) (English Language)
 -   [Telegram Group](https://t.me/emernews) (Russian Language)
 -   [Emerpress Telegram](https://t.me/emerpress)
@@ -65,7 +64,6 @@ More exchanges can be found at
 -   [Cryptocointalk](https://cryptocointalk.com/topic/2144-emercoin-emc-information)
 -   [Reddit](http://www.reddit.com/r/Emercoin/)
 -   [Twitter (official)](https://twitter.com/emercoin_press)
--   [Twitter (news)](https://twitter.com/emercoin)
 -   [Coinpursuit](https://www.coinpursuit.com/members/emercoin.1073)
 -   [BTCSEC (Russian)](https://forum.btcsec.com/index.php?/topic/3408-emercoin/)
 -   [Facebook](https://www.facebook.com/EmercoinOfficial)
@@ -99,11 +97,11 @@ More exchanges can be found at
 
 ### PoS Minting Info
 
--   [Emercoin PoS calculator](https://emercoin.mintr.org/poscal)
+-   [Emercoin PoS calculator](https://explorer.emercoin.com/poscal)
 
 ### PoW Mining Pools and Info
 
--   [Emercoin PoW calculator](https://emercoin.mintr.org/poscal)
+-   [Emercoin PoW calculator](https://explorer.emercoin.com/poscal)
 -   [F2pool](http://www.f2pool.com)
 -   [p2pool](http://p2pool.org/) (and [p2pool merge-mining
     guide](https://bitcointalk.org/index.php?topic=1921525.0))
