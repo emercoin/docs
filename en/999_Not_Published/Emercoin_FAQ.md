@@ -246,7 +246,7 @@ Q: How do I start using Emer?
 -----------------------------
 
 As: The description is at the site Emercoin.com
-<http://emercoin.com/getstarted>
+<http://emercoin.com/en>
 
 Q: How do I buy Emercoin money?
 -------------------------------
@@ -254,16 +254,14 @@ Q: How do I buy Emercoin money?
 **As:** It depends on its amount and the time you are ready to spend
 Smaller amounts (e.g. for buying a name inNVS) you can buy in exchanger.
 [The list of available exchangers is at the Emercoin
-site](http://emercoin.com/getstarted)
+site](http://emercoin.com/en)
 
 It is better to buy the lager amounts at the exchanges, it will be
 cheaper, the list of exchanges is renewed at [the Emercoin
-site](http://emercoin.com/getstarted) On the 3d July 2016 the three most
-popular exchages are
+site](http://emercoin.com/en) On the 12d July 2018 the most
+popular exchages are:
 
-1.  [Livecoin.net](http://www.livecoin.net/)
-2.  [Chinese exchange btc38.com](http://www.btc38.com/)
-3.  [биржа bittrex.com](https://bittrex.com/)
+https://coinmarketcap.com/currencies/emercoin/#markets
 
 The purchase scheme for [Livecoin.net](http://www.livecoin.net/) is
 
@@ -304,7 +302,5 @@ Q: Does Emer have technologies which are ready for usage at the moment?
 -----------------------------------------------------------------------
 
 As: technologies declared on the emercoin.com website can be used (and
-are being used) at this moment. The ATOM technology is on the trial
-stage at the moment (July (the) 2nd 2016) and doesn’t available yet.
-Russian description is available at the website
-<http://www.blockchainengine.org/ru/home-page/usecases/>
+are being used) at this moment is available at the website:
+https://emercoin.com/en/for-developers
