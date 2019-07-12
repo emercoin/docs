@@ -9,7 +9,7 @@ production of coins by energy-conservative PoS as PoW difficulty
 gradually increases over time.
 
 <table>
-  <tr><td>Total Supply:</td><td>Algorithmically increasing at approx. 6% per year [<a href="https://emercoin.mintr.org/stats">click here for latest stats</a>].</td></tr>
+  <tr><td>Total Supply:</td><td>Algorithmically increasing at approx. 6% per year [<a href="https://explorer.emercoin.com/stats">click here for latest stats</a>].</td></tr>
   <tr><td>Block frequency:</td><td>10 minute average.</td></tr>
   <tr><td>PoW Algorithm:</td><td><a href="https://en.wikipedia.org/wiki/SHA-2">SHA-256</a> (merge-mined with Bitcoin).</td></tr>
   <tr><td>PoW block reward:</td><td>5020 EMC, decreasing according to PoW difficulty.<br><br><code>Formula: Reward = 5020 / sqrt(sqrt(difficulty))</code></td></tr>

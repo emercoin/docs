@@ -82,7 +82,7 @@ More exchanges can be found at
 ### EmerDPO Services
 
 -   [EmerDPO.info](http://EmerDPO.info)
--   [EmerDPO verifier](https://emercoin.mintr.org/dpo)
+-   [EmerDPO verifier](https://explorer.emercoin.com/dpo)
 -   <https://letsnotar.me>
 
 ### EmerSSL Services

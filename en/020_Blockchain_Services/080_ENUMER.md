@@ -74,7 +74,7 @@ And the result:
 
 You can view ENUM records that have already been deployed in the Emercoin
 blockchain on a blockexplorer, by [clicking
-here](https://emercoin.mintr.org/nvs/enum///25/0/1).
+here](https://explorer.emercoin.com/nvs/enum///25/0/1).
 
 Registration
 ------------

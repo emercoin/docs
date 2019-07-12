@@ -74,7 +74,7 @@ the record about your company. In \~ 10 minutes, the record will be
 included in the blockchain and will be publicly available. Now you have
 a root DPO record. It will be needed to make the next steps.
 
-You can check it on the website <https://emercoin.mintr.org/dpo/> By
+You can check it on the website <https://explorer.emercoin.com/dpo/> By
 entering the name of your record in the "Brand" field (the XXXXX from
 step No. 2)
 
@@ -243,7 +243,7 @@ How to check whether everything went right?
 
 So, we have created and signed a list of serial numbers. We need to make
 sure that everything went right. To do this, go to the website
-<https://emercoin.mintr.org/dpo> and enter the following information in
+<https://explorer.emercoin.com/dpo> and enter the following information in
 the fields: the name of the root DPO record and any serial number from
 the column of our CSV table.
 
