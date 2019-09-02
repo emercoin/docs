@@ -4,6 +4,29 @@
     "author": "Emercoin Community",
     "image": "./images/EMC_Evolve_Planet.jpg",
     "languages": { "en": "English", "ru": "Russian" },
+    "string": {
+        "ru": {
+            "CodeBlocks_title": "Code blocks",
+            "CodeBlocks_hide": "Нет",
+            "CodeBlocks_below": "Внизу",
+            "CodeBlocks_inline": "В строке",
+            "CodeBlocks_show": "Show Code Blocks",
+            "Search_placeholder": "поиск...",
+            "Search_one_result": "1 результат",
+            "Search_results": "!count результат(-ов)",
+            "Search_no_results": "Ничего не найдено",
+            "Search_common_words_ignored": "Common words are largely ignored",
+            "Search_too_short": "Поисковый запрос слишком короткий",
+            "Search_one_character_or_more": "Поисковый запрос должен содержать не менее одного символа",
+            "Search_should_be_x_or_more": "Поисковый запрос должен содержать !min символ(-ов) или более",
+            "Link_previous": "Предыдущая",
+            "Link_next": "Следующая",
+            "Edit_on": "Редактировать :name:",
+            "View_on_github": "Смотреть на GitHub",
+            "View_documentation": "Смотреть документацию",
+            "Table_of_contents": "Содержание"
+        }
+    },
     "ignore": {
         "files": ["Work_In_Progress.md",".gitignore","README.md"],
         "folders": ["999_Not_Published","themes"]
